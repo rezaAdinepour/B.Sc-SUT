@@ -1,0 +1,139 @@
+
+**** 03/07/22 19:54:33 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec3_HW02"  [ e:\university\electerical\electronic 3\dr marvi\hw\hw02\simulation\q1\elec3_hw02-schematic1-e
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "elec3_hw02-schematic1-elec3_hw02.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1Hz 1Hz 1000KHz
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\elec3_hw02-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING elec3_hw02-SCHEMATIC1.net ****
+* source ELEC3_HW02
+R_R7         0 N01462  100K  
+V_V3         N02180 0 DC 0Vdc AC 1mVac 
+M_M4         N01509 N01462 N01558 N01558 M2N7000
+C_C3         0 N01400  2u  
+R_R1         N01341 N01844  1k  
+R_R2         N01509 N01844  1k  
+C_C5         N01648 N01509  3u  
+R_R3         0 N01400  0.4K  
+M_M5         N01341 N02180 N01400 N01400 M2N7000
+C_C6         N01462 N01341  1u  
+R_R4         0 N01648  100k  
+C_C7         0 N01558  1.5u  
+R_R5         N01462 N01844  65K  
+V_V1         N01844 0 1.8Vdc
+R_R6         0 N01558  0.4K  
+
+**** RESUMING elec3_hw02-schematic1-elec3_hw02.sim.cir ****
+.END
+
+**** 03/07/22 19:54:33 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec3_HW02"  [ e:\university\electerical\electronic 3\dr marvi\hw\hw02\simulation\q1\elec3_hw02-schematic1-e
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               M2N7000         
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .12         
+         VTO    1.73         
+          KP    1.073000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD     .5489       
+          RS     .02         
+          RG  546.2          
+          RB    1.000000E-03 
+         RDS   48.000000E+06 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD   74.460000E-12 
+          CJ    0            
+        CJSW    0            
+        CGSO   73.610000E-12 
+        CGDO    6.487000E-12 
+        CGBO    0            
+         TOX    2.000000E-06 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+**** 03/07/22 19:54:33 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec3_HW02"  [ e:\university\electerical\electronic 3\dr marvi\hw\hw02\simulation\q1\elec3_hw02-schematic1-e
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01341)    1.8000 (N01400) 15.00E-06 (N01462)    1.0909 (N01509)    1.8000     
+
+(N01558) 15.00E-06 (N01648)    0.0000 (N01844)    1.8000 (N02180)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         0.000E+00
+    V_V1        -1.098E-05
+
+    TOTAL POWER DISSIPATION   1.98E-05  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

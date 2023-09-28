@@ -1,0 +1,29 @@
+reza adinepour - 9814303 - Elec3-HW04-Q1
+
+
+
+*******************************//mosfet model//*******************************
+.model		Ynmos		nmos		level=1		vto=0.7		gamma=0.45		phi=0.9		nsub=9e14		ld=0.08e-6		uo=350		lambda=0.1		tox=9e-9	pb=0.9		cj=0.56e-3	cjsw=0.35e-11	mj=0.45		mjsw=0.2	cgdo=0.4e-9		js=1.0e-8
+
+.model		Ypmos		pmos		level=1		vto=-0.8	gamma=0.4		phi=0.8		nsub=5e14		ld=0.09e-6		uo=100		lambda=0.2		tox=9e-9	pb=0.9		cj=0.94e-3	cjsw=0.32e-11	mj=0.5		mjsw=0.3	cgdo=0.3e-9		js=0.5e-8
+
+*******************************//devices//*******************************
+vdd		100		0		1.8V
+vin		1		5		ac=1	sin		0V		1mV		1K
+vgs		5		0		0.6V
+vb		4		0		1.2V
+M1		2		1		0		0		Ynmos		w=360u		l=0.18u
+M2		3		4		2		0		Ynmos		w=360u		l=0.18u
+RL		100		3		1k
+CL		3		0		10pF
+
+*******************************//analysis//*******************************
+.op
+.tran		1u		5m		start=0m
+.ac			dec		50		1			10x
+.meas		ac		gain	max			V(3)
+.meas		ac		fu		when		V(3)=1
+.pz			v(3)	Vin	
+
+.option nomod
+.end

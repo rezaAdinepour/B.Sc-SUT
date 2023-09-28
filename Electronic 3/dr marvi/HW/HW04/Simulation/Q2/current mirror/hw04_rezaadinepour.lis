@@ -1,0 +1,158 @@
+ ****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+  Copyright (C) 2010 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: e:\university\electerical\electronic 3\dr marvi\hw\hw04\simulation
+  lic:  
+  lic: FLEXlm: v8.5b 
+  lic: USER:   r3z4                 HOSTNAME: DESKTOP-L98U3RU 
+  lic: HOSTID: "04d4c4e5f7d6 00ffbd48a6cb 7cb27d07c1f5 7cb27d07c1f6 7eb27d07c1f5
+ "
+  lic: Using FLEXlm license file: 
+  lic: 27000@elena 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9 
+  lic: NODE LOCKED license on hostid "04d4c4e5f7d6 00ffbd48a6cb 7cb27d07c1f5 7cb
+ 2
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_D-2010.03-SP1\meta.cfg
+ **warning** Element identification problem 
+   with output     0:2                ;ignored.
+ 
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ reza adinepour - 9814303 - elec3-hw04-q1
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       = 704.9145m 0:2       =  42.1621m 0:100     =   5.0000 
+
+
+ ****  voltage sources
+
+ subckt             
+ element  0:vcc     
+  volts      5.0000 
+  current   -1.4958m
+  power      7.4789m
+
+     total voltage source power dissipation=    7.4789m       watts
+
+
+
+ ***** current sources
+
+ subckt             
+ element  0:iss     
+  volts      4.2951 
+  current    1.0000m
+  power     -4.2951m
+
+
+     total current source power dissipation=  -4.2951m       watts
+
+ **** resistors
+
+ subckt             
+ element  0:rl      
+  r value   10.0000k
+  v drop     4.9578 
+  current  495.7838u
+  power      2.4580m
+
+
+ **** bipolar junction transistors
+
+
+ subckt                        
+ element  0:q1       0:q2      
+ model    0:mynpn    0:mynpn   
+  ib         8.2388u  167.8835u
+  ic       823.8777u  495.7838u
+  vbe      704.9145m  704.9145m
+  vce      704.9145m   42.1621m
+  vbc        0.       662.7524m
+  vs      -704.9145m  -42.1621m
+  power    586.5710u  139.2468u
+  betad    100.0000     2.9531 
+  gm        32.0512m   25.4979m
+  rpi        3.1184k    3.1184k
+  rx         0.         0.     
+  ro        60.6886k  162.7406 
+  cpi        0.         0.     
+  cmu        0.         0.     
+  cbx        0.         0.     
+  ccs        0.         0.     
+  betaac    99.9486    79.5127 
+  ft       5.101e+12  3.069e+12
+
+
+
+
+ **warning** zero value is used for the non-existance
+             output variable in the expression.
+             you may have output variables with
+             a long path name.
+ ******  
+ reza adinepour - 9814303 - elec3-hw04-q1
+
+  ******  ac analysis tnom=  25.000 temp=  25.000 *****
+   gain=  0.0000E+00    at=  1.0000E+00
+               from=  1.0000E+00    to=  1.0000E+07
+
+          ***** job concluded
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ reza adinepour - 9814303 - elec3-hw04-q1
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count                  :     1
+  Available CPU Count                         :    12
+  Actual Model Evaluation(Load) Threads Count :     1
+  Actual Solver Threads Count                 :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       4 # elements   =       5
+  # resistors   =       1 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       1
+  # curr_srcs   =       1 # diodes     =       0 # bjts        =       2
+  # jfets       =       0 # mosfets    =       0 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          10
+  ac analysis        0.06         351         351
+  transient          0.05        5001          54          27 rev=         0
+  readin             0.05
+  errchk             0.02
+  setup              0.02
+  output             0.00
+
+
+           total memory used          168  kbytes
+           total cpu time            0.24 seconds
+           total elapsed time        0.27 seconds
+           job started at     10:21:31 04/22/2010
+           job ended   at     10:21:31 04/22/2010
+
+
+  lic: Release hspice token(s) 

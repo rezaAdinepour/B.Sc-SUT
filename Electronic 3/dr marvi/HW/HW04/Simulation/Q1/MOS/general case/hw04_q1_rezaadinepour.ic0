@@ -1,0 +1,19 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "22:06:10 04/21/2010 "
+* "netlist" "e:\university\electerical\electronic 3\dr marvi\hw\hw04\hw04_q1_rezaadinepour.sp "
+* "runtitle" "reza adinepour - 9814303 - elec3-hw04-q1"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 1 = 600.0000m       
++ 2 = 447.7612m       
++ 3 =   1.8000        
++ 4 =   1.2000        
++ 5 = 600.0000m       
++ 100 =   1.8000        
+***   END: Saved Operating Point ***                     

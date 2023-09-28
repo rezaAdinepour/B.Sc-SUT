@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-Elec3_HW02"  [ E:\University\Electerical\Electronic 3\Dr Marvi\HW\HW02\Simulation\Q2\elec3_hw02-SCHEMATIC1-Elec3_HW02.sim ] 
+
+** Creating circuit file "elec3_hw02-SCHEMATIC1-Elec3_HW02.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1KHz 1Hz 100KHz
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\elec3_hw02-SCHEMATIC1.net" 
+
+
+.END

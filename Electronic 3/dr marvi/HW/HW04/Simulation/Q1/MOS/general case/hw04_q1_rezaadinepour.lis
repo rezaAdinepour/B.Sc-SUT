@@ -1,0 +1,159 @@
+ ****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+  Copyright (C) 2010 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: e:\university\electerical\electronic 3\dr marvi\hw\hw04\hw04_q1_re
+  lic:  
+  lic: FLEXlm: v8.5b 
+  lic: USER:   r3z4                 HOSTNAME: DESKTOP-L98U3RU 
+  lic: HOSTID: "04d4c4e5f7d6 00ffbd48a6cb 7cb27d07c1f5 7cb27d07c1f6 7eb27d07c1f5
+ "
+  lic: Using FLEXlm license file: 
+  lic: 27000@elena 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9 
+  lic: NODE LOCKED license on hostid "04d4c4e5f7d6 00ffbd48a6cb 7cb27d07c1f5 7cb
+ 2
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_D-2010.03-SP1\meta.cfg
+  **info** (e:\university\electerical\electronic 3\dr marvi\hw\hw04\hw04_q1_rezaadinepour.sp:12) DC voltage reset to initial transient source value              in source        0:vin                 new dc=  0.0000D+00
+ 
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ reza adinepour - 9814303 - elec3-hw04-q1
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       = 600.0000m 0:2       = 447.7612m 0:3       =   1.8000 
+ +0:4       =   1.2000  0:5       = 600.0000m 0:100     =   1.8000 
+
+
+ ****  voltage sources
+
+ subckt                                              
+ element  0:vdd      0:vgs      0:vb       0:vin     
+  volts      1.8000   600.0000m    1.2000     0.     
+  current   -3.1702p    0.         0.         0.     
+  power      5.7064p    0.         0.         0.     
+
+     total voltage source power dissipation=    5.7064p       watts
+
+
+
+ **** resistors
+
+ subckt             
+ element  0:rl      
+  r value    1.0000k
+  v drop     3.1702n
+  current    3.1702p
+  power    1.005e-20
+
+
+
+ **** mosfets
+
+
+ subckt                        
+ element  0:m1       0:m2      
+ model    0:ynmos    0:ynmos   
+ region       Cutoff     Cutoff
+  id         0.         0.     
+  ibs        0.        -4.4776f
+  ibd       -4.4776f  -18.0000f
+  vgs      600.0000m  752.2388m
+  vds      447.7612m    1.3522 
+  vbs        0.      -447.7612m
+  vth      700.0000m  795.5115m
+  vdsat      0.         0.     
+  vod     -100.0000m  -43.2727m
+  beta       2.4172     2.4172 
+  gam eff  450.0000m  450.0000m
+  gm         0.         0.     
+  gds        0.         0.     
+  gmb        0.         0.     
+  cdtot    144.0027f  144.0157f
+  cgtot    263.0720f  264.8740f
+  cstot    113.5701f  116.3220f
+  cbtot      5.4992f    4.5362f
+  cgs      113.5701f  116.3220f
+  cgd      144.0027f  144.0157f
+
+
+
+ ***************************************************
+   ******   pole/zero analysis  
+ 
+ 
+    input =  0:vin          output = v(3)
+ 
+       poles (rad/sec)                 poles ( hertz)
+ real            imag            real            imag            
+ -98.5803x       0.              -15.6895x       0.              
+ 
+ ***** no zeros found *****     coeffn =98.5803a
+  ***** constant factor = 98.5803n
+ ******  
+ reza adinepour - 9814303 - elec3-hw04-q1
+
+  ******  ac analysis tnom=  25.000 temp=  25.000 *****
+   gain=  0.0000E+00    at=  1.0000E+00
+               from=  1.0000E+00    to=  1.0000E+07
+   fu= failed
+
+          ***** job concluded
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ reza adinepour - 9814303 - elec3-hw04-q1
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count                  :     1
+  Available CPU Count                         :    12
+  Actual Model Evaluation(Load) Threads Count :     1
+  Actual Solver Threads Count                 :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       7 # elements   =       8
+  # resistors   =       1 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       2 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.02           1           5
+  ac analysis        0.13         351         351
+  transient          0.11        5001         172          86 rev=         0
+  readin             0.09
+  errchk             0.02
+  setup              0.04
+  output             0.00
+
+
+           total memory used          167  kbytes
+           total cpu time            0.50 seconds
+           total elapsed time        0.58 seconds
+           job started at     22:06:10 04/21/2010
+           job ended   at     22:06:11 04/21/2010
+
+
+  lic: Release hspice token(s) 
