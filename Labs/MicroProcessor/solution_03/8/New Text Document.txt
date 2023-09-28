@@ -1,0 +1,19 @@
+F = 8MHz
+DC = 5%  --> -90deg --> comp A = 1F4
+DC = 6.25% --> -45deg --> comp A = 271
+DC = 7.5% --> 0deg --> comp A = 2EE
+DC = 8.75% --> 45deg --> comp A = 36B
+DC = 10% --> 90deg --> comp A = 3E8
+
+clk val. = 1000KHz
+input cap. = 2710
+
+F = 4MHz
+DC = 5%  --> -90deg --> comp A = 7D0
+DC = 6.25% --> -45deg --> comp A = 9C4
+DC = 7.5% --> 0deg --> comp A = BB8
+DC = 8.75% --> 45deg --> comp A = DAC
+DC = 10% --> 90deg --> comp A = FA0
+
+clk val. = 4000KHz
+input cap. = 9C40
