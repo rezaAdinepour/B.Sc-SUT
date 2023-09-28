@@ -1,0 +1,7 @@
+* source PULSE-HW01
+C_C6         0 N01894  20P  
+R_R5         N01878 N01894  9000k  
+V_V2         N01878 0  
++PULSE -1 5 1n 1n 1n 1u 3u
+R_R6         0 N01894  1000k  
+C_C5         N01878 N01894  2.2P  
