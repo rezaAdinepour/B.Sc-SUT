@@ -1,0 +1,12 @@
+VERSION:3 SOURCE_TIMESTAMP:558CAE74
+NODE:I LEVEL:0 LINE:10 "C:\cvavr\inc\mega32.h"
+NODE:I LEVEL:0 LINE:11 "C:\cvavr\inc\alcd.h"
+NODE:I LEVEL:0 LINE:12 "C:\cvavr\inc\stdio.h"
+NODE:V LEVEL:0 LINE:14 "sec -> R4,R5"
+NODE:V LEVEL:0 LINE:14 "min -> R6,R7"
+NODE:V LEVEL:0 LINE:14 "hour -> R8,R9"
+NODE:V LEVEL:0 LINE:15 "str -> RAM:????"
+NODE:F LEVEL:0 LINE:18 "ext_int0_isr(void)"
+NODE:F LEVEL:0 LINE:29 "ext_int1_isr(void)"
+NODE:F LEVEL:0 LINE:40 "timer2_ovf_isr(void)"
+NODE:F LEVEL:0 LINE:62 "main(void)"

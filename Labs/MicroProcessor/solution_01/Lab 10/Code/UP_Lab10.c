@@ -1,0 +1,120 @@
+//           ******************************************************
+//          **   Processor      : ATMEGA 32                       **
+//         ***   Frequency      : 8MHz External Clock             ***
+//        ****   AUTHOR         : Reza Adinepour                  ****
+//        ****   Linkedin       : linkedin.com/reza_adinepour/    ****
+//         ***   Student ID:    : 9814303                         ***
+//          **   Github         : github.com/reza_adinepour/      **
+//           ******************************************************
+
+#include <mega32.h>
+#include <alcd.h>
+#include <stdio.h>
+
+int sec = 0, min = 0, hour = 0;
+unsigned char str[17];
+
+// External Interrupt 0 service routine
+interrupt [EXT_INT0] void ext_int0_isr(void)
+{
+    if(PIND.2 == 0)
+    {
+        min++;
+        if(min == 60)
+            min = 0;
+    }
+}
+
+// External Interrupt 1 service routine
+interrupt [EXT_INT1] void ext_int1_isr(void)
+{
+    if(PIND.3 == 0)
+    {
+        hour++;
+        if(hour == 24)
+            hour = 0;
+    }
+}
+
+// Timer2 overflow interrupt service routine
+interrupt [TIM2_OVF] void timer2_ovf_isr(void)
+{
+    sec++;
+    if(sec == 60)
+    {
+        sec = 0;
+        min++;
+        if(min == 60)
+        {
+            min = 0;
+            hour++;
+            if(hour == 24)
+            {
+                hour = 0;
+            }
+        }
+    }
+    sprintf(str, "time:%2d:%2d:%2d", hour, min, sec);
+    lcd_clear();
+    lcd_puts(str);
+}
+
+void main(void)
+{
+    DDRA = 0xff;
+    PORTA = 0x00;
+    
+    DDRB = 0xff;
+    PORTB = 0x00;
+    
+    DDRC = 0xff;
+    PORTC = 0x00;
+    
+    DDRD = 0x00;
+    PORTD = 0xff;
+
+    // Timer/Counter 2 initialization
+    // Clock source: TOSC1 pin
+    // Clock value: PCK2/128
+    // Mode: Normal top=0xFF
+    // OC2 output: Disconnected
+    ASSR=1<<AS2;
+    TCCR2=(0<<PWM2) | (0<<COM21) | (0<<COM20) | (0<<CTC2) | (1<<CS22) | (0<<CS21) | (1<<CS20);
+    TCNT2=0x00;
+    OCR2=0x00;
+
+    // Timer(s)/Counter(s) Interrupt(s) initialization
+    TIMSK=(0<<OCIE2) | (1<<TOIE2) | (0<<TICIE1) | (0<<OCIE1A) | (0<<OCIE1B) | (0<<TOIE1) | (0<<OCIE0) | (0<<TOIE0);
+
+    // External Interrupt(s) initialization
+    // INT0: On
+    // INT0 Mode: Falling Edge
+    // INT1: On
+    // INT1 Mode: Falling Edge
+    // INT2: Off
+    GICR|=(1<<INT1) | (1<<INT0) | (0<<INT2);
+    MCUCR=(1<<ISC11) | (0<<ISC10) | (1<<ISC01) | (0<<ISC00);
+    MCUCSR=(0<<ISC2);
+    GIFR=(1<<INTF1) | (1<<INTF0) | (0<<INTF2);
+
+    // Alphanumeric LCD initialization
+    // Connections are specified in the
+    // Project|Configure|C Compiler|Libraries|Alphanumeric LCD menu:
+    // RS - PORTA Bit 1
+    // RD - PORTA Bit 2
+    // EN - PORTA Bit 3
+    // D4 - PORTA Bit 4
+    // D5 - PORTA Bit 5
+    // D6 - PORTA Bit 6
+    // D7 - PORTA Bit 7
+    // Characters/line: 16
+    lcd_init(16);
+
+    // Global enable interrupts
+    #asm("sei")
+
+    while (1)
+    {
+        
+    }
+}
