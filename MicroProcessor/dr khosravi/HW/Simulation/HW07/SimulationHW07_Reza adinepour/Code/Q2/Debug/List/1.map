@@ -1,0 +1,54 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+prevLet                                                                           0x0260       2
+stat                                                                              0x0262       1
+prevX                                                                             0x0263       1
+prevY                                                                             0x0264       1
+str                                                                               0x0265      10
+i                                                                                 0x026F       4
+_seed                                                                             0x0273       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+trigger                                                                           0x0073B      9
+glcd_on                                                                           0x00744      8
+goto_col                                                                          0x0074C     28
+goto_row                                                                          0x00768     13
+goto_xy                                                                           0x00775     10
+glcd_write                                                                        0x0077F     11
+glcd_clrln                                                                        0x0078A     31
+glcd_clear                                                                        0x007A9     16
+glcd_read                                                                         0x007B9     47
+point_at                                                                          0x007E8     42
+h_line                                                                            0x00812     29
+v_line                                                                            0x0082F     27
+line                                                                              0x0084A    260
+putIt                                                                             0x0094E     22
+enlarge                                                                           0x00964     40
+putItSz                                                                           0x0098C    124
+glcd_putchar                                                                      0x00A08    136
+glcd_puts                                                                         0x00A90    173
+bmp_disp                                                                          0x00B3D     45
+timer0_ovf_isr                                                                    0x00B6A     27
+main                                                                              0x00B85    316
+put_buff_G100                                                                     0x00CC1     58
+_print_G100                                                                       0x00CFB    308
+sprintf                                                                           0x00E2F     52
+abs                                                                               0x00E63     10
+min                                                                               0x00E6D     11
+ftrunc                                                                            0x00E78     49
+floor                                                                             0x00EA9     20
+sin                                                                               0x00EBD    136
+cos                                                                               0x00F45     12
+strlen                                                                            0x00F51     12
+strlenf                                                                           0x00F5D     13

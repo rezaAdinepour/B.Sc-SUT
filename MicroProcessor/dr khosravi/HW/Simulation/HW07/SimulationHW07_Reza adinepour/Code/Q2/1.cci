@@ -1,0 +1,10 @@
+VERSION:3 SOURCE_TIMESTAMP:539355D6
+NODE:I LEVEL:0 LINE:1 "C:\cvavr\inc\mega32.h"
+NODE:I LEVEL:0 LINE:2 "C:\cvavr\inc\delay.h"
+NODE:I LEVEL:0 LINE:3 "C:\cvavr\inc\stdio.h"
+NODE:I LEVEL:0 LINE:4 "E:\University\Electerical\MicroProcessor\Dr Khosravi\HW\Simulation\HW07\SimulationHW07_Reza adinepour\Code\Q2\Includes\GLCD.h"
+NODE:C LEVEL:0 LINE:7 "clock -> FLASH"
+NODE:V LEVEL:0 LINE:69 "str -> RAM:????"
+NODE:V LEVEL:0 LINE:71 "i -> RAM:????"
+NODE:F LEVEL:0 LINE:73 "timer0_ovf_isr(void)"
+NODE:F LEVEL:0 LINE:78 "main(void)"

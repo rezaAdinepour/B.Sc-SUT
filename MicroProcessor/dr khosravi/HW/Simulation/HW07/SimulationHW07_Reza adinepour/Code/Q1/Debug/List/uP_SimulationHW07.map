@@ -1,0 +1,52 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+str                                                                               0x026E       2
+correctPass                                                                       0x0270       4
+code                                                                              0x0274       4
+_base_y                                                                           0x0278       4
+_lcd_maxx                                                                         0x027C       1
+_seed                                                                             0x027D       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+i                                                                                 R4,R5        2
+j                                                                                 R7           1
+k                                                                                 R6           1
+e                                                                                 R9           1
+z                                                                                 R8           1
+setPass                                                                           R11          1
+flag                                                                              R10          1
+_lcd_x                                                                            R13          1
+_lcd_y                                                                            R12          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+byteWrite                                                                         0x000A5     22
+randomRead                                                                        0x000BB     32
+ext_int0_isr                                                                      0x000DB    364
+main                                                                              0x00247    224
+_lcd_write_nibble_G100                                                            0x00327     20
+_lcd_write_data                                                                   0x0033B     12
+lcd_gotoxy                                                                        0x00347     13
+lcd_clear                                                                         0x00354     12
+lcd_putchar                                                                       0x00360     23
+lcd_puts                                                                          0x00377     15
+lcd_putsf                                                                         0x00386     19
+lcd_init                                                                          0x00399     47
+put_buff_G101                                                                     0x003C8     58
+_ftoe_G101                                                                        0x00402    210
+_print_G101                                                                       0x004D4    538
+sprintf                                                                           0x006EE     52
+strcpyf                                                                           0x00722     13
+strlen                                                                            0x0072F     12
+strlenf                                                                           0x0073B     13
+ftrunc                                                                            0x00748     49
+floor                                                                             0x00779     23
+ftoa                                                                              0x00790    161
