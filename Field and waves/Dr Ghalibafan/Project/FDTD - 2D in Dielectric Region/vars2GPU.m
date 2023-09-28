@@ -1,0 +1,26 @@
+function[] = vars2GPU()
+    assignin('base','S',gpuArray(evalin('base','S')));
+    assignin('base','Ez',gpuArray(evalin('base','Ez')));
+    assignin('base','Hx',gpuArray(evalin('base','Hx')));
+    assignin('base','Hy',gpuArray(evalin('base','Hy')));
+    assignin('base','Cezhx',gpuArray(evalin('base','Cezhx')));
+    assignin('base','Cezhy',gpuArray(evalin('base','Cezhy')));
+    assignin('base','Chyez',gpuArray(evalin('base','Chyez')));
+    assignin('base','Chxez',gpuArray(evalin('base','Chxez')));
+    assignin('base','aex',gpuArray(evalin('base','aex')));
+    assignin('base','aey',gpuArray(evalin('base','aey')));
+    assignin('base','bex',gpuArray(evalin('base','bex')));
+    assignin('base','bey',gpuArray(evalin('base','bey')));
+    assignin('base','amx',gpuArray(evalin('base','amx')));
+    assignin('base','amy',gpuArray(evalin('base','amy')));
+    assignin('base','bmx',gpuArray(evalin('base','bmx')));
+    assignin('base','bmy',gpuArray(evalin('base','bmy')));
+    assignin('base','Psi_ezx',gpuArray(evalin('base','Psi_ezx')));
+    assignin('base','Psi_ezy',gpuArray(evalin('base','Psi_ezy')));
+    assignin('base','Psi_hyx',gpuArray(evalin('base','Psi_hyx')));
+    assignin('base','Psi_hxy',gpuArray(evalin('base','Psi_hxy')));
+    assignin('base','CPsi_ezx',gpuArray(evalin('base','CPsi_ezx')));
+    assignin('base','CPsi_ezy',gpuArray(evalin('base','CPsi_ezy')));
+    assignin('base','CPsi_hyx',gpuArray(evalin('base','CPsi_hyx')));
+    assignin('base','CPsi_hxy',gpuArray(evalin('base','CPsi_hxy')));
+end
