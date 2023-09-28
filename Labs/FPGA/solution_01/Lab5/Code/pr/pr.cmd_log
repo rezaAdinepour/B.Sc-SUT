@@ -1,0 +1,102 @@
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+map -intstyle ise -p xc2s150-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o pr_map.ncd pr.ngd pr.pcf
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf
+trce -intstyle ise -e 3 -l 3 -s 6 -xml pr pr.ncd -o pr.twr pr.pcf
+bitgen -intstyle ise -f pr.ut pr.ncd
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+map -intstyle ise -p xc2s150-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o pr_map.ncd pr.ngd pr.pcf
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf
+trce -intstyle ise -e 3 -l 3 -s 6 -xml pr pr.ncd -o pr.twr pr.pcf
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+map -intstyle ise -p xc2s150-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o pr_map.ncd pr.ngd pr.pcf
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf
+trce -intstyle ise -e 3 -l 3 -s 6 -xml pr pr.ncd -o pr.twr pr.pcf
+bitgen -intstyle ise -f pr.ut pr.ncd
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+map -intstyle ise -p xc2s150-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o pr_map.ncd pr.ngd pr.pcf
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf
+trce -intstyle ise -e 3 -l 3 -s 6 -xml pr pr.ncd -o pr.twr pr.pcf
+bitgen -intstyle ise -f pr.ut pr.ncd
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+map -intstyle ise -p xc2s150-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o pr_map.ncd pr.ngd pr.pcf
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf
+trce -intstyle ise -e 3 -l 3 -s 6 -xml pr pr.ncd -o pr.twr pr.pcf
+bitgen -intstyle ise -f pr.ut pr.ncd
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+map -intstyle ise -p xc2s150-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o pr_map.ncd pr.ngd pr.pcf
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf
+trce -intstyle ise -e 3 -l 3 -s 6 -xml pr pr.ncd -o pr.twr pr.pcf
+bitgen -intstyle ise -f pr.ut pr.ncd
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+map -intstyle ise -p xc2s150-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o pr_map.ncd pr.ngd pr.pcf
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf
+trce -intstyle ise -e 3 -l 3 -s 6 -xml pr pr.ncd -o pr.twr pr.pcf
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+map -intstyle ise -p xc2s150-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o pr_map.ncd pr.ngd pr.pcf
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf
+trce -intstyle ise -e 3 -l 3 -s 6 -xml pr pr.ncd -o pr.twr pr.pcf
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+map -intstyle ise -p xc2s150-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o pr_map.ncd pr.ngd pr.pcf
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf
+trce -intstyle ise -e 3 -l 3 -s 6 -xml pr pr.ncd -o pr.twr pr.pcf
+bitgen -intstyle ise -f pr.ut pr.ncd
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+map -intstyle ise -p xc2s150-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o pr_map.ncd pr.ngd pr.pcf
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf
+trce -intstyle ise -e 3 -l 3 -s 6 -xml pr pr.ncd -o pr.twr pr.pcf
+bitgen -intstyle ise -f pr.ut pr.ncd
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+map -intstyle ise -p xc2s150-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o pr_map.ncd pr.ngd pr.pcf
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf
+trce -intstyle ise -e 3 -l 3 -s 6 -xml pr pr.ncd -o pr.twr pr.pcf
+bitgen -intstyle ise -f pr.ut pr.ncd
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+map -intstyle ise -p xc2s150-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o pr_map.ncd pr.ngd pr.pcf
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf
+trce -intstyle ise -e 3 -l 3 -s 6 -xml pr pr.ncd -o pr.twr pr.pcf
+bitgen -intstyle ise -f pr.ut pr.ncd
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+map -intstyle ise -p xc2s150-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o pr_map.ncd pr.ngd pr.pcf
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf
+trce -intstyle ise -e 3 -l 3 -s 6 -xml pr pr.ncd -o pr.twr pr.pcf
+bitgen -intstyle ise -f pr.ut pr.ncd
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+map -intstyle ise -p xc2s150-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o pr_map.ncd pr.ngd pr.pcf
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf
+trce -intstyle ise -e 3 -l 3 -s 6 -xml pr pr.ncd -o pr.twr pr.pcf
+bitgen -intstyle ise -f pr.ut pr.ncd
+xst -intstyle ise -ifn __projnav/pr.xst -ofn pr.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf  -p xc2s150-pq208-6 pr.ngc pr.ngd
+map -intstyle ise -p xc2s150-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o pr_map.ncd pr.ngd pr.pcf
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf
+trce -intstyle ise -e 3 -l 3 -s 6 -xml pr pr.ncd -o pr.twr pr.pcf
+bitgen -intstyle ise -f pr.ut pr.ncd

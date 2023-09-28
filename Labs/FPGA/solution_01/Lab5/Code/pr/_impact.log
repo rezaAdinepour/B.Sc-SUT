@@ -1,0 +1,154 @@
+iMPACT Version: H.38
+iMPACT log file started on 2002/01/01 00:36:56
+// *** BATCH CMD : setPreference -pref UserLevel:NOVICE
+// *** BATCH CMD : setPreference -pref MessageLevel:DETAILED
+// *** BATCH CMD : setPreference -pref ConcurrentMode:FALSE
+// *** BATCH CMD : setPreference -pref UseHighz:FALSE
+// *** BATCH CMD : setPreference -pref ConfigOnFailure:STOP
+// *** BATCH CMD : setPreference -pref StartupCLock:AUTO_CORRECTION
+// *** BATCH CMD : setPreference -pref AutoSignature:FALSE
+// *** BATCH CMD : setPreference -pref KeepSVF:FALSE
+// *** BATCH CMD : setPreference -pref svfUseTime:FALSE
+// *** BATCH CMD : setPreference -pref UserLevel:NOVICE
+// *** BATCH CMD : setPreference -pref MessageLevel:DETAILED
+// *** BATCH CMD : setPreference -pref ConcurrentMode:FALSE
+// *** BATCH CMD : setPreference -pref UseHighz:FALSE
+// *** BATCH CMD : setPreference -pref ConfigOnFailure:STOP
+// *** BATCH CMD : setPreference -pref StartupCLock:AUTO_CORRECTION
+// *** BATCH CMD : setPreference -pref AutoSignature:FALSE
+// *** BATCH CMD : setPreference -pref KeepSVF:FALSE
+// *** BATCH CMD : setPreference -pref svfUseTime:FALSE
+// *** BATCH CMD : setMode -bs
+Loading cdf file c:\documents and settings\ccit\desktop\new folder\pr/pr.ipf...
+// *** BATCH CMD : setPreference -pref UserLevel:Novice
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -mpm
+// *** BATCH CMD : setMode -cf
+// *** BATCH CMD : setMode -dtconfig
+// *** BATCH CMD : setMode -bsfile
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : addDevice -position 1 -file "C:\Documents and Settings\Ccit\Desktop\New Folder\pr\pr.bit"
+'1': Loading file 'C:\Documents and Settings\Ccit\Desktop\New Folder\pr\pr.bit' ...
+done.
+INFO:iMPACT:501 - '1': Added Device xc2s150 successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : 
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+Finish loading cdf file c:\documents and settings\ccit\desktop\new folder\pr/pr.ipf.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -bsfile
+// *** BATCH CMD : setMode -dtconfig
+// *** BATCH CMD : setMode -cf
+GUI --- Read System ACE CF Mode...
+// *** BATCH CMD : setMode -mpm
+GUI --- Read System ACE MPM Mode...
+// *** BATCH CMD : setMode -pff
+GUI --- Read PROM Formatter Mode...
+// *** BATCH CMD : setMode -ss
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+CB_PROGRESS_START - Starting Operation.
+Connecting to cable (USB Port).
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 6.2.2.2. LPT base address = 0378h.
+ ECP base address = 0778h.
+Cable connection established.
+CB_PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : Program -p 1 
+INFO:iMPACT:479 - Programming device, total bits 1040096, ...
+PROGRESS_START - Starting Operation.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+Programming completed successfully.
+// *** BATCH CMD : Program -p 1 
+Updating config file C:\Documents and Settings\Ccit\Desktop\New Folder\pr\pr.bit...
+INFO:iMPACT:479 - Programming device, total bits 1040096, ...
+PROGRESS_START - Starting Operation.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+Programming completed successfully.
+// *** BATCH CMD : Program -p 1 
+Updating config file C:\Documents and Settings\Ccit\Desktop\New Folder\pr\pr.bit...
+INFO:iMPACT:479 - Programming device, total bits 1040096, ...
+PROGRESS_START - Starting Operation.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+Programming completed successfully.
+// *** BATCH CMD : Program -p 1 
+INFO:iMPACT:479 - Programming device, total bits 1040096, ...
+PROGRESS_START - Starting Operation.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+Programming completed successfully.
+// *** BATCH CMD : Program -p 1 
+Updating config file C:\Documents and Settings\Ccit\Desktop\New Folder\pr\pr.bit...
+INFO:iMPACT:479 - Programming device, total bits 1040096, ...
+PROGRESS_START - Starting Operation.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+Programming completed successfully.
+// *** BATCH CMD : Program -p 1 
+Updating config file C:\Documents and Settings\Ccit\Desktop\New Folder\pr\pr.bit...
+INFO:iMPACT:479 - Programming device, total bits 1040096, ...
+PROGRESS_START - Starting Operation.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+Programming completed successfully.
+// *** BATCH CMD : Program -p 1 
+Updating config file C:\Documents and Settings\Ccit\Desktop\New Folder\pr\pr.bit...
+INFO:iMPACT:479 - Programming device, total bits 1040096, ...
+PROGRESS_START - Starting Operation.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+Programming completed successfully.
+// *** BATCH CMD : Program -p 1 
+Updating config file C:\Documents and Settings\Ccit\Desktop\New Folder\pr\pr.bit...
+INFO:iMPACT:479 - Programming device, total bits 1040096, ...
+PROGRESS_START - Starting Operation.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+Programming completed successfully.
+// *** BATCH CMD : Program -p 1 
+Updating config file C:\Documents and Settings\Ccit\Desktop\New Folder\pr\pr.bit...
+INFO:iMPACT:479 - Programming device, total bits 1040096, ...
+PROGRESS_START - Starting Operation.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+Programming completed successfully.
+// *** BATCH CMD : Program -p 1 
+Updating config file C:\Documents and Settings\Ccit\Desktop\New Folder\pr\pr.bit...
+INFO:iMPACT:479 - Programming device, total bits 1040096, ...
+PROGRESS_START - Starting Operation.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+Programming completed successfully.
+// *** BATCH CMD : Program -p 1 
+Updating config file C:\Documents and Settings\Ccit\Desktop\New Folder\pr\pr.bit...
+INFO:iMPACT:479 - Programming device, total bits 1040096, ...
+PROGRESS_START - Starting Operation.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+Programming completed successfully.
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -bsfile
+// *** BATCH CMD : setMode -dtconfig
+// *** BATCH CMD : setMode -cf
+// *** BATCH CMD : setMode -mpm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -ss
+*****   Closing iMPACT program.   *****

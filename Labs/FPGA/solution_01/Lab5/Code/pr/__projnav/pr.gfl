@@ -1,0 +1,1369 @@
+# xst flow : RunXST
+oiut_summary.html
+# XST (Creating Lso File) : 
+pr.lso
+# Check Syntax
+pr.stx
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Assign Package Pins (Design Module)
+if
+ $IsCopy 
+
+            Xilinx::Dpm::dpm_flowUtilsFilesToDelete "DID_File"  "$HDLModule"
+         
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Edit Constraints (Text)
+# XST (Creating Lso File) : 
+pr.lso
+# Check Syntax
+pr.stx
+pr.ngc
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implementation : Map
+pr_summary.html
+# Implementation : Map
+pr_map.ncd
+pr.ngm
+pr.pcf
+pr.nc1
+pr.mrp
+pr_map.mrp
+pr.mdf
+pr.cmd_log
+MAP_NO_GUIDE_FILE_CPF "pr"
+pr_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+pr.twr
+pr.twx
+pr.tsi
+pr.cmd_log
+# Implementation : Place & Route
+pr_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+pr.ncd
+pr.par
+pr.pad
+pr_pad.txt
+pr_pad.csv
+pr.pad_txt
+pr.dly
+reportgen.log
+pr.xpi
+pr.grf
+pr.itr
+pr_last_par.ncd
+pr.placed_ncd_tracker
+pr.routed_ncd_tracker
+pr.cmd_log
+PAR_NO_GUIDE_FILE_CPF "pr"
+# Generate Programming File
+__projnav/pr_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+pr.ut
+# Generate Programming File
+pr.bgn
+pr.rbt
+pr.ll
+pr.msk
+pr.drc
+pr.nky
+pr.bit
+pr.bin
+pr.isc
+pr.cmd_log
+# Configure Device (iMPACT)
+pr.prm
+pr.isc
+pr.svf
+xilinx.sys
+pr.mcs
+pr.exo
+pr.hex
+pr.tek
+pr.dst
+pr.dst_compressed
+pr.mpm
+_impact.cmd
+_impact.log
+# Configure Device (iMPACT)
+pr.prm
+pr.isc
+pr.svf
+xilinx.sys
+pr.mcs
+pr.exo
+pr.hex
+pr.tek
+pr.dst
+pr.dst_compressed
+pr.mpm
+_impact.cmd
+_impact.log
+# Configure Device (iMPACT)
+pr.prm
+pr.isc
+pr.svf
+xilinx.sys
+pr.mcs
+pr.exo
+pr.hex
+pr.tek
+pr.dst
+pr.dst_compressed
+pr.mpm
+_impact.cmd
+_impact.log
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr_summary.html
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implementation : Map
+pr_summary.html
+# Implementation : Map
+pr_map.ncd
+pr.ngm
+pr.pcf
+pr.nc1
+pr.mrp
+pr_map.mrp
+pr.mdf
+pr.cmd_log
+MAP_NO_GUIDE_FILE_CPF "pr"
+pr_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+pr.twr
+pr.twx
+pr.tsi
+pr.cmd_log
+# Implementation : Place & Route
+pr_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+pr.ncd
+pr.par
+pr.pad
+pr_pad.txt
+pr_pad.csv
+pr.pad_txt
+pr.dly
+reportgen.log
+pr.xpi
+pr.grf
+pr.itr
+pr_last_par.ncd
+pr.placed_ncd_tracker
+pr.routed_ncd_tracker
+pr.cmd_log
+PAR_NO_GUIDE_FILE_CPF "pr"
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implementation : Map
+pr_summary.html
+# Implementation : Map
+pr_map.ncd
+pr.ngm
+pr.pcf
+pr.nc1
+pr.mrp
+pr_map.mrp
+pr.mdf
+pr.cmd_log
+MAP_NO_GUIDE_FILE_CPF "pr"
+pr_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+pr.twr
+pr.twx
+pr.tsi
+pr.cmd_log
+# Implementation : Place & Route
+pr_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+pr.ncd
+pr.par
+pr.pad
+pr_pad.txt
+pr_pad.csv
+pr.pad_txt
+pr.dly
+reportgen.log
+pr.xpi
+pr.grf
+pr.itr
+pr_last_par.ncd
+pr.placed_ncd_tracker
+pr.routed_ncd_tracker
+pr.cmd_log
+PAR_NO_GUIDE_FILE_CPF "pr"
+# Generate Programming File
+__projnav/pr_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+pr.ut
+# Programming File Generation Report
+pr.bgn
+pr.rbt
+pr.ll
+pr.msk
+pr.drc
+pr.nky
+pr.bit
+pr.bin
+pr.isc
+pr.cmd_log
+# Configure Device (iMPACT)
+pr.prm
+pr.isc
+pr.svf
+xilinx.sys
+pr.mcs
+pr.exo
+pr.hex
+pr.tek
+pr.dst
+pr.dst_compressed
+pr.mpm
+_impact.cmd
+_impact.log
+# XST (Creating Lso File) : 
+pr.lso
+# Check Syntax
+pr.stx
+pr.ngc
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Edit Constraints (Text)
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implementation : Map
+pr_summary.html
+# Implementation : Map
+pr_map.ncd
+pr.ngm
+pr.pcf
+pr.nc1
+pr.mrp
+pr_map.mrp
+pr.mdf
+pr.cmd_log
+MAP_NO_GUIDE_FILE_CPF "pr"
+pr_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+pr.twr
+pr.twx
+pr.tsi
+pr.cmd_log
+# Implementation : Place & Route
+pr_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+pr.ncd
+pr.par
+pr.pad
+pr_pad.txt
+pr_pad.csv
+pr.pad_txt
+pr.dly
+reportgen.log
+pr.xpi
+pr.grf
+pr.itr
+pr_last_par.ncd
+pr.placed_ncd_tracker
+pr.routed_ncd_tracker
+pr.cmd_log
+PAR_NO_GUIDE_FILE_CPF "pr"
+# Generate Programming File
+__projnav/pr_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+pr.ut
+# Generate Programming File
+pr.bgn
+pr.rbt
+pr.ll
+pr.msk
+pr.drc
+pr.nky
+pr.bit
+pr.bin
+pr.isc
+pr.cmd_log
+# Configure Device (iMPACT)
+pr.prm
+pr.isc
+pr.svf
+xilinx.sys
+pr.mcs
+pr.exo
+pr.hex
+pr.tek
+pr.dst
+pr.dst_compressed
+pr.mpm
+_impact.cmd
+_impact.log
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implementation : Map
+pr_summary.html
+# Implementation : Map
+pr_map.ncd
+pr.ngm
+pr.pcf
+pr.nc1
+pr.mrp
+pr_map.mrp
+pr.mdf
+pr.cmd_log
+MAP_NO_GUIDE_FILE_CPF "pr"
+pr_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+pr.twr
+pr.twx
+pr.tsi
+pr.cmd_log
+# Implementation : Place & Route
+pr_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+pr.ncd
+pr.par
+pr.pad
+pr_pad.txt
+pr_pad.csv
+pr.pad_txt
+pr.dly
+reportgen.log
+pr.xpi
+pr.grf
+pr.itr
+pr_last_par.ncd
+pr.placed_ncd_tracker
+pr.routed_ncd_tracker
+pr.cmd_log
+PAR_NO_GUIDE_FILE_CPF "pr"
+# Generate Programming File
+__projnav/pr_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+pr.ut
+# Programming File Generation Report
+pr.bgn
+pr.rbt
+pr.ll
+pr.msk
+pr.drc
+pr.nky
+pr.bit
+pr.bin
+pr.isc
+pr.cmd_log
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implementation : Map
+pr_summary.html
+# Implementation : Map
+pr_map.ncd
+pr.ngm
+pr.pcf
+pr.nc1
+pr.mrp
+pr_map.mrp
+pr.mdf
+pr.cmd_log
+MAP_NO_GUIDE_FILE_CPF "pr"
+pr_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+pr.twr
+pr.twx
+pr.tsi
+pr.cmd_log
+# Implementation : Place & Route
+pr_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+pr.ncd
+pr.par
+pr.pad
+pr_pad.txt
+pr_pad.csv
+pr.pad_txt
+pr.dly
+reportgen.log
+pr.xpi
+pr.grf
+pr.itr
+pr_last_par.ncd
+pr.placed_ncd_tracker
+pr.routed_ncd_tracker
+pr.cmd_log
+PAR_NO_GUIDE_FILE_CPF "pr"
+# Generate Programming File
+__projnav/pr_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+pr.ut
+# Generate Programming File
+pr.bgn
+pr.rbt
+pr.ll
+pr.msk
+pr.drc
+pr.nky
+pr.bit
+pr.bin
+pr.isc
+pr.cmd_log
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implementation : Map
+pr_summary.html
+# Implementation : Map
+pr_map.ncd
+pr.ngm
+pr.pcf
+pr.nc1
+pr.mrp
+pr_map.mrp
+pr.mdf
+pr.cmd_log
+MAP_NO_GUIDE_FILE_CPF "pr"
+pr_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+pr.twr
+pr.twx
+pr.tsi
+pr.cmd_log
+# Implementation : Place & Route
+pr_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+pr.ncd
+pr.par
+pr.pad
+pr_pad.txt
+pr_pad.csv
+pr.pad_txt
+pr.dly
+reportgen.log
+pr.xpi
+pr.grf
+pr.itr
+pr_last_par.ncd
+pr.placed_ncd_tracker
+pr.routed_ncd_tracker
+pr.cmd_log
+PAR_NO_GUIDE_FILE_CPF "pr"
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implementation : Map
+pr_summary.html
+# Implementation : Map
+pr_map.ncd
+pr.ngm
+pr.pcf
+pr.nc1
+pr.mrp
+pr_map.mrp
+pr.mdf
+pr.cmd_log
+MAP_NO_GUIDE_FILE_CPF "pr"
+pr_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+pr.twr
+pr.twx
+pr.tsi
+pr.cmd_log
+# Implementation : Place & Route
+pr_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+pr.ncd
+pr.par
+pr.pad
+pr_pad.txt
+pr_pad.csv
+pr.pad_txt
+pr.dly
+reportgen.log
+pr.xpi
+pr.grf
+pr.itr
+pr_last_par.ncd
+pr.placed_ncd_tracker
+pr.routed_ncd_tracker
+pr.cmd_log
+PAR_NO_GUIDE_FILE_CPF "pr"
+# Create Area Constraints
+Xilinx::Dpm::dpm_flowUtilsEndScriptMarker
+0
+# Assign Package Pins (Design Module)
+if
+ $IsCopy 
+
+            Xilinx::Dpm::dpm_flowUtilsFilesToDelete "DID_File"  "$HDLModule"
+         
+# Edit Constraints (Text)
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implementation : Map
+pr_summary.html
+# Implementation : Map
+pr_map.ncd
+pr.ngm
+pr.pcf
+pr.nc1
+pr.mrp
+pr_map.mrp
+pr.mdf
+pr.cmd_log
+MAP_NO_GUIDE_FILE_CPF "pr"
+pr_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+pr.twr
+pr.twx
+pr.tsi
+pr.cmd_log
+# Implementation : Place & Route
+pr_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+pr.ncd
+pr.par
+pr.pad
+pr_pad.txt
+pr_pad.csv
+pr.pad_txt
+pr.dly
+reportgen.log
+pr.xpi
+pr.grf
+pr.itr
+pr_last_par.ncd
+pr.placed_ncd_tracker
+pr.routed_ncd_tracker
+pr.cmd_log
+PAR_NO_GUIDE_FILE_CPF "pr"
+# Generate Programming File
+__projnav/pr_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+pr.ut
+# Generate Programming File
+pr.bgn
+pr.rbt
+pr.ll
+pr.msk
+pr.drc
+pr.nky
+pr.bit
+pr.bin
+pr.isc
+pr.cmd_log
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implementation : Map
+pr_summary.html
+# Implementation : Map
+pr_map.ncd
+pr.ngm
+pr.pcf
+pr.nc1
+pr.mrp
+pr_map.mrp
+pr.mdf
+pr.cmd_log
+MAP_NO_GUIDE_FILE_CPF "pr"
+pr_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+pr.twr
+pr.twx
+pr.tsi
+pr.cmd_log
+# Implementation : Place & Route
+pr_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+pr.ncd
+pr.par
+pr.pad
+pr_pad.txt
+pr_pad.csv
+pr.pad_txt
+pr.dly
+reportgen.log
+pr.xpi
+pr.grf
+pr.itr
+pr_last_par.ncd
+pr.placed_ncd_tracker
+pr.routed_ncd_tracker
+pr.cmd_log
+PAR_NO_GUIDE_FILE_CPF "pr"
+# Generate Programming File
+__projnav/pr_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+pr.ut
+# Programming File Generation Report
+pr.bgn
+pr.rbt
+pr.ll
+pr.msk
+pr.drc
+pr.nky
+pr.bit
+pr.bin
+pr.isc
+pr.cmd_log
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implementation : Map
+pr_summary.html
+# Implementation : Map
+pr_map.ncd
+pr.ngm
+pr.pcf
+pr.nc1
+pr.mrp
+pr_map.mrp
+pr.mdf
+pr.cmd_log
+MAP_NO_GUIDE_FILE_CPF "pr"
+pr_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+pr.twr
+pr.twx
+pr.tsi
+pr.cmd_log
+# Implementation : Place & Route
+pr_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+pr.ncd
+pr.par
+pr.pad
+pr_pad.txt
+pr_pad.csv
+pr.pad_txt
+pr.dly
+reportgen.log
+pr.xpi
+pr.grf
+pr.itr
+pr_last_par.ncd
+pr.placed_ncd_tracker
+pr.routed_ncd_tracker
+pr.cmd_log
+PAR_NO_GUIDE_FILE_CPF "pr"
+# Generate Programming File
+__projnav/pr_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+pr.ut
+# Programming File Generation Report
+pr.bgn
+pr.rbt
+pr.ll
+pr.msk
+pr.drc
+pr.nky
+pr.bit
+pr.bin
+pr.isc
+pr.cmd_log
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implementation : Map
+pr_summary.html
+# Implementation : Map
+pr_map.ncd
+pr.ngm
+pr.pcf
+pr.nc1
+pr.mrp
+pr_map.mrp
+pr.mdf
+pr.cmd_log
+MAP_NO_GUIDE_FILE_CPF "pr"
+pr_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+pr.twr
+pr.twx
+pr.tsi
+pr.cmd_log
+# Implementation : Place & Route
+pr_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+pr.ncd
+pr.par
+pr.pad
+pr_pad.txt
+pr_pad.csv
+pr.pad_txt
+pr.dly
+reportgen.log
+pr.xpi
+pr.grf
+pr.itr
+pr_last_par.ncd
+pr.placed_ncd_tracker
+pr.routed_ncd_tracker
+pr.cmd_log
+PAR_NO_GUIDE_FILE_CPF "pr"
+# Generate Programming File
+__projnav/pr_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+pr.ut
+# Programming File Generation Report
+pr.bgn
+pr.rbt
+pr.ll
+pr.msk
+pr.drc
+pr.nky
+pr.bit
+pr.bin
+pr.isc
+pr.cmd_log
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Edit Constraints (Text)
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implementation : Map
+pr_summary.html
+# Implementation : Map
+pr_map.ncd
+pr.ngm
+pr.pcf
+pr.nc1
+pr.mrp
+pr_map.mrp
+pr.mdf
+pr.cmd_log
+MAP_NO_GUIDE_FILE_CPF "pr"
+pr_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+pr.twr
+pr.twx
+pr.tsi
+pr.cmd_log
+# Implementation : Place & Route
+pr_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+pr.ncd
+pr.par
+pr.pad
+pr_pad.txt
+pr_pad.csv
+pr.pad_txt
+pr.dly
+reportgen.log
+pr.xpi
+pr.grf
+pr.itr
+pr_last_par.ncd
+pr.placed_ncd_tracker
+pr.routed_ncd_tracker
+pr.cmd_log
+PAR_NO_GUIDE_FILE_CPF "pr"
+# Generate Programming File
+__projnav/pr_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+pr.ut
+# Programming File Generation Report
+pr.bgn
+pr.rbt
+pr.ll
+pr.msk
+pr.drc
+pr.nky
+pr.bit
+pr.bin
+pr.isc
+pr.cmd_log
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implementation : Map
+pr_summary.html
+# Implementation : Map
+pr_map.ncd
+pr.ngm
+pr.pcf
+pr.nc1
+pr.mrp
+pr_map.mrp
+pr.mdf
+pr.cmd_log
+MAP_NO_GUIDE_FILE_CPF "pr"
+pr_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+pr.twr
+pr.twx
+pr.tsi
+pr.cmd_log
+# Implementation : Place & Route
+pr_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+pr.ncd
+pr.par
+pr.pad
+pr_pad.txt
+pr_pad.csv
+pr.pad_txt
+pr.dly
+reportgen.log
+pr.xpi
+pr.grf
+pr.itr
+pr_last_par.ncd
+pr.placed_ncd_tracker
+pr.routed_ncd_tracker
+pr.cmd_log
+PAR_NO_GUIDE_FILE_CPF "pr"
+# Generate Programming File
+__projnav/pr_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+pr.ut
+# Programming File Generation Report
+pr.bgn
+pr.rbt
+pr.ll
+pr.msk
+pr.drc
+pr.nky
+pr.bit
+pr.bin
+pr.isc
+pr.cmd_log
+# XST (Creating Lso File) : 
+pr.lso
+# xst flow : RunXST
+pr_summary.html
+# xst flow : RunXST
+pr.syr
+pr.prj
+pr.sprj
+pr.ana
+pr.stx
+pr.cmd_log
+pr.ngc
+pr.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\ccit\desktop\new folder\pr/_ngo"
+pr.ngd
+pr_ngdbuild.nav
+pr.bld
+pr.ucf.untf
+pr.cmd_log
+# Implementation : Map
+pr_summary.html
+# Implementation : Map
+pr_map.ncd
+pr.ngm
+pr.pcf
+pr.nc1
+pr.mrp
+pr_map.mrp
+pr.mdf
+pr.cmd_log
+MAP_NO_GUIDE_FILE_CPF "pr"
+pr_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+pr.twr
+pr.twx
+pr.tsi
+pr.cmd_log
+# Implementation : Place & Route
+pr_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+pr.ncd
+pr.par
+pr.pad
+pr_pad.txt
+pr_pad.csv
+pr.pad_txt
+pr.dly
+reportgen.log
+pr.xpi
+pr.grf
+pr.itr
+pr_last_par.ncd
+pr.placed_ncd_tracker
+pr.routed_ncd_tracker
+pr.cmd_log
+PAR_NO_GUIDE_FILE_CPF "pr"
+# Generate Programming File
+__projnav/pr_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+pr.ut
+# Programming File Generation Report
+pr.bgn
+pr.rbt
+pr.ll
+pr.msk
+pr.drc
+pr.nky
+pr.bit
+pr.bin
+pr.isc
+pr.cmd_log

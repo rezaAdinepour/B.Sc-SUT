@@ -1,0 +1,13 @@
+# begin LFP file C:\Documents and Settings\Ccit\Desktop\New Folder\pr\pr.lfp
+designfile pr.ngd
+IO_GROUP "Q"  ;
+IO_GROUP "Z"  ;
+NET "Z<6>" IO_GROUP="Z"  ;
+NET "Z<5>" IO_GROUP="Z"  ;
+NET "Z<4>" IO_GROUP="Z"  ;
+NET "Z<3>" IO_GROUP="Z"  ;
+NET "Z<2>" IO_GROUP="Z"  ;
+NET "Z<1>" IO_GROUP="Z"  ;
+NET "Z<0>" IO_GROUP="Z"  ;
+NET "Q<1>" IO_GROUP="Q"  ;
+NET "Q<0>" IO_GROUP="Q"  ;

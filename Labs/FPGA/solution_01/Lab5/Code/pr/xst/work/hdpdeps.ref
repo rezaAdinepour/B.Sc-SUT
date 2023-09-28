@@ -1,0 +1,8 @@
+V2 3
+FL "C:/Documents and Settings/Ccit/Desktop/New Folder/pr/oiut.vhd" 2002/01/01.01:17:10 H.38
+EN work/PR 1106404634              FL "C:/Documents and Settings/Ccit/Desktop/New Folder/pr/oiut.vhd" \
+      PB ieee/STD_LOGIC_1164 1106404628 PB ieee/STD_LOGIC_ARITH 1106404630 \
+      PB ieee/STD_LOGIC_UNSIGNED 1106404634
+AR work/PR/BEHAVIORAL 1106404635 \
+      FL "C:/Documents and Settings/Ccit/Desktop/New Folder/pr/oiut.vhd" \
+      EN work/PR 1106404634

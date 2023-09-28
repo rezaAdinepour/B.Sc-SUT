@@ -1,0 +1,3 @@
+set ADucfFile {pr.ucf}
+set ADbmmFile {}
+set ADcdcFile {}

@@ -1,0 +1,383 @@
+Release 7.1i - xst H.38
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.19 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.19 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Reading design: pr.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+  5) Advanced HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pr.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pr"
+Output Format                      : NGC
+Target Device                      : xc2s150-6-pq208
+
+---- Source Options
+Top Module Name                    : pr
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : lut
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100
+Add Generic Clock Buffer(BUFG)     : 4
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+Global Optimization                : AllClockNets
+RTL Output                         : Yes
+Write Timing Constraints           : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : pr.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+safe_implementation                : No
+Optimize Instantiated Primitives   : NO
+tristate2logic                     : Yes
+use_clock_enable                   : Yes
+use_sync_set                       : Yes
+use_sync_reset                     : Yes
+enable_auto_floorplanning          : No
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Documents and Settings/Ccit/Desktop/New Folder/pr/oiut.vhd" in Library work.
+Entity <pr> compiled.
+Entity <pr> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <pr> (Architecture <behavioral>).
+Entity <pr> analyzed. Unit <pr> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <pr>.
+    Related source file is "C:/Documents and Settings/Ccit/Desktop/New Folder/pr/oiut.vhd".
+    Found 16x7-bit ROM for signal <$n0026> created at line 141.
+    Found 16x7-bit ROM for signal <$n0027> created at line 144.
+    Found 16x7-bit ROM for signal <$n0028> created at line 147.
+    Found 16x7-bit ROM for signal <$n0029> created at line 150.
+    Found 16x7-bit ROM for signal <$n0030> created at line 153.
+    Found 16x7-bit ROM for signal <$n0031> created at line 156.
+    Found 6-bit register for signal <Q>.
+    Found 7-bit register for signal <Z>.
+    Found 10-bit comparator less for signal <$n0012> created at line 82.
+    Found 3-bit adder for signal <$n0024> created at line 138.
+    Found 10-bit adder for signal <$n0025> created at line 81.
+    Found 3-bit up counter for signal <C>.
+    Found 1-bit register for signal <clk_1s>.
+    Found 10-bit up counter for signal <counter0>.
+    Found 4-bit up counter for signal <counter1>.
+    Found 4-bit up counter for signal <counter2>.
+    Found 4-bit up counter for signal <counter3>.
+    Found 4-bit up counter for signal <counter4>.
+    Found 4-bit up counter for signal <counter5>.
+    Found 4-bit up counter for signal <counter6>.
+    Summary:
+	inferred   6 ROM(s).
+	inferred   8 Counter(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <pr> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                             : 6
+ 16x7-bit ROM                      : 6
+# Adders/Subtractors               : 2
+ 10-bit adder                      : 1
+ 3-bit adder                       : 1
+# Counters                         : 8
+ 10-bit up counter                 : 1
+ 3-bit up counter                  : 1
+ 4-bit up counter                  : 6
+# Registers                        : 3
+ 1-bit register                    : 1
+ 6-bit register                    : 1
+ 7-bit register                    : 1
+# Comparators                      : 1
+ 10-bit comparator less            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <pr> ...
+Loading device for application Rf_Device from file 'v150.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block pr, actual ratio is 4.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : pr.ngr
+Top Level Output File Name         : pr
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 17
+
+Macro Statistics :
+# ROMs                             : 6
+#      16x7-bit ROM                : 6
+# Registers                        : 6
+#      1-bit register              : 1
+#      3-bit register              : 3
+#      6-bit register              : 1
+#      7-bit register              : 1
+# Counters                         : 5
+#      4-bit up counter            : 5
+# Adders/Subtractors               : 1
+#      10-bit adder                : 1
+# Comparators                      : 1
+#      10-bit comparator less      : 1
+
+Cell Usage :
+# BELS                             : 219
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 19
+#      LUT1_L                      : 9
+#      LUT2                        : 4
+#      LUT3                        : 3
+#      LUT3_D                      : 1
+#      LUT4                        : 61
+#      LUT4_D                      : 5
+#      LUT4_L                      : 22
+#      MUXCY                       : 38
+#      MUXF5                       : 14
+#      VCC                         : 1
+#      XORCY                       : 37
+# FlipFlops/Latches                : 51
+#      FD                          : 18
+#      FDCE                        : 4
+#      FDCPE                       : 20
+#      FDR                         : 2
+#      FDS                         : 7
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 2
+#      OBUF                        : 14
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2s150pq208-6 
+
+ Number of Slices:                      76  out of   1728     4%  
+ Number of Slice Flip Flops:            51  out of   3456     1%  
+ Number of 4 input LUTs:               124  out of   3456     3%  
+ Number of bonded IOBs:                 17  out of    144    11%  
+ Number of GCLKs:                        2  out of      4    50%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 27    |
+clk_1s:Q                           | BUFG                   | 24    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -6
+
+   Minimum period: 8.983ns (Maximum Frequency: 111.321MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 6.959ns
+   Maximum combinational path delay: 6.479ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.940ns (frequency: 111.857MHz)
+  Total number of paths / destination ports: 200 / 34
+-------------------------------------------------------------------------
+Delay:               8.940ns (Levels of Logic = 7)
+  Source:            counter0_0 (FF)
+  Destination:       clk_1s (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: counter0_0 to clk_1s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   1.085   1.206  counter0_0 (counter0_0)
+     INV:I->O              1   0.549   0.000  pr__n0025<0>lut_INV_0 (N5)
+     MUXCY:S->O            1   0.659   0.000  pr__n0025<0>cy (pr__n0025<0>_cyo)
+     MUXCY:CI->O           1   0.042   0.000  pr__n0025<1>cy (pr__n0025<1>_cyo)
+     MUXCY:CI->O           1   0.042   0.000  pr__n0025<2>cy (pr__n0025<2>_cyo)
+     XORCY:CI->O           1   0.420   1.035  pr__n0025<3>_xor (_n0025<3>)
+     LUT2:I0->O            1   0.549   1.035  _n001218_SW0 (N506)
+     LUT4:I3->O            1   0.549   1.035  _n0012135 (_n0012)
+     FDR:R                     0.734          clk_1s
+    ----------------------------------------
+    Total                      8.940ns (4.629ns logic, 4.311ns route)
+                                       (51.8% logic, 48.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_1s:Q'
+  Clock period: 8.983ns (frequency: 111.321MHz)
+  Total number of paths / destination ports: 461 / 44
+-------------------------------------------------------------------------
+Delay:               8.983ns (Levels of Logic = 3)
+  Source:            counter1_1 (FF)
+  Destination:       counter6_2 (FF)
+  Source Clock:      clk_1s:Q rising
+  Destination Clock: clk_1s:Q rising
+
+  Data Path: counter1_1 to counter6_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCPE:C->Q           11   1.085   2.070  counter1_1 (counter1_1)
+     LUT4_D:I1->O          7   0.549   1.755  _n00151 (_n0015)
+     LUT3_D:I1->LO         1   0.549   0.100  Ker371 (N550)
+     LUT3:I0->O            4   0.549   1.440  _n00531 (_n0053)
+     FDCE:CE                   0.886          counter6_0
+    ----------------------------------------
+    Total                      8.983ns (3.618ns logic, 5.365ns route)
+                                       (40.3% logic, 59.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              6.959ns (Levels of Logic = 1)
+  Source:            Q_5 (FF)
+  Destination:       Q<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Q_5 to Q<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   1.085   1.206  Q_5 (Q_5)
+     OBUF:I->O                 4.668          Q_5_OBUF (Q<5>)
+    ----------------------------------------
+    Total                      6.959ns (5.753ns logic, 1.206ns route)
+                                       (82.7% logic, 17.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               6.479ns (Levels of Logic = 2)
+  Source:            b (PAD)
+  Destination:       dpp (PAD)
+
+  Data Path: b to dpp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.776   1.035  b_IBUF (dpp_OBUF)
+     OBUF:I->O                 4.668          dpp_OBUF (dpp)
+    ----------------------------------------
+    Total                      6.479ns (5.444ns logic, 1.035ns route)
+                                       (84.0% logic, 16.0% route)
+
+=========================================================================
+CPU : 2.22 / 2.42 s | Elapsed : 2.00 / 3.00 s
+ 
+--> 
+
+Total memory usage is 87828 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

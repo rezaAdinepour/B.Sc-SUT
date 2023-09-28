@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon May  8 22:33:10 2023
+# Process ID: 2480
+# Current directory: E:/University/Electerical/Labs/FPGA/Spring 01-02/Lab4/Code/FPGA_HW04/FPGA_HW04.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: E:/University/Electerical/Labs/FPGA/Spring 01-02/Lab4/Code/FPGA_HW04/FPGA_HW04.runs/synth_1/main.vds
+# Journal file: E:/University/Electerical/Labs/FPGA/Spring 01-02/Lab4/Code/FPGA_HW04/FPGA_HW04.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: synth_design -top main -part xc7v585tffg1157-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7v585t'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xc7v585t'. Explanation: The license feature Synthesis could not be found.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+0 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xc7v585t'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". If you are using a license server, verify that the license server is up and running a version of the xilinx daemon that is compatible with the version of Xilinx software that you are using. Please note that Vivado 2017.3 and later requires upgrading your license server tools to the Flex 11.14.1 tools. Please confirm with your license admin that the correct version of the license server tools are installed.
+INFO: [Common 17-206] Exiting Vivado at Mon May  8 22:33:16 2023...

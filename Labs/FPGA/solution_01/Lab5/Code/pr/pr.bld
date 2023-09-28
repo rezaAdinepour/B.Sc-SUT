@@ -1,0 +1,24 @@
+Release 7.1i ngdbuild H.38
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and
+settings\ccit\desktop\new folder\pr/_ngo" -uc pr.ucf -p xc2s150-pq208-6 pr.ngc
+pr.ngd 
+
+Reading NGO file 'C:/Documents and Settings/Ccit/Desktop/New Folder/pr/pr.ngc'
+...
+
+Applying constraints in "pr.ucf" to the design...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 61308 kilobytes
+
+Writing NGD file "pr.ngd" ...
+
+Writing NGDBUILD log file "pr.bld"...

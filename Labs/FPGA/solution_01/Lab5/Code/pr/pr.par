@@ -1,0 +1,129 @@
+Release 7.1i par H.38
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+UNIVER-4681BEE3::  Tue Jan 01 01:17:18 2002
+
+par -w -intstyle ise -ol std -t 1 pr_map.ncd pr.ncd pr.pcf 
+
+
+Constraints file: pr.pcf.
+Loading device for application Rf_Device from file 'v150.nph' in environment
+C:/Xilinx.
+   "pr" is an NCD, version 3.1, device xc2s150, package pq208, speed -6
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000
+Celsius)
+Initializing voltage to 2.375 Volts. (default - Range: 2.375 to 2.625 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.27 2005-01-22".
+
+
+Device Utilization Summary:
+
+   Number of GCLKs                     2 out of 4      50%
+   Number of External GCLKIOBs         1 out of 4      25%
+      Number of LOCed GCLKIOBs         1 out of 1     100%
+
+   Number of External IOBs            16 out of 140    11%
+      Number of LOCed IOBs            16 out of 16    100%
+
+   Number of SLICEs                   76 out of 1728    4%
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:98984d) REAL time: 0 secs 
+
+Phase 2.31
+Phase 2.31 (Checksum:1312cfe) REAL time: 0 secs 
+
+Phase 3.23
+Phase 3.23 (Checksum:1c9c37d) REAL time: 0 secs 
+
+Phase 4.3
+Phase 4.3 (Checksum:26259fc) REAL time: 0 secs 
+
+Phase 5.5
+Phase 5.5 (Checksum:2faf07b) REAL time: 0 secs 
+
+Phase 6.8
+......
+Phase 6.8 (Checksum:9a0c35) REAL time: 0 secs 
+
+Phase 7.5
+Phase 7.5 (Checksum:42c1d79) REAL time: 0 secs 
+
+Phase 8.18
+Phase 8.18 (Checksum:4c4b3f8) REAL time: 0 secs 
+
+Phase 9.5
+Phase 9.5 (Checksum:55d4a77) REAL time: 0 secs 
+
+Writing design to file pr.ncd
+
+
+Total REAL time to Placer completion: 0 secs 
+Total CPU time to Placer completion: 0 secs 
+
+Starting Router
+
+Phase 1: 550 unrouted;       REAL time: 0 secs 
+
+Phase 2: 501 unrouted;       REAL time: 1 secs 
+
+Phase 3: 147 unrouted;       REAL time: 1 secs 
+
+Phase 4: 0 unrouted;       REAL time: 1 secs 
+
+Total REAL time to Router completion: 1 secs 
+Total CPU time to Router completion: 1 secs 
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP |      GCLKBUF0| No   |   18 |  0.078     |  0.522      |
++---------------------+--------------+------+------+------------+-------------+
+|              clk_1s |      GCLKBUF1| No   |   17 |  0.072     |  0.523      |
++---------------------+--------------+------+------+------------+-------------+
+
+INFO:Par:340 - 
+   The Delay report will not be generated when running non-timing driven PAR
+   with effort level Standard or Medium. If a delay report is required please do
+   one of the following:  1) use effort level High, 2) use the following
+   environment variable "XIL_PAR_GENERATE_DLY_REPORT", 3) create Timing
+   constraints for the design.
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 1 secs 
+Total CPU time to PAR completion: 1 secs 
+
+Peak Memory Usage:  77 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file pr.ncd
+
+
+
+PAR done!
