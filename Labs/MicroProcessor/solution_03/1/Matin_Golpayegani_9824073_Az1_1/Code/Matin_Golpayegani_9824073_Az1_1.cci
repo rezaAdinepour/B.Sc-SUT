@@ -1,0 +1,4 @@
+VERSION:3 SOURCE_TIMESTAMP:54506494
+NODE:I LEVEL:0 LINE:26 "F:\CodeVisionAVR\inc\mega32.h"
+NODE:I LEVEL:0 LINE:27 "F:\CodeVisionAVR\inc\delay.h"
+NODE:F LEVEL:0 LINE:31 "main(void)"
