@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/University/FPGA/HW/MUX4to1/MyTB_isim_beh.exe" -prj "E:/University/FPGA/HW/MUX4to1/MyTB_beh.prj" "work.MyTB" 
