@@ -1,0 +1,49 @@
+
+**** 01/06/21 04:32:32 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-E1-Project-Simulation"  [ e:\university\electerical\elec 1\dr ashraf\el1_9901\e1\project\simulation\pspise\c
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "e1-project-simulation-schematic1-e1-project-simulation.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB ".\e1-project-simulation.lib" 
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN/OP  0 1m 0 
+.FOUR 10k 10 V([out]) 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\e1-project-simulation-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING e1-project-simulation-SCHEMATIC1.net ****
+* source E1-PROJECT-SIMULATION
+Q_Q1         VOUT N00334 N00581 BC107A 
+R_RC         VOUT N00284  5.6k  
+R_RE         0 N00581  3.7k  
+R_RB2         N00334 N00284  100  
+R_RB1         0 N00334  100  
+C_CE         0 N00581  100u  
+C_C1         N00334 VIN  100u  
+V_V1         VIN 0  
++SIN 0 10m 10k 0 0 0
+V_Vcc         N00284 0 5Vdc
+
+**** RESUMING e1-project-simulation-schematic1-e1-project-simulation.sim.cir ****
+.END
+
+ERROR -- Node out is undefined
+ERROR -- Node out is floating

@@ -1,0 +1,11 @@
+* source E1-PROJECT-SIMULATION
+Q_Q1         VOUT N00334 N00581 BC107A 
+R_RC         VOUT N00284  5.6k  
+R_RE         0 N00581  3.7k  
+R_RB2         N00334 N00284  100  
+R_RB1         0 N00334  100  
+C_CE         0 N00581  100u  
+C_C1         N00334 VIN  100u  
+V_V1         VIN 0  
++SIN 0 10m 10k 0 0 0
+V_Vcc         N00284 0 5Vdc

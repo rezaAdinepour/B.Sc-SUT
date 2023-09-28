@@ -1,0 +1,136 @@
+
+**** 01/03/21 00:15:44 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-E1-Project-Simulation"  [ e:\university\electerical\elec 1\dr ashraf\el1_9901\e1\project\simulation\pspise\e
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ec1-project-simulation-schematic1-e1-project-simulation.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB ".\ec1-project-simulation.lib" 
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10meg 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\ec1-project-simulation-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING ec1-project-simulation-SCHEMATIC1.net ****
+* source EC1-PROJECT-SIMULATION
+Q_Q1         N00187 N00257 N00447 BC107A 
+V_VCC         N00153 0 5Vdc
+R_RC         N00187 N00153  6.8k  
+C_C3         0 N00257  100u  
+V_V6         N01601 0  
++SIN 1 0.1 10k 0 0 0
+R_R_B2         N00257 N00153  3.3k  
+R_R_B1         0 N00257  1k  
+R_RE         0 N00447  1k  
+C_C1         N00447 N01601  100u  
+
+**** RESUMING ec1-project-simulation-schematic1-e1-project-simulation.sim.cir ****
+.END
+
+**** 01/03/21 00:15:44 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-E1-Project-Simulation"  [ e:\university\electerical\elec 1\dr ashraf\el1_9901\e1\project\simulation\pspise\e
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC107A          
+               NPN             
+          IS    7.049000E-15 
+          BF  100            
+          NF    1            
+         VAF  100            
+         IKF    4.589        
+         ISE    7.049000E-15 
+          NE    1.281        
+          BR    2.611        
+          NR    1            
+         IKR    5.313        
+         ISC  121.700000E-12 
+          NC    1.865        
+          RC    1.464        
+         CJE   11.500000E-12 
+         VJE     .5          
+         MJE     .2717       
+         CJC    5.380000E-12 
+         VJC     .6218       
+         MJC     .329        
+          TF  451.000000E-12 
+         XTF   17.43         
+         VTF   10            
+         ITF    6.194        
+          TR   10.000000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 01/03/21 00:15:44 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-E1-Project-Simulation"  [ e:\university\electerical\elec 1\dr ashraf\el1_9901\e1\project\simulation\pspise\e
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00153)    5.0000 (N00187)    1.5734 (N00257)    1.1573 (N00447)     .5110     
+
+(N01601)    1.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -1.668E-03
+    V_V6         0.000E+00
+
+    TOTAL POWER DISSIPATION   8.34E-03  WATTS
+
+
+ERROR -- Time step =  618.0E-09 is too small in Transient Analysis at
+Time =  20.62E-06.  Minimum allowable step size =  10.00E-06.
+         The device which is changing too fast is Q_Q1.
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00153)    5.0000 (N00187)    4.6332 (N00257)    1.1573 (N00447)     .5696     
+
+(N01601)    1.0588 
+

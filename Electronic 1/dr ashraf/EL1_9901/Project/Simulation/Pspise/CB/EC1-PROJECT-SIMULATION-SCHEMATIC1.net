@@ -1,0 +1,11 @@
+* source EC1-PROJECT-SIMULATION
+C_C3         N00447 VIN  100u  
+Q_Q1         VOUT N00257 N00447 BC107A 
+V_VCC         N00153 0 5Vdc
+C_C4         0 N00257  100u  
+R_RC         VOUT N00153  6.8k  
+V_V1         VIN 0  
++SIN 1 100m 10k 0 0 0
+R_R_B2         N00257 N00153  3.3k  
+R_R_B1         0 N00257  1k  
+R_RE         0 N00447  1k  

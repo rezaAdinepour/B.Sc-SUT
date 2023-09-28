@@ -1,0 +1,18 @@
+** Profile: "SCHEMATIC1-E1-Project-Simulation"  [ e:\university\electerical\elec 1\dr ashraf\el1_9901\e1\project\simulation\pspise\ce\e1-project-simulation-schematic1-e1-project-simulation.sim ] 
+
+** Creating circuit file "e1-project-simulation-schematic1-e1-project-simulation.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB ".\e1-project-simulation.lib" 
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1m 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\e1-project-simulation-SCHEMATIC1.net" 
+
+
+.END
