@@ -1,0 +1,155 @@
+
+**** 05/12/22 14:02:47 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Pulse_HW07_Q36"  [ E:\UNIVERSITY\ELECTERICAL\PULSE TECHNIQUE\DR AHMADIFARD\SPRING 00-01\HW\HW07\SIMULATION\Q
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "pulse_hw07_q36-SCHEMATIC1-Pulse_HW07_Q36.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\pulse_hw07_q36-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING pulse_hw07_q36-SCHEMATIC1.net ****
+* source PULSE_HW07_Q36
+X_U1         N00751 N00791 N01418 N01458 N00945 LM741
+D_D1         N00915 N00887 D02CZ9_1 
+R_R1         N00751 N01120  1k  
+D_D2         0 N00887 D02CZ9_1 
+R_R2         N00945 N00915  1k  
+R_R3         0 N00791  1k  
+C_C1         0 N00751  1n  
+R_R4         N00791 N00915  1k  
+R_R5         N00751 N01147  1k  
+D_D3         N01120 N00915 D1N4148 
+V_V1         N01418 N01458 12Vdc
+D_D4         N00915 N01147 D1N4148 
+
+**** RESUMING pulse_hw07_q36-SCHEMATIC1-Pulse_HW07_Q36.sim.cir ****
+.END
+
+**** 05/12/22 14:02:47 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Pulse_HW07_Q36"  [ E:\UNIVERSITY\ELECTERICAL\PULSE TECHNIQUE\DR AHMADIFARD\SPRING 00-01\HW\HW07\SIMULATION\Q
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D02CZ9_1        D1N4148         X_U1.x_lm741.dx X_U1.x_lm741.dy 
+          IS    2.067000E-12    2.682000E-09  800.000000E-18  800.000000E-18 
+           N    1.348           1.836                                        
+         ISR  130.600000E-09    1.565000E-09                                 
+         IKF     .03337          .04417                                      
+          BV    9.244         100                                            
+         IBV    1.326         100.000000E-06                                 
+          RS     .0979           .5664          1               1.000000E-03 
+          TT    5.000000E-09   11.540000E-09                                 
+         CJO  402.800000E-12    4.000000E-12                   10.000000E-12 
+          VJ    5                .5                                          
+           M    1.533            .3333                                       
+
+
+**** 05/12/22 14:02:47 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Pulse_HW07_Q36"  [ E:\UNIVERSITY\ELECTERICAL\PULSE TECHNIQUE\DR AHMADIFARD\SPRING 00-01\HW\HW07\SIMULATION\Q
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.x_lm741.qx 
+               NPN             
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 05/12/22 14:02:47 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Pulse_HW07_Q36"  [ E:\UNIVERSITY\ELECTERICAL\PULSE TECHNIQUE\DR AHMADIFARD\SPRING 00-01\HW\HW07\SIMULATION\Q
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00751)     .1457 (N00791)     .1457 (N00887)     .2535 (N00915)     .2914     
+
+(N00945)     .4374 (N01120)     .1458 (N01147)     .1458 (N01418)    3.4046     
+
+(N01458)   -8.5954 (X_U1.x_lm741.6)-287.9E-06                                   
+
+(X_U1.x_lm741.7)     .4447            (X_U1.x_lm741.8)     .4447                
+
+(X_U1.x_lm741.9)    0.0000            (X_U1.x_lm741.10)    -.4625               
+
+(X_U1.x_lm741.11)    3.3644           (X_U1.x_lm741.12)    3.3643               
+
+(X_U1.x_lm741.13)    -.4485           (X_U1.x_lm741.14)    -.4484               
+
+(X_U1.x_lm741.53)    2.4046           (X_U1.x_lm741.54)   -7.5954               
+
+(X_U1.x_lm741.90)     .1460           (X_U1.x_lm741.91)   40.0000               
+
+(X_U1.x_lm741.92)  -40.0000           (X_U1.x_lm741.99)   -2.5954           
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -6.760E-04
+    X_U1.x_lm741.vb  -2.879E-09
+    X_U1.x_lm741.vc   1.968E-12
+    X_U1.x_lm741.ve   8.210E-12
+    X_U1.x_lm741.vlim   1.460E-04
+    X_U1.x_lm741.vlp  -3.985E-11
+    X_U1.x_lm741.vln  -4.015E-11
+
+    TOTAL POWER DISSIPATION   8.11E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

@@ -1,0 +1,153 @@
+
+**** 06/21/22 12:35:38 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Pulse_HW09"  [ e:\university\electerical\pulse technique\dr ahmadifard\spring 00-01\hw\hw09\simulation\pulse
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "pulse-hw09-schematic1-pulse_hw09.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 40ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\pulse-hw09-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING pulse-hw09-SCHEMATIC1.net ****
+* source PULSE-HW09
+Q_Q1         0 N04066 N04358 Q2N1420
+R_R19         N09959 N08225  240  
+R_R2         N02297 N01589  240  
+R_R13         N06741 N04474  240  
+Q_Q2         0 N08568 N09300 Q2N1420
+R_R3         N09300 N02329  2k  
+V_V1         N09754 0 10Vdc
+R_R4         N09300 N03257  14.3k  
+V_V2         0 N09959 10Vdc
+R_R15         N08225 N06741  240  
+Q_Q20         N09959 N06741 N07862 Q2N1132
+R_R5         0 N03354  240  
+R_R16         N07862 0  27k  
+R_R20         N08568 0  27k  
+Q_Q13         0 N01646 N09300 Q2N1132
+R_R6         N04066 0  27k  
+Q_Q21         0 N03172 N03257 Q2N1132
+R_R7         N01589 N09754  412  
+Q_Q22         N09959 N04474 N04066 Q2N1132
+Q_Q6         0 N07862 N09192 Q2N1420
+V_V5         N10977 0  
++PWL 0 0 5m 20 10m 0 15m 0 20m 20 25m 0 30m 0 
+Q_Q14         0 N05256 N02329 Q2N1132
+R_R8         0 N05256  27k  
+Q_Q23         N09959 N08225 N08568 Q2N1132
+Q_Q7         N09754 N03354 N03172 Q2N1420
+R_R9         0 N03172  27k  
+Q_Q8         N09754 N01589 N01646 Q2N1420
+R_R10         N03354 N02297  240  
+R_R21         N10977 N09300  1k  
+Q_Q9         N09754 N02297 N05256 Q2N1420
+R_R11         N09300 N04358  14.3k  
+R_R27         N09300 N09192  2k  
+R_R1         0 N01646  27k  
+R_R12         N04474 0  1k  
+
+**** RESUMING pulse-hw09-schematic1-pulse_hw09.sim.cir ****
+.END
+
+**** 06/21/22 12:35:38 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Pulse_HW09"  [ e:\university\electerical\pulse technique\dr ahmadifard\spring 00-01\hw\hw09\simulation\pulse
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N1420         Q2N1132         
+               NPN             PNP             
+          IS   14.340000E-15  650.600000E-18 
+          BF  255.9            70.35         
+          NF    1               1            
+         VAF   74.03          115.7          
+         IKF     .2847          1.079        
+         ISE   14.340000E-15  180.500000E-15 
+          NE    1.307           1.829        
+          BR    6.092           4.146        
+          NR    1               1            
+          RB   10              10            
+          RC    1                .715        
+         CJE   22.010000E-12   19.820000E-12 
+         MJE     .377            .3357       
+         CJC    9.393000E-12   29.520000E-12 
+         MJC     .3416           .5383       
+          TF  410.000000E-12  757.700000E-12 
+         XTF    3               1.7          
+         VTF    1.7             5            
+         ITF     .6              .65         
+          TR   46.910000E-09  119.900000E-09 
+         XTB    1.5             1.5          
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 06/21/22 12:35:38 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Pulse_HW09"  [ e:\university\electerical\pulse technique\dr ahmadifard\spring 00-01\hw\hw09\simulation\pulse
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01589)    6.3598 (N01646)    5.7554 (N02297)    4.2396 (N02329) 1.042E-09     
+
+(N03172)    1.5507 (N03257) 3.474E-09 (N03354)    2.1198 (N04066)   -5.1296     
+
+(N04358) 85.11E-12 (N04474)   -5.8111 (N05256)    3.6478 (N06741)   -7.2065     
+
+(N07862)   -6.5184 (N08225)   -8.6027 (N08568)   -7.9093 (N09192) 497.9E-12     
+
+(N09300) 577.6E-12 (N09754)   10.0000 (N09959)  -10.0000 (N10977)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -9.238E-03
+    V_V2        -6.535E-03
+    V_V5         5.776E-13
+
+    TOTAL POWER DISSIPATION   1.58E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .16
+

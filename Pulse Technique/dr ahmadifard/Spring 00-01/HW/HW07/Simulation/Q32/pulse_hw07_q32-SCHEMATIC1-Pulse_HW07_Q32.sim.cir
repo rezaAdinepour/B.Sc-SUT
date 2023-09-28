@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-Pulse_HW07_Q32"  [ e:\university\electerical\pulse technique\dr ahmadifard\spring 00-01\hw\hw07\simulation\q32\pulse_hw07_q32-schematic1-pulse_hw07_q32.sim ] 
+
+** Creating circuit file "pulse_hw07_q32-schematic1-pulse_hw07_q32.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\pulse_hw07_q32-SCHEMATIC1.net" 
+
+
+.END
