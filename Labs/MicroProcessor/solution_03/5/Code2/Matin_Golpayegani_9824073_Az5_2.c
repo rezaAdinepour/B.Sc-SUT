@@ -1,0 +1,59 @@
+/*******************************************************
+This program was created by the
+CodeWizardAVR V3.12 Advanced
+Automatic Program Generator
+© Copyright 1998-2014 Pavel Haiduc, HP InfoTech s.r.l.
+http://www.hpinfotech.com
+
+Project : 
+Version : 
+Date    : 3/22/2022
+Author  : Matin Golpayegani
+Company : 
+Comments: 
+Az 5-2
+
+
+Chip type               : ATmega32
+Program type            : Application
+AVR Core Clock frequency: 8.000000 MHz
+Memory model            : Small
+External RAM size       : 0
+Data Stack size         : 512
+*******************************************************/
+
+#include <mega32.h>
+#include <delay.h>
+#define delay(x) delay_ms(x)
+
+void main(void)
+{
+char step[] = {14,12,13,9,11,3,7,6};
+int i;
+
+DDRA=(0<<DDA7) | (0<<DDA6) | (0<<DDA5) | (0<<DDA4) | (0<<DDA3) | (0<<DDA2) | (0<<DDA1) | (0<<DDA0);
+PORTA=(0<<PORTA7) | (0<<PORTA6) | (0<<PORTA5) | (0<<PORTA4) | (0<<PORTA3) | (0<<PORTA2) | (0<<PORTA1) | (1<<PORTA0);
+
+DDRC=(0<<DDC7) | (0<<DDC6) | (0<<DDC5) | (0<<DDC4) | (1<<DDC3) | (1<<DDC2) | (1<<DDC1) | (1<<DDC0);
+PORTC=(0<<PORTC7) | (0<<PORTC6) | (0<<PORTC5) | (0<<PORTC4) | (0<<PORTC3) | (0<<PORTC2) | (0<<PORTC1) | (0<<PORTC0);
+
+	while (1)
+	{
+      if(PINA.0 == 1)
+	  {
+        for(i=0;i<8;i++)
+		{
+            PORTC = step[i];
+            delay(1000);
+        }
+      }
+      else if(PINA.0 == 0)
+	  {
+        for(i=7;i>=0;i--)
+		{
+            PORTC = step[i];
+            delay(1000);
+        } 
+      }
+	}
+}
