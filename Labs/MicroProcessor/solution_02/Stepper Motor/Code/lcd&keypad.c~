@@ -1,0 +1,101 @@
+
+//Driving Step Motor With ATmega 32
+#include <mega32.h>
+#include <delay.h>
+#include <stdio.h>
+#include <alcd.h>
+
+int Press_key(void);
+void Display_key(int key);
+
+
+void main(void)
+{
+
+int i=0;
+int key; 
+int n[]={0, 0, 0};
+int degree;
+DDRC=0x0F;
+DDRD=0xFF;
+PORTC=0xF0;
+
+lcd_init(16);
+
+while (1)
+   
+      {
+      while(i<3){
+        
+        do 
+            key = Press_key();   
+            while(key==16);
+             n[i]=key;
+            Display_key(key);
+            delay_ms(350);  
+            i++;
+            }
+            
+       degree=(n[0]*100)+(n[1]*10)+n[2]; 
+       
+       degree/=7.2;
+       
+       for(i=0;i<degree;i++)
+		{
+			PORTD = 0x09;
+			delay_ms(100);
+			PORTD = 0x03;
+			delay_ms(100);
+			PORTD = 0x06;
+			delay_ms(100);
+			PORTD = 0x0C;
+			delay_ms(100);
+		}
+		
+};
+}
+
+int Press_key(void)
+{
+    PORTC.0=0; PORTC.1=1; PORTC.2=1; PORTC.3=1;
+    if(!PINC.4) return 1;
+    if(!PINC.5) return 2;
+    if(!PINC.6) return 3;
+    if(!PINC.7) return 10;
+    PORTC.0=1; PORTC.1=0; PORTC.2=1; PORTC.3=1;
+    if(!PINC.4) return 4;
+    if(!PINC.5) return 5;
+    if(!PINC.6) return 6;
+    if(!PINC.7) return 11;
+    PORTC.0=1; PORTD.1=1; PORTC.2=0; PORTC.3=1;
+    if(!PINC.4) return 7;
+    if(!PINC.5) return 8;
+    if(!PINC.6) return 9;
+    if(!PINC.7) return 12;
+    PORTC.0=1; PORTC.1=1; PORTC.2=1; PORTC.3=0;
+    if(!PINC.4) return 15;
+    if(!PINC.5) return 0;
+    if(!PINC.6) return 14;
+    if(!PINC.7) return 13;
+    return 16;
+}
+
+void Display_key(int key)
+{
+    if(key==0)  lcd_puts("0");
+    if(key==1)  lcd_puts("7");
+    if(key==2)  lcd_puts("8");
+    if(key==3)  lcd_puts("9");
+    if(key==4)  lcd_puts("4");
+    if(key==5)  lcd_puts("5");
+    if(key==6)  lcd_puts("6");
+    if(key==7)  lcd_puts("1");
+    if(key==8)  lcd_puts("2");
+    if(key==9)  lcd_puts("3");
+    if(key==10) lcd_puts("/");
+    if(key==11) lcd_puts("*");
+    if(key==12) lcd_puts("+");
+    if(key==13) lcd_puts("-");
+    if(key==14) lcd_puts("=");
+    if(key==15) lcd_clear();
+} 

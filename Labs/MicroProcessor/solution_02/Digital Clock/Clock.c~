@@ -1,0 +1,129 @@
+            
+#include <io.h>
+#include <delay.h>
+
+int sec1, sec2, min1, min2, hour1, hour2 = 0;
+
+int count = 0;
+
+unsigned char seg[]={0x3F ,0x06 ,0x5B ,0x4F , 0x66, 0x6D , 0x7D , 0x07 ,0x7F , 0x67};
+
+// Timer2 overflow interrupt service routine
+interrupt [TIM2_OVF] void timer2_ovf_isr(void)
+{
+ count++;
+ if(count == 3921)
+ {          
+  count = 0;
+  sec1++;
+  
+  if(sec1 > 9){
+    sec2++;
+    sec1=0;
+  }
+  
+  if(sec2 > 5){
+    min1++;
+    sec2=0;
+  
+  }
+  
+  if(min1 > 9){
+   min2++;
+   min1=0;
+  }
+  
+  if(min2 > 5){
+   hour1++;
+   min2=0;
+  }      
+  
+  if (hour1 > 9){
+   hour2++;
+   hour1=0;
+  }
+  
+  if(hour1 == 4 && hour2 == 2){
+   sec1=0;
+   sec2=0;
+   min1=0;
+   min2=0;
+   hour1=0;
+   hour2=0;
+  }
+ 
+ }
+
+}
+
+interrupt [EXT_INT0] void ext_int0_isr(void) 
+{
+min1++;
+if ( min1 > 9 )
+{
+min2++ ;
+min1 = 0 ;
+}
+if( min2 == 5 & min1==9 ) {
+min2 = 0;
+min1 = 0; }
+}
+
+interrupt [EXT_INT1] void ext_int1_isr(void)
+{
+hour1++;
+if ( hour1 > 9 )
+{
+hour2++ ;
+hour1 = 0 ;
+}
+if( hour2 == 2 & hour1==4 ) {
+hour2 = 0;
+hour1 = 0; }
+
+}
+
+void main(void)
+{
+
+DDRB=0xFF;
+DDRC=0x3F;
+DDRD=0x00;
+TCNT2=0x00;
+OCR2=0x00;
+TCCR2=0x01;
+ASSR=0<<AS2;
+TIMSK=0x40;
+
+GICR|=(1<<INT1) | (1<<INT0) | (0<<INT2); 
+
+GIFR=(1<<INTF1) | (1<<INTF0) | (0<<INTF2);
+#asm ("sei");
+
+while (1)
+    {
+     PORTC=0x2F;
+     PORTB=seg[sec2];
+     delay_ms(3);
+     
+     PORTC=0x1F;
+     PORTB=seg[sec1];
+     delay_ms(3);
+     
+     PORTC=0x3B;
+     PORTB=seg[min2];
+     delay_ms(3);
+     
+     PORTC=0x37;
+     PORTB=seg[min1];
+     delay_ms(3);
+     
+     PORTC=0x3E;
+     PORTB=seg[hour2];
+     delay_ms(3);
+     
+     PORTC=0x3D;
+     PORTB=seg[hour1];
+     delay_ms(3);
+    }
+}

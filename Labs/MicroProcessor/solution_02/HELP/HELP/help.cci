@@ -1,0 +1,4 @@
+VERSION:3 SOURCE_TIMESTAMP:5050382C
+NODE:I LEVEL:0 LINE:24 "H:\Softwares\CodeVisionAVR\inc\mega8535.h"
+NODE:I LEVEL:0 LINE:25 "H:\Softwares\CodeVisionAVR\inc\delay.h"
+NODE:F LEVEL:0 LINE:28 "main(void)"

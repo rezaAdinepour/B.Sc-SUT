@@ -1,0 +1,27 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+hour2                                                                             0x0260       2
+count                                                                             0x0262       2
+seg                                                                               0x0264      10
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+sec1                                                                              R4,R5        2
+sec2                                                                              R6,R7        2
+min1                                                                              R8,R9        2
+min2                                                                              R10,R11      2
+hour1                                                                             R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+timer2_ovf_isr                                                                    0x00060    118
+ext_int0_isr                                                                      0x000D6     45
+ext_int1_isr                                                                      0x00103     55
+main                                                                              0x0013A     95
