@@ -1,0 +1,65 @@
+//           ******************************************************
+//          **   Processor      : ATMEGA 32                       **
+//         ***   Frequency      : 8MHz External Clock             ***
+//        ****   AUTHOR         : Reza Adinepour                  ****
+//        ****   Linkedin       : linkedin.com/reza_adinepour/    ****
+//         ***   Student ID:    : 9814303                         ***
+//          **   Github         : github.com/reza_adinepour/      **
+//           ******************************************************
+
+#include <mega32.h>
+#include <delay.h>
+
+
+unsigned char digit[10] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x6F};
+int i;
+
+void main(void)
+{
+    DDRA = 0xff;
+    PORTA = 0x00;
+    
+    DDRB = 0xff;
+    PORTB = 0x00;
+    
+    DDRC = 0xff;
+    PORTC = 0x00;
+    
+    DDRD = 0xff;
+    PORTD = 0x00;
+
+    while (1)
+    {
+        PORTC = 0x21;
+        for(i = 7; i >= 0; i--)
+        {
+            PORTD = digit[i + 2];
+            PORTB = digit[i];
+            delay_ms(1000);
+        }
+         
+        PORTC = 0x11; 
+        for(i = 1; i >= 0; i--)
+        {
+            PORTD = digit[i];
+            PORTB = digit[i];
+            delay_ms(1000);
+        } 
+            
+        PORTC = 0x0c;
+        for(i = 7; i >= 0; i--)
+        {
+            PORTB = digit[i + 2];
+            PORTD = digit[i];
+            delay_ms(1000);
+        }
+            
+        PORTC = 0x0a; 
+        for(i = 1; i >= 0; i--)
+        {
+            PORTB = digit[i];
+            PORTD = digit[i];
+            delay_ms(1000);
+        }
+    }//end while
+}//end main

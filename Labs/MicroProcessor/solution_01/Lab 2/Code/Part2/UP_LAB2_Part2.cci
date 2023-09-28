@@ -1,0 +1,6 @@
+VERSION:3 SOURCE_TIMESTAMP:5553B844
+NODE:I LEVEL:0 LINE:10 "C:\cvavr\inc\mega32.h"
+NODE:I LEVEL:0 LINE:11 "C:\cvavr\inc\delay.h"
+NODE:V LEVEL:0 LINE:14 "digit -> RAM:????"
+NODE:V LEVEL:0 LINE:15 "i -> R4,R5"
+NODE:F LEVEL:0 LINE:17 "main(void)"
