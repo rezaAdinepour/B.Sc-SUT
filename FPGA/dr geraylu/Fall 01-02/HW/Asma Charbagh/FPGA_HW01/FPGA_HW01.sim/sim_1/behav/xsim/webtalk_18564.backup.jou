@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jan  1 20:59:56 2023
+# Process ID: 18564
+# Current directory: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim/xsim.dir/tb_main_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/University/Electerical/FPGA/Dr -notrace

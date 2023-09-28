@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Dec 31 11:51:34 2022
+# Process ID: 11812
+# Current directory: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15028 E:\University\Electerical\FPGA\Dr Geraylou\Fall 01-02\HW\HW01\FPGA_HW01\FPGA_HW01.xpr
+# Log file: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/vivado.log
+# Journal file: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+reset_run synth_1
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim
+launch_simulation
+source tb_main.tcl
+close_sim

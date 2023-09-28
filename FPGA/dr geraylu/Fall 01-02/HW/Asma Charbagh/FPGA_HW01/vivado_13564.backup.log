@@ -1,0 +1,751 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Dec 31 14:42:45 2022
+# Process ID: 13564
+# Current directory: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5904 E:\University\Electerical\FPGA\Dr Geraylou\Fall 01-02\HW\HW01\FPGA_HW01\FPGA_HW01.xpr
+# Log file: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/vivado.log
+# Journal file: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:16 . Memory (MB): peak = 910.742 ; gain = 47.965
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xelab -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_main
+Built simulation snapshot tb_main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_main_behav -key {Behavioral:sim_1:Functional:tb_main} -tclbatch {tb_main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: DIV, MOD, or REM by zero
+Time: 50 ns  Iteration: 1  Process: /tb_main/uut/line__23  File: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 50 ns  Iteration: 1  Process: /tb_main/uut/line__23
+  File: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd
+
+HDL Line: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd:30
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 910.742 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 910.742 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xelab -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_main
+Built simulation snapshot tb_main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_main_behav -key {Behavioral:sim_1:Functional:tb_main} -tclbatch {tb_main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: DIV, MOD, or REM by zero
+Time: 50 ns  Iteration: 1  Process: /tb_main/uut/line__23  File: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 50 ns  Iteration: 1  Process: /tb_main/uut/line__23
+  File: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd
+
+HDL Line: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd:29
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 910.742 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sim_1/new/tb_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_main'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xelab -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_main
+Built simulation snapshot tb_main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_main_behav -key {Behavioral:sim_1:Functional:tb_main} -tclbatch {tb_main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 910.742 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xelab -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_main
+Built simulation snapshot tb_main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_main_behav -key {Behavioral:sim_1:Functional:tb_main} -tclbatch {tb_main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 910.742 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sim_1/new/tb_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_main'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xelab -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_main
+Built simulation snapshot tb_main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_main_behav -key {Behavioral:sim_1:Functional:tb_main} -tclbatch {tb_main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 910.742 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sim_1/new/tb_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_main'
+ERROR: [VRFC 10-4982] syntax error near ')' [E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sim_1/new/tb_main.vhd:61]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sim_1/new/tb_main.vhd:10]
+INFO: [VRFC 10-3070] VHDL file 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sim_1/new/tb_main.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sim_1/new/tb_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_main'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xelab -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_main
+Built simulation snapshot tb_main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_main_behav -key {Behavioral:sim_1:Functional:tb_main} -tclbatch {tb_main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: DIV, MOD, or REM by zero
+Time: 50 ns  Iteration: 1  Process: /tb_main/uut/line__25  File: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 50 ns  Iteration: 1  Process: /tb_main/uut/line__25
+  File: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd
+
+HDL Line: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd:31
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 910.742 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sim_1/new/tb_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_main'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xelab -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_main
+Built simulation snapshot tb_main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_main_behav -key {Behavioral:sim_1:Functional:tb_main} -tclbatch {tb_main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: DIV, MOD, or REM by zero
+Time: 50 ns  Iteration: 1  Process: /tb_main/uut/line__24  File: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 50 ns  Iteration: 1  Process: /tb_main/uut/line__24
+  File: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd
+
+HDL Line: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd:30
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 910.742 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xelab -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_main
+Built simulation snapshot tb_main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_main_behav -key {Behavioral:sim_1:Functional:tb_main} -tclbatch {tb_main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: DIV, MOD, or REM by zero
+Time: 50 ns  Iteration: 1  Process: /tb_main/uut/line__24  File: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 50 ns  Iteration: 1  Process: /tb_main/uut/line__24
+  File: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd
+
+HDL Line: E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd:30
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 910.742 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xelab -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_main
+Built simulation snapshot tb_main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_main_behav -key {Behavioral:sim_1:Functional:tb_main} -tclbatch {tb_main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 910.742 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sim_1/new/tb_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_main'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xelab -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_main
+Built simulation snapshot tb_main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_main_behav -key {Behavioral:sim_1:Functional:tb_main} -tclbatch {tb_main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 910.742 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sim_1/new/tb_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_main'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xelab -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_main
+Built simulation snapshot tb_main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_main_behav -key {Behavioral:sim_1:Functional:tb_main} -tclbatch {tb_main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 910.742 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.srcs/sim_1/new/tb_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_main'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+"xelab -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4975e2810c274a51872f442619031715 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_main_behav xil_defaultlib.tb_main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_main
+Built simulation snapshot tb_main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/University/Electerical/FPGA/Dr Geraylou/Fall 01-02/HW/HW01/FPGA_HW01/FPGA_HW01.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_main_behav -key {Behavioral:sim_1:Functional:tb_main} -tclbatch {tb_main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 910.742 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 31 15:36:28 2022...

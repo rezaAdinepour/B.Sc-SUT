@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../FPGA_HW01.srcs/sources_1/new/main.vhd" \
+"../../../../FPGA_HW01.srcs/sim_1/new/tb_main.vhd" \
+
+# Do not sort compile order
+nosort
