@@ -1,0 +1,48 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+x                                                                                 0x0260      30
+per                                                                               0x027E       4
+freq                                                                              0x0282       4
+timer                                                                             0x0286       4
+_base_y                                                                           0x028A       4
+_seed                                                                             0x028E       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+owf                                                                               R4,R5        2
+j                                                                                 R6,R7        2
+f1                                                                                R8,R9        2
+_lcd_x                                                                            R11          1
+_lcd_y                                                                            R10          1
+_lcd_maxx                                                                         R13          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ext_int1_isr                                                                      0x0007B     53
+timer1_ovf_isr                                                                    0x000B0     12
+main                                                                              0x000BC     58
+period                                                                            0x000F6     89
+_lcd_write_nibble_G100                                                            0x0014F     20
+_lcd_write_data                                                                   0x00163     12
+lcd_gotoxy                                                                        0x0016F     13
+lcd_clear                                                                         0x0017C     12
+lcd_putchar                                                                       0x00188     21
+lcd_puts                                                                          0x0019D     17
+lcd_init                                                                          0x001AE     46
+put_buff_G101                                                                     0x001DC     58
+_ftoe_G101                                                                        0x00216    210
+_print_G101                                                                       0x002E8    538
+sprintf                                                                           0x00502     52
+strcpyf                                                                           0x00536     13
+strlen                                                                            0x00543     12
+strlenf                                                                           0x0054F     13
+ftrunc                                                                            0x0055C     49
+floor                                                                             0x0058D     23
+ftoa                                                                              0x005A4    155

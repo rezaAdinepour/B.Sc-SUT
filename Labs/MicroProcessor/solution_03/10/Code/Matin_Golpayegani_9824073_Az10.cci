@@ -1,0 +1,11 @@
+VERSION:3 SOURCE_TIMESTAMP:54B0084F
+NODE:I LEVEL:0 LINE:24 "F:\CodeVisionAVR\inc\mega32.h"
+NODE:I LEVEL:0 LINE:25 "F:\CodeVisionAVR\inc\alcd.h"
+NODE:I LEVEL:0 LINE:26 "F:\CodeVisionAVR\inc\stdio.h"
+NODE:V LEVEL:0 LINE:28 "sec -> R4,R5"
+NODE:V LEVEL:0 LINE:29 "min -> R6,R7"
+NODE:V LEVEL:0 LINE:30 "hour -> R8,R9"
+NODE:V LEVEL:0 LINE:31 "time -> RAM:????"
+NODE:F LEVEL:0 LINE:34 "timer2_ovf_isr(void)"
+NODE:F LEVEL:0 LINE:47 "ext_int0_isr(void)"
+NODE:F LEVEL:0 LINE:58 "main(void)"
