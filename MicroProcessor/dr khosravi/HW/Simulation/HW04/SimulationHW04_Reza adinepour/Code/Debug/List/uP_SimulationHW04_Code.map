@@ -1,0 +1,27 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+digit                                                                             0x0260      10
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+hour                                                                              R5           1
+minute                                                                            R4           1
+second                                                                            R7           1
+day                                                                               R6           1
+month                                                                             R9           1
+year                                                                              R8           1
+i                                                                                 R11          1
+mode                                                                              R10          1
+state                                                                             R13          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+timer0_ovf_isr                                                                    0x00067      6
+main                                                                              0x0006D    210

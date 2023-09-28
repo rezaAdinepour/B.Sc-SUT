@@ -1,0 +1,2 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"uP_SimulationHW04_Code.c" LINE:36
+timer0_ovf_isr DSTACK_USAGE:2 DSTACK_LEVEL:2 FILE:"uP_SimulationHW04_Code.c" LINE:31

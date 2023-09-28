@@ -1,0 +1,135 @@
+#include <mega32.h>
+
+
+#define btn0 PINA.0
+#define btn1 PINA.1
+#define TLLR PORTB.0
+#define TLLY PORTB.1
+#define TLLG PORTB.2
+#define TLRR PORTB.3
+#define TLRY PORTB.4
+#define TLRG PORTB.5
+#define on 1
+#define off 0
+
+
+unsigned char p = 0x73, digit[10] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x6F}, t1 = 0, t2 = 0, t3 = 0, t4 = 0, i;
+enum st
+{
+    police,
+    traficLight1,
+    traficLight2,
+    blinker       
+}state;
+
+interrupt [TIM0_OVF] void timer0_ovf_isr(void)
+{
+    t1++;
+    t2++;
+    t3++;
+    t4++;
+}
+
+void main(void)
+{
+    DDRA = 0x00;
+    PORTA = 0xff;
+    
+    DDRB = 0xff;
+    PORTB = 0x00;
+    
+    DDRC = 0xff;
+    PORTC = 0x00;
+    
+    DDRD = 0xff;
+    PORTD = 0x00;
+
+
+    // Timer/Counter 0 initialization
+    // Clock source: System Clock
+    // Clock value: 7.813 kHz
+    // Mode: Normal top=0xFF
+    // OC0 output: Disconnected
+    // Timer Period: 32.768 ms
+    TCCR0=(0<<WGM00) | (0<<COM01) | (0<<COM00) | (0<<WGM01) | (1<<CS02) | (0<<CS01) | (1<<CS00);
+    TCNT0=0x00;
+    OCR0=0x00;
+
+    // Timer(s)/Counter(s) Interrupt(s) initialization
+    TIMSK=(0<<OCIE2) | (0<<TOIE2) | (0<<TICIE1) | (0<<OCIE1A) | (0<<OCIE1B) | (0<<TOIE1) | (0<<OCIE0) | (1<<TOIE0);
+
+
+#asm("sei")
+
+    while (1)
+    {
+        switch(state)
+        {           
+            case(police):
+                PORTC = p;
+                PORTB = 0x00;
+                PORTD = 0x00;
+                if((btn0 == 0) && (btn1 == 1))
+                {
+                    state = traficLight1;
+                    t1 = t2 = t3 = 0;
+                    i = 7;
+                    PORTC = 0x00;
+                    TLLR = TLRG = on;
+                }   
+                if((btn0 == 1) && (btn1 == 0))
+                    state = traficLight2;
+                if((btn0 == 0) && (btn1 == 0))
+                    state = blinker;   
+            break;
+            
+            case(traficLight1):
+                
+                if(t1 > 187)
+                {
+                    t1 = 0;
+                    TLLR = TLRG = off;
+                    TLLY = TLRY = on;
+                    if(t2 > 31)
+                    {
+                        t2 = 0;
+                        TLLY = TLRY = off;
+                        TLLG = TLRR = on;
+                        t3 = 0;
+                        if(t3 > 125)
+                        {
+                            t3 = 0;
+                            TLLG = TLRR = off;  
+                        }   
+                    }  
+                }                     
+                /*PORTD = digit[i];
+                if(t4 > 31)
+                {
+                    t4 = 0;
+                    i--;
+                }*/
+                
+                        
+            break;
+            
+        }
+        /*else if((btn0 == 0) && (btn1 == 1)) 
+        {
+            if(t1 > 187)
+            {
+                //t1 = 0;
+                PORTC = 0x00;
+                TLLG = TLRR = on;
+            }
+            else if(t3 > 31)
+            {
+                TLLG = TLRR = off;
+                //PORTD = digit[i];
+                TLLY = TLRY = on;
+            }
+            else if()
+        }*/
+        
+    }
+}
