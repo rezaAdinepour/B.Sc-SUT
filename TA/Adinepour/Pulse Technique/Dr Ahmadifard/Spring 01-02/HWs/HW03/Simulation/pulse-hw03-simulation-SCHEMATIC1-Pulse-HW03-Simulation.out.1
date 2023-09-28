@@ -1,0 +1,52 @@
+
+**** 04/15/23 21:42:14 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Pulse-HW03-Simulation"  [ d:\drive e\university\ta\pulse technique\dr ahmadifard\spring 01-02\hws\hw03\simul
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "pulse-hw03-simulation-schematic1-pulse-hw03-simulation.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN Vin -10 10 1 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\pulse-hw03-simulation-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING pulse-hw03-simulation-SCHEMATIC1.net ****
+* source PULSE-HW03-SIMULATION
+R_R2         N09195 N09465  0.5k  
+R_R1         N09195 N09267  1.4k  
+Q_Q4         N09457 N09277 N09271 Q2N2222A/ZTX 
+R_R4         N09409 N09317  2k  
+Q_Q2         OUT N09465 N09457 Q2N2222A/ZTX 
+R_R7         0 N09277  23k  
+V_V2         0 N09409 5
+R_R3         OUT N09267  1k  
+V_V1         N09267 0 10Vdc
+Q_Q3         N09457 N09277 N09317 Q2N2222A/ZTX 
+R_R6         N09409 N09277  27k  
+R_R8         N09409 N09271  1k  
+V_V3         IN 0  
++SIN 0 10 100 0 0 0
+Q_Q5         N09195 IN N09457 Q2N2222A/ZTX 
+
+**** RESUMING pulse-hw03-simulation-schematic1-pulse-hw03-simulation.sim.cir ****
+.END
+
+
+ERROR -- DC device Vin is undefined

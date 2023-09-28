@@ -1,0 +1,7 @@
+* source PULSE-HW02-SIMULATION
+D_D1         N00271 N00339 D1N4448 
+R_R1         N00339 0  1k  
+R_R2         N00464 N00271  1k  
+V_V1         N00464 0  
++PULSE -5 +5 1n 1n 1n 0.5u 10
+L_L1         N00271 0  10uH  

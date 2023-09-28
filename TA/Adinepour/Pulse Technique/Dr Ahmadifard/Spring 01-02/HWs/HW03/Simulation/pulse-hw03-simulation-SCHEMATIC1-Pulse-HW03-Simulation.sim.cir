@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-Pulse-HW03-Simulation"  [ d:\drive e\university\ta\pulse technique\dr ahmadifard\spring 01-02\hws\hw03\simulation\pulse-hw03-simulation-schematic1-pulse-hw03-simulation.sim ] 
+
+** Creating circuit file "pulse-hw03-simulation-schematic1-pulse-hw03-simulation.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V3 -10 10 1 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\pulse-hw03-simulation-SCHEMATIC1.net" 
+
+
+.END

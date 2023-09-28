@@ -1,0 +1,55 @@
+(ExpressProject "Pulse-HW03-Simulation"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\pulse-hw03-simulation.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\pulse-hw03-simulation-schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile
+         ".\pulse-hw03-simulation-schematic1-pulse-hw03-simulation.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\pulse-hw03-simulation-schematic1-pulse-hw03-simulation.sim"
+        (DisplayName "SCHEMATIC1-Pulse-HW03-Simulation")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\pulse-hw03-simulation.dsn")
+      (Path "Design Resources" ".\pulse-hw03-simulation.dsn" "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources" ".\pulse-hw03-simulation.dsn" "SCHEMATIC1"
+         "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 447"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 52 1380 52 534")
+        (Scroll "278 276")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "D:\DRIVE E\UNIVERSITY\TA\PULSE TECHNIQUE\DR AHMADIFARD\SPRING 01-02\HWS\HW03\SIMULATION\PULSE-HW03-SIMULATION.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))
