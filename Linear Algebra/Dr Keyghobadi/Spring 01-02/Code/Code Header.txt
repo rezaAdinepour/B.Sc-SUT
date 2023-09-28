@@ -1,0 +1,20 @@
+%           ******************************************************
+%          **   course         : Linear Algebra                  **
+%         ***   HomeWork       : 01                              ***
+%        ****   Topic          : Calculate Determinant           ****
+%        ****   AUTHOR         : Reza Adinepour                  ****
+%         ***   Student ID:    : 9814303                         ***
+%          **   Github         : github.com/reza_adinepour/      **
+%           ******************************************************
+
+
+
+
+#           ******************************************************
+#          **   course         : Linear Algebra                  **
+#         ***   HomeWork       : 01                              ***
+#        ****   Topic          : Calculate Determinant           ****
+#        ****   AUTHOR         : Reza Adinepour                  ****
+#         ***   Student ID:    : 9814303                         ***
+#          **   Github         : github.com/reza_adinepour/      **
+#           ******************************************************
