@@ -1,0 +1,54 @@
+//           ******************************************************
+//          **   Processor      : ATMEGA 32                       **
+//         ***   Frequency      : 8MHz External Clock             ***
+//        ****   AUTHOR         : Reza Adinepour                  ****
+//        ****   Linkedin       : linkedin.com/reza_adinepour/    ****
+//         ***   Student ID:    : 9814303                         ***
+//          **   Github         : github.com/reza_adinepour/      **
+//           ******************************************************
+
+#include <mega32.h>
+#include <alcd.h>
+#include <delay.h>
+
+
+char str[] = "adinepour", strlength = 9;
+int i, j;
+
+void main(void)
+{
+
+    lcd_init(16);
+
+    while (1)
+    {
+        lcd_gotoxy(5, 0);
+        lcd_puts("reza");
+      
+        for(i = 0; i < strlength + 1; i++)
+        {
+            for(j = 0; j <= strlength - i; j++)
+            {
+                lcd_gotoxy(j - 1, 1);
+                lcd_putchar(' ');
+                lcd_gotoxy(j, 1);
+                lcd_putchar(str[strlength - i]);
+                delay_ms(50);    
+            }
+        }
+        delay_ms(1000);
+        
+        for(i = 0; i < strlength; i++)
+        {
+            for(j = strlength + 1 - i; j <= 16; j++)
+            {
+                lcd_gotoxy(j - 1, 1);
+                lcd_putchar(' ');
+                lcd_gotoxy(j, 1);
+                lcd_putchar(str[strlength - i]);
+                delay_ms(50);    
+            }
+        } 
+        delay_ms(1000);
+    }
+}
