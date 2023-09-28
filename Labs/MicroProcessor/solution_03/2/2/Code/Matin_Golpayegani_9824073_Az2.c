@@ -1,0 +1,90 @@
+/*******************************************************
+Project : Az2
+Version : 
+Date    : 2/23/2022
+Author  : Matin Golpayegani
+Company : 
+Comments: 9824073
+
+
+Chip type               : ATmega32
+Program type            : Application
+AVR Core Clock frequency: 8.000000 MHz
+Memory model            : Small
+External RAM size       : 0
+Data Stack size         : 512
+*******************************************************/
+
+#include <mega32.h>
+#include <delay.h>
+
+// Declare your global variables here
+
+void main(void)
+{
+
+char seg[] = {0x3f,0x6,0x5b,0x4f,0x66,0x6d,0x7d,0x7,0x7f,0x6f} ;
+int i;
+
+
+// Port A initialization
+// Function: Bit7=Out Bit6=Out Bit5=Out Bit4=Out Bit3=Out Bit2=Out Bit1=Out Bit0=Out 
+DDRA=(1<<DDA7) | (1<<DDA6) | (1<<DDA5) | (1<<DDA4) | (1<<DDA3) | (1<<DDA2) | (1<<DDA1) | (1<<DDA0);
+// State: Bit7=0 Bit6=0 Bit5=0 Bit4=0 Bit3=0 Bit2=0 Bit1=0 Bit0=0 
+PORTA=(0<<PORTA7) | (0<<PORTA6) | (0<<PORTA5) | (0<<PORTA4) | (0<<PORTA3) | (0<<PORTA2) | (0<<PORTA1) | (0<<PORTA0);
+
+// Port B initialization
+// Function: Bit7=Out Bit6=Out Bit5=Out Bit4=Out Bit3=Out Bit2=Out Bit1=Out Bit0=Out 
+DDRB=(1<<DDB7) | (1<<DDB6) | (1<<DDB5) | (1<<DDB4) | (1<<DDB3) | (1<<DDB2) | (1<<DDB1) | (1<<DDB0);
+// State: Bit7=0 Bit6=0 Bit5=0 Bit4=0 Bit3=0 Bit2=0 Bit1=0 Bit0=0 
+PORTB=(0<<PORTB7) | (0<<PORTB6) | (0<<PORTB5) | (0<<PORTB4) | (0<<PORTB3) | (0<<PORTB2) | (0<<PORTB1) | (0<<PORTB0);
+
+// Port C initialization
+// Function: Bit7=Out Bit6=Out Bit5=Out Bit4=Out Bit3=Out Bit2=Out Bit1=Out Bit0=Out 
+DDRC=(1<<DDC7) | (1<<DDC6) | (1<<DDC5) | (1<<DDC4) | (1<<DDC3) | (1<<DDC2) | (1<<DDC1) | (1<<DDC0);
+// State: Bit7=0 Bit6=0 Bit5=0 Bit4=0 Bit3=0 Bit2=0 Bit1=0 Bit0=0 
+PORTC=(0<<PORTC7) | (0<<PORTC6) | (0<<PORTC5) | (0<<PORTC4) | (0<<PORTC3) | (0<<PORTC2) | (0<<PORTC1) | (0<<PORTC0);
+
+
+
+while (1)
+      {
+      PORTC = 0xff;
+      
+      PORTC.0 = 0;
+      PORTC.3 = 0;
+      for(i=7;i>=0;i--){
+        PORTA = seg[i];
+        PORTB = seg[i+2];
+        delay_ms(1000);
+      }
+      
+      PORTC.3 = 1;
+      PORTC.4 = 0;
+      for(i=1;i>=0;i--){
+        PORTA = seg[i];
+        PORTB = seg[i];
+        delay_ms(1000);
+      }
+      
+      PORTC.4 = 1;
+      PORTC.0 = 1;
+      PORTC.5 = 0;
+      PORTC.2 = 0;
+      for(i=7;i>=0;i--){
+        PORTA = seg[i+2];
+        PORTB = seg[i];
+        delay_ms(1000);
+      }
+      
+      PORTC.2 = 1;
+      PORTC.1 = 0;
+      for(i=1;i>=0;i--){
+        PORTA = seg[i];
+        PORTB = seg[i];
+        delay_ms(1000);
+      }      
+
+      }
+}
+                                                                                          
