@@ -1,0 +1,122 @@
+;/*******************************************************
+;This program was created by the
+;CodeWizardAVR V3.12 Advanced
+;Automatic Program Generator
+;© Copyright 1998-2014 Pavel Haiduc, HP InfoTech s.r.l.
+;http://www.hpinfotech.com
+;
+;Project : LCD
+;Version :
+;Date    : 3/9/2022
+;Author  : Matin Golpayegani
+;Company :
+;Comments:
+;Az4_1
+;
+;
+;Chip type               : ATmega32
+;Program type            : Application
+;AVR Core Clock frequency: 8.000000 MHz
+;Memory model            : Small
+;External RAM size       : 0
+;Data Stack size         : 512
+;*******************************************************/
+;
+;#include <mega32.h>
+;PCODE: $00000000 VOL: 0
+	#ifndef __SLEEP_DEFINED__
+;PCODE: $00000001 VOL: 0
+	#define __SLEEP_DEFINED__
+;PCODE: $00000002 VOL: 0
+	.EQU __se_bit=0x80
+;PCODE: $00000003 VOL: 0
+	.EQU __sm_mask=0x70
+;PCODE: $00000004 VOL: 0
+	.EQU __sm_powerdown=0x20
+;PCODE: $00000005 VOL: 0
+	.EQU __sm_powersave=0x30
+;PCODE: $00000006 VOL: 0
+	.EQU __sm_standby=0x60
+;PCODE: $00000007 VOL: 0
+	.EQU __sm_ext_standby=0x70
+;PCODE: $00000008 VOL: 0
+	.EQU __sm_adc_noise_red=0x10
+;PCODE: $00000009 VOL: 0
+	.SET power_ctrl_reg=mcucr
+;PCODE: $0000000A VOL: 0
+	#endif
+;PCODE: $0000000B VOL: 0
+;PCODE: $0000000C VOL: 0
+;
+;// Alphanumeric LCD functions
+;#include <alcd.h>
+;
+;// Declare your global variables here
+;
+;void main(void)
+; 0000 0021 {
+
+	.CSEG
+;PCODE: $0000000D VOL: 0
+; 0000 0022 // Declare your local variables here
+; 0000 0023 
+; 0000 0024 // Input/Output Ports initialization
+; 0000 0025 // Port A initialization
+; 0000 0026 // Function: Bit7=In Bit6=In Bit5=In Bit4=In Bit3=In Bit2=In Bit1=In Bit0=In
+; 0000 0027 DDRA=(0<<DDA7) | (0<<DDA6) | (0<<DDA5) | (0<<DDA4) | (0<<DDA3) | (0<<DDA2) | (0<<DDA1) | (0<<DDA0);
+;PCODE: $0000000E VOL: 0
+;PCODE: $0000000F VOL: 0
+; 0000 0028 // State: Bit7=T Bit6=T Bit5=T Bit4=T Bit3=T Bit2=T Bit1=T Bit0=T
+; 0000 0029 PORTA=(0<<PORTA7) | (0<<PORTA6) | (0<<PORTA5) | (0<<PORTA4) | (0<<PORTA3) | (0<<PORTA2) | (0<<PORTA1) | (0<<PORTA0);
+;PCODE: $00000010 VOL: 0
+;PCODE: $00000011 VOL: 0
+; 0000 002A 
+; 0000 002B 
+; 0000 002C // Alphanumeric LCD initialization
+; 0000 002D // Connections are specified in the
+; 0000 002E // Project|Configure|C Compiler|Libraries|Alphanumeric LCD menu:
+; 0000 002F // RS - PORTA Bit 0
+; 0000 0030 // RD - PORTA Bit 1
+; 0000 0031 // EN - PORTA Bit 2
+; 0000 0032 // D4 - PORTA Bit 4
+; 0000 0033 // D5 - PORTA Bit 5
+; 0000 0034 // D6 - PORTA Bit 6
+; 0000 0035 // D7 - PORTA Bit 7
+; 0000 0036 // Characters/line: 16
+; 0000 0037 lcd_init(16);
+;PCODE: $00000012 VOL: 0
+;PCODE: $00000013 VOL: 0
+; 0000 0038 
+; 0000 0039 while (1)
+;PCODE: $00000014 VOL: 0
+; 0000 003A       {
+; 0000 003B       lcd_gotoxy(1,0);
+;PCODE: $00000015 VOL: 0
+;PCODE: $00000016 VOL: 0
+;PCODE: $00000017 VOL: 0
+;PCODE: $00000018 VOL: 0
+; 0000 003C       lcd_puts("In the name of");
+;PCODE: $00000019 VOL: 0
+;PCODE: $0000001A VOL: 0
+;PCODE: $0000001B VOL: 0
+; 0000 003D       lcd_gotoxy(6,1);
+;PCODE: $0000001C VOL: 0
+;PCODE: $0000001D VOL: 0
+;PCODE: $0000001E VOL: 0
+;PCODE: $0000001F VOL: 0
+; 0000 003E       lcd_puts("God");
+;PCODE: $00000020 VOL: 0
+;PCODE: $00000021 VOL: 0
+;PCODE: $00000022 VOL: 0
+; 0000 003F 
+; 0000 0040       }
+;PCODE: $00000023 VOL: 0
+;PCODE: $00000024 VOL: 0
+; 0000 0041 }
+;PCODE: $00000025 VOL: 0
+;PCODE: $00000026 VOL: 0
+;PCODE: $00000027 VOL: 0
+
+	.DSEG
+_0x6:
+	.BYTE 0x13
