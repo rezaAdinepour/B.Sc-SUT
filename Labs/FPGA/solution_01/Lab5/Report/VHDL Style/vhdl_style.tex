@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{beramono}% monospaced font with bold variant
+
+\usepackage{listings}
+\lstdefinelanguage{VHDL}{
+	morekeywords=[1]{
+		library,use,all,entity,is,port,in,out,end,architecture,of,
+		begin,and,or,not,xor,nor,xnor,buffer,not,if,then,else,elsif,
+		when,others,signal,process,variable,constant
+	},
+	morekeywords=[2]{
+		std_logic,std_logic_vector,std_ulogic,std_ulogic_vector
+	},
+	morecomment=[l]--
+}
+
+\usepackage{xcolor}
+\colorlet{keyword}{blue!100!black!80}
+\colorlet{comment}{green!90!black!90}
+\lstdefinestyle{vhdl}{
+	language=VHDL,
+	basicstyle=\small\ttfamily,
+	keywordstyle=[1]\color{blue}\bfseries,
+	keywordstyle=[2]\color{red}\bfseries,
+	commentstyle=\color{green!50!black},
+	tabsize=4,
+	showstringspaces=false,
+	breaklines=true,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	stepnumber=1,
+	numbersep=10pt,
+	frame=lines
+}
+
+\begin{document}
+\section{Example VHDL code}
+Here's an example of how to include VHDL code in a \LaTeX document using the \texttt{listings} package:
+	
+\begin{lstlisting}[style=vhdl,caption={Example VHDL code}]
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity example is
+port (
+clk : in std_logic;
+rst : in std_logic;
+data_in : in std_logic_vector(7 downto 0);
+data_out : out std_logic_vector(7 downto 0)
+);
+end entity;
+
+architecture rtl of example is
+begin
+-- insert your VHDL code here
+end architecture;
+\end{lstlisting}
+	
+\end{document}
