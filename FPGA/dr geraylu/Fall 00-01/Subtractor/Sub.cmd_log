@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "E:/University/FPGA/HW/Subtractor/Sub.xst" -ofn "E:/University/FPGA/HW/Subtractor/Sub.syr" 
+xst -intstyle ise -ifn "E:/University/FPGA/HW/Subtractor/Sub.xst" -ofn "E:/University/FPGA/HW/Subtractor/Sub.syr" 
+xst -intstyle ise -ifn "E:/University/FPGA/HW/Subtractor/Sub.xst" -ofn "E:/University/FPGA/HW/Subtractor/Sub.syr" 

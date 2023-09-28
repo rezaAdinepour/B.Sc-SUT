@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "E:/University/FPGA/HW/Subtractor/full_sub.xst" -ofn "E:/University/FPGA/HW/Subtractor/full_sub.syr" 
+xst -intstyle ise -ifn "E:/University/FPGA/HW/Subtractor/full_sub.xst" -ofn "E:/University/FPGA/HW/Subtractor/full_sub.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 full_sub.ngc full_sub.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o full_sub_map.ncd full_sub.ngd full_sub.pcf 
+par -w -intstyle ise -ol high -mt off full_sub_map.ncd full_sub.ncd full_sub.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml full_sub.twx full_sub.ncd -o full_sub.twr full_sub.pcf 
+xst -intstyle ise -ifn "E:/University/FPGA/HW/Subtractor/full_sub.xst" -ofn "E:/University/FPGA/HW/Subtractor/full_sub.syr" 
+xst -intstyle ise -ifn "E:/University/FPGA/HW/Subtractor/full_sub.xst" -ofn "E:/University/FPGA/HW/Subtractor/full_sub.syr" 

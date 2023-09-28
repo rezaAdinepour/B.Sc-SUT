@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/University/FPGA/HW/Subtractor/full_sub_isim_beh.exe" -prj "E:/University/FPGA/HW/Subtractor/full_sub_beh.prj" "work.full_sub" 
