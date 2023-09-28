@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "E:/University/FPGA/HW/Adder/Full_Adder.xst" -ofn "E:/University/FPGA/HW/Adder/Full_Adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Full_Adder.ngc Full_Adder.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Full_Adder_map.ncd Full_Adder.ngd Full_Adder.pcf 
+par -w -intstyle ise -ol high -mt off Full_Adder_map.ncd Full_Adder.ncd Full_Adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Full_Adder.twx Full_Adder.ncd -o Full_Adder.twr Full_Adder.pcf 
+xst -intstyle ise -ifn "E:/University/FPGA/HW/Adder/Full_Adder.xst" -ofn "E:/University/FPGA/HW/Adder/Full_Adder.syr" 
+xst -intstyle ise -ifn "E:/University/FPGA/HW/Adder/Full_Adder.xst" -ofn "E:/University/FPGA/HW/Adder/Full_Adder.syr" 
