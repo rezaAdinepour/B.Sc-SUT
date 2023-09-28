@@ -1,0 +1,188 @@
+
+**** 11/29/20 21:33:59 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-try3"  [ e:\university\communication circuits\lab\8\pspice (1)\pspice\project7-schematic1-try3.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "project7-schematic1-try3.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 3m 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\project7-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING project7-SCHEMATIC1.net ****
+* source PROJECT7
+C_C5         0 N09229  47n  
+R_R7         0 N07750  3.3k  
+C_C8         0 VOUT  10n  
+C_C2         N17922 N16434  100n  
+X_TX1    N08727 N08698 N09078 0 SCHEMATIC1_TX1 
+R_R8         N07750 N08727  10k  
+C_C3         0 N16077  1n  
+V_V6         N08727 0 10Vdc
+V_V7         N17922 0  
++SIN 0 1.65 2k 0 0 0
+R_R9         0 N09229  560  
+C_C9         VIN N15863  1.5n  
+R_R10         0 N08972  4.7k  
+R_R1         0 N15680  2.2k  
+L_L1         N15863 VIN  82u  
+Q_Q6         N15890 N16434 N16531 Q2N2222
+Q_Q3         N08698 N07750 N09229 Q2N2222
+R_R11         VOUT N08972  2.2k  
+R_R2         0 N16434  33k  
+Q_Q4         N15848 N15680 N15890 Q2N2222
+V_V3         N15863 0 12
+C_C4         VIN N07750  1n  
+R_R3         N16606 N16531  1.5k  
+V_V5         N17517 0  
++SIN 0 0.025 455k 0 0 0
+Q_Q5         VIN N16077 N15890 Q2N2222
+R_R4         N16606 N16434  15k  
+C_C6         N08698 N08727  1000p  
+R_R5         N15848 N15863  1k  
+R_R6         VIN N15863  10k  
+D_D1         N09078 N08972 D1N4148 
+R_R12         0 N16077  2.2k  
+V_V4         0 N16606 12
+C_C7         0 N08972  22n  
+C_C1         N17517 N15680  1n  
+
+.subckt SCHEMATIC1_TX1 1 2 3 4  
+K_TX1         L1_TX1 L2_TX1 1
+L1_TX1         1 2 310uH
+L2_TX1         3 4 11H
+.ends SCHEMATIC1_TX1
+
+**** RESUMING project7-schematic1-try3.sim.cir ****
+.END
+
+**** 11/29/20 21:33:59 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-try3"  [ e:\university\communication circuits\lab\8\pspice (1)\pspice\project7-schematic1-try3.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         
+          IS    2.682000E-09 
+           N    1.836        
+         ISR    1.565000E-09 
+         IKF     .04417      
+          BV  100            
+         IBV  100.000000E-06 
+          RS     .5664       
+          TT   11.540000E-09 
+         CJO    4.000000E-12 
+          VJ     .5          
+           M     .3333       
+
+
+**** 11/29/20 21:33:59 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-try3"  [ e:\university\communication circuits\lab\8\pspice (1)\pspice\project7-schematic1-try3.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         
+               NPN             
+          IS   14.340000E-15 
+          BF  255.9          
+          NF    1            
+         VAF   74.03         
+         IKF     .2847       
+         ISE   14.340000E-15 
+          NE    1.307        
+          BR    6.092        
+          NR    1            
+          RB   10            
+          RC    1            
+         CJE   22.010000E-12 
+         MJE     .377        
+         CJC    7.306000E-12 
+         MJC     .3416       
+          TF  411.100000E-12 
+         XTF    3            
+         VTF    1.7          
+         ITF     .6          
+          TR   46.910000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 11/29/20 21:33:59 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-try3"  [ e:\university\communication circuits\lab\8\pspice (1)\pspice\project7-schematic1-try3.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)   12.0000  ( VOUT)-1.227E-15  (N07750)    2.4376 (N08698)   10.0000     
+
+(N08727)   10.0000 (N08972)-1.227E-15 (N09078)    0.0000 (N09229)    1.7644     
+
+(N15680)    -.0128 (N15848)   11.0270 (N15863)   12.0000 (N15890)    -.6544     
+
+(N16077)    -.0128 (N16434)   -8.3681 (N16531)   -9.0291 (N16606)  -12.0000     
+
+(N17517)    0.0000 (N17922)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V6        -3.889E-03
+    V_V7         0.000E+00
+    V_V3        -1.957E-03
+    V_V5         0.000E+00
+    V_V4        -2.223E-03
+
+    TOTAL POWER DISSIPATION   8.91E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            2.30
+

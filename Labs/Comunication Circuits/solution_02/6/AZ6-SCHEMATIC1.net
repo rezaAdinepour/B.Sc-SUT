@@ -1,0 +1,22 @@
+* source AZ6
+R_R1         N00618 N00417  1k  
+Q_Q2         VOUT N00783 N00677 Q2N2222
+V_V1         N00417 0 12
+R_R2         VOUT N00417  10k  
+R_R3         0 N01039  2.2k  
+V_V6         V 0  
++SIN 0 1.65 2k 0 0 0
+R_R4         0 N00647  33k  
+Q_Q3         N00677 N00647 N00910 Q2N2222
+C_C4         VIN N01039  1n  
+R_R5         N00983 N00647  15k  
+V_V2         0 N00983 12
+R_R6         N00983 N00910  1.5k  
+R_R7         0 N00783  2.2k  
+V_V4         VIN 0  
++SIN 0 0.06 451k 0 0 0
+C_C1         0 N00783  1n  
+C_C3         V N00647  100n  
+C_C2         VOUT N00417  1.5n  
+L_L1         N00417 VOUT  82u  
+Q_Q1         N00618 N01039 N00677 Q2N2222

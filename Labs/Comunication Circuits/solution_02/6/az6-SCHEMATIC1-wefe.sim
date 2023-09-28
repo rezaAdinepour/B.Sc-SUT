@@ -1,0 +1,119 @@
+@OrCAD Simulation Server Version: 1.0
+
+@Settings: 0 1
+@General:
+ProfileName= "wefe" 
+ProfileFile= "az6-schematic1-wefe.sim" 
+DesignFile= "az6.dsn" 0 
+ProjectFile= "Az6.opj" 
+NetlistFile= "az6-schematic1-wefe.sim.cir" 
+RootSchematics= "SCHEMATIC1" 
+DataFile= "az6-SCHEMATIC1-wefe.dat" 
+OutFile= "az6-SCHEMATIC1-wefe.out" 
+Notes=
+@#$BEGINNOTES
+@#$ENDNOTES
+@End General
+@Analysis: 0 1
++0 0 0 
++0 "5ÅÅmÅs" 
++1 "" 
++2 "0" 
++3 "" 
++4 "" 
++5 "" 
++6 "" 
+@End Analysis
+@Analysis: 1 0
++2 0 0
++0 "10" 
++1 "100" 
++2 "10k" 
++3 "" 
++4 "" 
++5 "" 
+@End Analysis
+@Analysis: 2 0
++0 0
++0 "V3" 
++1 "" 
++2 "" 
++3 "" 
++4 "0" 
++5 "1" 
++6 "0.01" 
++7 "" 
+@End Analysis
+@Analysis: 3 0
++0 0 0
++0 "" 
++1 "" 
++2 "" 
+@End Analysis
+@Analysis: 4 0
++0 0 1 0 0 0 0 0 
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
++6 "" 
++7 "" 
+@End Analysis
+@Analysis: 5 0
++0 0
++0 "V5" 
++1 "" 
++2 "" 
++3 "" 
++4 "100" 
++5 "10k" 
++6 "10" 
++7 "" 
+@End Analysis
+@Analysis: 6 0
++1 
++0 "" 
+@End Analysis
+@Analysis: 7 0
++0 0
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
+@End Analysis
+@Analysis: 8 0
++0 
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
+@End Analysis
+@Analysis: 9 0
++0 "" 
+@End Analysis
+@Analysis: 10 0
++0 0
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
++6 "" 
++7 "" 
+@End Analysis
+@Analysis: 11 1
++ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+@End Analysis
+@Analysis: 12 0
++1118480 0
+@End Analysis
+@Analysis: 13 1
++0 1 1 0
+@End Analysis

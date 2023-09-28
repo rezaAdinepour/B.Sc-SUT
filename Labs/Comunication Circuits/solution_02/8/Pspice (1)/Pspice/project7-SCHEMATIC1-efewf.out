@@ -1,0 +1,222 @@
+
+**** 11/22/20 22:54:09 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-efewf"  [ c:\users\reza\desktop\pspice\project7-SCHEMATIC1-efewf.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "project7-SCHEMATIC1-efewf.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 5m 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\project7-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING project7-SCHEMATIC1.net ****
+* source PROJECT7
+R_R7         0 N07750  3.3k  
+C_C8         0 N08999  10n  
+R_R4         N00329 N00392  3.3k  
+X_TX1    N08727 N08698 N09078 0 SCHEMATIC1_TX1 
+R_R8         N07750 N08727  10k  
+V_V1         N00392 0 10
+R_R5         N00673 N02216  1000k  
+C_C1         N00329 N00392  1.49n  
+C_C3         N00673 N06500  100n  
+V_V6         N08727 0 10Vdc
+J_J1         N01829 N00673 0 J2N3369 
+R_R9         0 N07808  560  
+V_V2         0 N00624 10
+R_R6         0 N00673  10000k  
+C_C2         N01829 N00469  100n  
+R_R10         0 N08972  4.7k  
+V_V4         N02293 0  
++SIN 0 1.5 455k 0 0 0
+R_R11         N08999 N08972  2.2k  
+Q_Q1         N00329 N02293 N00469 Q2N2222A/ZTX 
+V_V5         N06500 0  
++SIN 0 0.1 2k 0 0 0
+C_C4         N00329 N07750  1n  
+Q_Q2         N00469 N00528 N00560 Q2N2222A/ZTX 
+C_C5         0 N07808  47n  
+L_L1         N00329 N00392  82uH  
+C_C6         N08698 N08727  470p  
+Q_Q3         N08698 N07750 N07808 Q2N2222A/ZTX 
+R_R1         N00624 N00560  0.5k  
+V_V3         N02216 0 10
+R_R2         N00624 N00528  1k  
+D_D1         N09078 N08972 D1N4148 
+R_R3         0 N00528  5.25k  
+C_C7         0 N08972  22n  
+
+.subckt SCHEMATIC1_TX1 1 2 3 4  
+K_TX1         L1_TX1 L2_TX1 1
+L1_TX1         1 2 10uH
+L2_TX1         3 4 250uH
+.ends SCHEMATIC1_TX1
+
+**** RESUMING project7-SCHEMATIC1-efewf.sim.cir ****
+.END
+
+**** 11/22/20 22:54:09 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-efewf"  [ c:\users\reza\desktop\pspice\project7-SCHEMATIC1-efewf.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         
+          IS    2.682000E-09 
+           N    1.836        
+         ISR    1.565000E-09 
+         IKF     .04417      
+          BV  100            
+         IBV  100.000000E-06 
+          RS     .5664       
+          TT   11.540000E-09 
+         CJO    4.000000E-12 
+          VJ     .5          
+           M     .3333       
+
+
+**** 11/22/20 22:54:09 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-efewf"  [ c:\users\reza\desktop\pspice\project7-SCHEMATIC1-efewf.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222A/ZTX    
+               NPN             
+          IS   30.611000E-15 
+          BF  220            
+          NF    1.00124      
+         VAF  104            
+         IKF     .52         
+         ISE    7.500000E-15 
+          NE    1.41         
+          BR    4            
+          NR    1.005        
+         VAR   28            
+         IKR     .24         
+         ISC   10.652500E-12 
+          NC    1.3728       
+          RB     .13         
+          RE     .22         
+          RC     .12         
+         CJE   27.010000E-12 
+         CJC    9.120000E-12 
+         VJC     .4089       
+         MJC     .3508       
+          TF  325.000000E-12 
+          TR  100.000000E-09 
+          CN    2.42         
+           D     .87         
+
+
+**** 11/22/20 22:54:09 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-efewf"  [ c:\users\reza\desktop\pspice\project7-SCHEMATIC1-efewf.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               J2N3369         
+               NJF             
+         VTO   -2.07         
+        BETA  336.200000E-06 
+      LAMBDA     .011        
+          IS  114.500000E-15 
+         ISR    1.091000E-12 
+       ALPHA  506.800000E-06 
+          VK  251.7          
+          RD    1            
+          RS    1            
+         CGD    2.800000E-12 
+         CGS    2.916000E-12 
+           M     .2271       
+          PB     .5          
+       VTOTC   -2.500000E-03 
+     BETATCE    -.5          
+          KF    1.214000E-18 
+
+
+**** 11/22/20 22:54:09 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-efewf"  [ c:\users\reza\desktop\pspice\project7-SCHEMATIC1-efewf.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00329)   10.0000 (N00392)   10.0000 (N00469)    -.6420 (N00528)   -8.4072     
+
+(N00560)   -9.0498 (N00624)  -10.0000 (N00673)     .4550 (N01829)     .0027     
+
+(N02216)   10.0000 (N02293)    0.0000 (N06500)    0.0000 (N07750)    2.4456     
+
+(N07808)    1.7891 (N08698)   10.0000 (N08727)   10.0000 (N08972)-1.227E-15     
+
+(N08999)-1.227E-15 (N09078)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.883E-03
+    V_V6        -3.936E-03
+    V_V2        -3.493E-03
+    V_V4        -8.332E-06
+    V_V5         0.000E+00
+    V_V3        -9.545E-06
+
+    TOTAL POWER DISSIPATION   9.32E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            9.56
+

@@ -1,0 +1,246 @@
+
+**** 11/29/20 20:23:20 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-try3"  [ e:\university\communication circuits\lab\8\pspice (1)\pspice\project7-schematic1-try3.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "project7-schematic1-try3.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 5m 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\project7-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING project7-SCHEMATIC1.net ****
+* source PROJECT7
+C_C5         0 N09229  47n  
+R_R7         0 N07750  3.3k  
+C_C8         0 N08999  10n  
+R_R4         N00329 N00392  3.3k  
+X_TX1    N08727 N08698 N09078 0 SCHEMATIC1_TX1 
+R_R8         N07750 N08727  10k  
+V_V1         N00392 0 10
+R_R5         N00673 N02216  1meg  
+C_C1         N00329 N00392  1.5n  
+C_C3         N00673 N06500  100n  
+V_V6         N08727 0 10Vdc
+J_J1         N01829 N00673 0 J2N3369 
+R_R9         0 N09229  560  
+V_V2         0 N00624 10
+R_R6         0 N00673  8meg  
+C_C2         N01829 N00469  100n  
+R_R10         0 N08972  4.7k  
+V_V4         N02293 0  
++SIN 0 1 455k 0 0 0
+R_R11         N08999 N08972  2.2k  
+Q_Q1         N00329 N02293 N00469 Q2N2222A/ZTX 
+V_V5         N06500 0  
++SIN 0 0.1 2k 0 0 0
+C_C4         N00329 N07750  1n  
+Q_Q2         N00469 N00528 N00560 Q2N2222A/ZTX 
+L_L1         N00329 N00392  82uH  
+C_C6         N08698 N08727  470u  
+Q_Q3         N08698 N07750 N09229 Q2N2222A/ZTX 
+R_R1         N00624 N00560  0.47k  
+V_V3         N02216 0 10
+R_R2         N00624 N00528  1k  
+D_D1         N09078 N08972 D1N4148 
+R_R3         0 N00528  5.6k  
+C_C7         0 N08972  22n  
+
+.subckt SCHEMATIC1_TX1 1 2 3 4  
+K_TX1         L1_TX1 L2_TX1 1
+L1_TX1         1 2 310uH
+L2_TX1         3 4 11H
+.ends SCHEMATIC1_TX1
+
+**** RESUMING project7-schematic1-try3.sim.cir ****
+.END
+
+**** 11/29/20 20:23:20 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-try3"  [ e:\university\communication circuits\lab\8\pspice (1)\pspice\project7-schematic1-try3.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         
+          IS    2.682000E-09 
+           N    1.836        
+         ISR    1.565000E-09 
+         IKF     .04417      
+          BV  100            
+         IBV  100.000000E-06 
+          RS     .5664       
+          TT   11.540000E-09 
+         CJO    4.000000E-12 
+          VJ     .5          
+           M     .3333       
+
+
+**** 11/29/20 20:23:20 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-try3"  [ e:\university\communication circuits\lab\8\pspice (1)\pspice\project7-schematic1-try3.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222A/ZTX    
+               NPN             
+          IS   30.611000E-15 
+          BF  220            
+          NF    1.00124      
+         VAF  104            
+         IKF     .52         
+         ISE    7.500000E-15 
+          NE    1.41         
+          BR    4            
+          NR    1.005        
+         VAR   28            
+         IKR     .24         
+         ISC   10.652500E-12 
+          NC    1.3728       
+          RB     .13         
+          RE     .22         
+          RC     .12         
+         CJE   27.010000E-12 
+         CJC    9.120000E-12 
+         VJC     .4089       
+         MJC     .3508       
+          TF  325.000000E-12 
+          TR  100.000000E-09 
+          CN    2.42         
+           D     .87         
+
+
+**** 11/29/20 20:23:20 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-try3"  [ e:\university\communication circuits\lab\8\pspice (1)\pspice\project7-schematic1-try3.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               J2N3369         
+               NJF             
+         VTO   -2.07         
+        BETA  336.200000E-06 
+      LAMBDA     .011        
+          IS  114.500000E-15 
+         ISR    1.091000E-12 
+       ALPHA  506.800000E-06 
+          VK  251.7          
+          RD    1            
+          RS    1            
+         CGD    2.800000E-12 
+         CGS    2.916000E-12 
+           M     .2271       
+          PB     .5          
+       VTOTC   -2.500000E-03 
+     BETATCE    -.5          
+          KF    1.214000E-18 
+
+
+**** 11/29/20 20:23:20 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-try3"  [ e:\university\communication circuits\lab\8\pspice (1)\pspice\project7-schematic1-try3.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00329)   10.0000 (N00392)   10.0000 (N00469)    -.6412 (N00528)   -8.4919     
+
+(N00560)   -9.1337 (N00624)  -10.0000 (N00673)     .4549 (N01829)     .0027     
+
+(N02216)   10.0000 (N02293)    0.0000 (N06500)    0.0000 (N07750)    2.4456     
+
+(N08698)   10.0000 (N08727)   10.0000 (N08972)-1.227E-15 (N08999)-1.227E-15     
+
+(N09078)    0.0000 (N09229)    1.7891 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.827E-03
+    V_V6        -3.936E-03
+    V_V2        -3.351E-03
+    V_V4        -8.083E-06
+    V_V5         0.000E+00
+    V_V3        -9.545E-06
+
+    TOTAL POWER DISSIPATION   9.12E-02  WATTS
+
+
+ERROR -- Convergence problem in transient analysis at Time =  2.899E-09
+         Time step =  2.235E-15, minimum allowable step size =  5.000E-15
+
+  These voltages failed to converge:
+
+    V(N09078)                 =         0V  \   -1.907uV
+
+  These supply currents failed to converge:
+
+    I(X_TX1.L1_TX1)           =    3.246mA  \    2.602mA
+    I(X_TX1.L2_TX1)           =  -349.67nA  \    3.073uA
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00329)   10.0000 (N00392)   10.0000 (N00469)    -.6333 (N00528)   -8.4887     
+
+(N00560)   -9.1306 (N00624)  -10.0000 (N00673)     .4549 (N01829)     .0106     
+
+(N02216)   10.0000 (N02293)     .0083 (N06500) 3.643E-06 (N07750)    2.4456     
+
+(N08698)   10.0000 (N08727)   10.0000 (N08972) 3.486E-12 (N08999)-1.310E-15     
+
+(N09078)    0.0000 (N09229)    1.7891 
+

@@ -1,0 +1,136 @@
+
+**** 11/15/20 22:12:55 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-wefe"  [ e:\university\communication circuits\lab\6\az6-schematic1-wefe.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "az6-schematic1-wefe.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 5ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\az6-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING az6-SCHEMATIC1.net ****
+* source AZ6
+R_R1         N00618 N00417  1k  
+Q_Q2         VOUT N00783 N00677 Q2N2222
+V_V1         N00417 0 12
+R_R2         VOUT N00417  10k  
+R_R3         0 N01039  2.2k  
+V_V6         V 0  
++SIN 0 1.65 2k 0 0 0
+R_R4         0 N00647  33k  
+Q_Q3         N00677 N00647 N00910 Q2N2222
+C_C4         VIN N01039  1n  
+R_R5         N00983 N00647  15k  
+V_V2         0 N00983 12
+R_R6         N00983 N00910  1.5k  
+R_R7         0 N00783  2.2k  
+V_V4         VIN 0  
++SIN 0 0.06 451k 0 0 0
+C_C1         0 N00783  1n  
+C_C3         V N00647  100n  
+C_C2         VOUT N00417  1.5n  
+L_L1         N00417 VOUT  82u  
+Q_Q1         N00618 N01039 N00677 Q2N2222
+
+**** RESUMING az6-schematic1-wefe.sim.cir ****
+.END
+
+**** 11/15/20 22:12:55 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-wefe"  [ e:\university\communication circuits\lab\6\az6-schematic1-wefe.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         
+               NPN             
+          IS   14.340000E-15 
+          BF  255.9          
+          NF    1            
+         VAF   74.03         
+         IKF     .2847       
+         ISE   14.340000E-15 
+          NE    1.307        
+          BR    6.092        
+          NR    1            
+          RB   10            
+          RC    1            
+         CJE   22.010000E-12 
+         MJE     .377        
+         CJC    7.306000E-12 
+         MJC     .3416       
+          TF  411.100000E-12 
+         XTF    3            
+         VTF    1.7          
+         ITF     .6          
+          TR   46.910000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 11/15/20 22:12:55 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-wefe"  [ e:\university\communication circuits\lab\6\az6-schematic1-wefe.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    V)    0.0000  (  VIN)    0.0000  ( VOUT)   12.0000  (N00417)   12.0000     
+
+(N00618)   11.0270 (N00647)   -8.3681 (N00677)    -.6544 (N00783)    -.0128     
+
+(N00910)   -9.0291 (N00983)  -12.0000 (N01039)    -.0128 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.957E-03
+    V_V6         0.000E+00
+    V_V2        -2.223E-03
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   5.02E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            1.34
+
