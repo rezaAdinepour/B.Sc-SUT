@@ -1,0 +1,85 @@
+#include <mega32.h>
+#include <delay.h>
+
+#define R PINA.0
+#define L PINA.1
+#define S PINA.2
+#define RM PORTC.0
+#define LM PORTC.1
+#define RLED PORTD.3
+#define LLED PORTD.4
+#define on 1
+#define off 0
+
+enum st{OFF, right, left, stop}state;
+
+void main(void)
+{
+    DDRA = 0x00;
+    PORTA = 0xff;
+    
+    DDRD = 0xff;
+    PORTD = 0x00;
+    
+    DDRC = 0xff;
+    PORTC = 0x00;
+    
+    DDRB = 0xff;
+    PORTB = 0x00;
+    
+
+
+    while (1)
+    {   
+        switch(state)
+        {
+            case OFF:
+                R = L = on;
+                RM = LM = off;
+                if(R == 0)
+                    state = right;
+                if(L == 0)
+                    state = left;
+            break;
+            
+            case right:
+                RM = off;
+                LM = on;
+                RLED = on;
+                delay_ms(100);
+                RLED = off;
+                delay_ms(100);
+                if(S == 0)
+                    state = stop;
+                if(L == 0)
+                    state = left;
+                if(R == 1)
+                    state = OFF;
+            break;
+            
+            case left:
+                RM = on;
+                LM = off;
+                LLED = on;
+                delay_ms(100);
+                LLED = off;
+                delay_ms(100);
+                if(S == 0)
+                    state = stop;
+                if(L == 1)
+                    state = OFF;
+                if(R == 0)
+                    state = right;
+            break;
+            
+            case stop:
+                R = L = on;
+                RLED = off;
+                RM = LM = off;
+                if(S == 1 && L == 0)
+                    state = left;
+                if(S == 1 && R == 0)
+                    state = right;
+        }//End Switch()
+    }//End While(1)
+}//End main()

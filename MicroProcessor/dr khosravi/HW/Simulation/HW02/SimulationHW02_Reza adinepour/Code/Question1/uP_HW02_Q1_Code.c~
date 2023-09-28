@@ -1,0 +1,67 @@
+#include <mega32.h>
+#include <delay.h>
+
+
+#define d1 PINB.2
+#define d2 PINB.3
+
+unsigned char i = 1;
+
+void main(void)
+{
+    DDRB = 0x00;
+    PORTB = 0xff;
+    
+    DDRD = 0xff;
+    PORTD = 0x00;
+
+
+    while (1)
+    { 
+        if( (d1 == 0)&&(d2 == 0) == 1 )
+        {
+            while((d1 == 0)&&(d2 == 0) == 1) 
+            {
+                PORTD = 0xaa;
+                delay_ms(200);
+                PORTD = 0x55;
+                delay_ms(200);
+            }
+        }
+        else
+            PORTD = 0x00;
+        
+        if(d1 == 0)
+        {
+            while(d1 == 0)
+            {
+                PORTD = 0xff;
+                delay_ms(500);
+                PORTD = 0x00;
+                delay_ms(500);
+            }
+        }
+        else
+            PORTD = 0x00;
+        
+        if(d2 == 0)
+        {
+            while(d2 == 0)
+            {
+                for(i = 1; i < 128; i<<=1)
+                {
+                    PORTD = i;
+                    delay_ms(200);
+                }
+                for(i = 128; i > 0; i>>=1)
+                {
+                    PORTD = i;
+                    delay_ms(200);
+                }
+            }
+        }
+                
+        else
+            PORTD = 0x00;
+    }
+}
