@@ -1,0 +1,49 @@
+
+**** 02/07/20 19:22:48 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-jhu"  [ E:\UNIVERSITY\ELECTRONICS 2\LAB\2ND\SIM\cascodeamp-SCHEMATIC1-jhu.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "cascodeamp-SCHEMATIC1-jhu.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 10 10M
+--------------$
+ERROR -- Invalid value
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\cascodeamp-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING cascodeamp-SCHEMATIC1.net ****
+* source CASCODEAMP
+R_R1         N00463 N00436  10k  
+R_R2         N00726 N00463  5.6k  
+C_C3         VIN N00726  10u  
+R_R3         0 N00726  4.7k  
+C_C4         0 N01203  10u  
+R_R4         VOUT N00436  1.8k  
+R_R5         0 N01203  1k  
+V_V1         N00436 0 15
+V_V3         VIN 0 DC 0Vdc AC 1Vac 
+Q_Q1         VOUT N00463 N001712 BC107A 
+Q_Q2         N001712 N00726 N01203 BC107A 
+C_C1         0 N00463  10u  
+
+**** RESUMING cascodeamp-SCHEMATIC1-jhu.sim.cir ****
+.END
+

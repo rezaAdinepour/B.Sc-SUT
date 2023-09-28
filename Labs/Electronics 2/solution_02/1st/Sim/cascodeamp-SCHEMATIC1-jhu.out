@@ -1,0 +1,123 @@
+
+**** 02/07/20 21:17:56 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-jhu"  [ e:\university\electronics 2\lab\1st\sim\cascodeamp-schematic1-jhu.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "cascodeamp-schematic1-jhu.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 10 10gig
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\cascodeamp-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING cascodeamp-SCHEMATIC1.net ****
+* source CASCODEAMP
+R_R1         N00463 N00436  47k  
+R_R2         0 N00463  10k  
+C_C3         VIN N00463  1u  
+C_C4         0 N01203  10u  
+C_C1         N01114 VOUT  1u  
+R_R4         N01114 N00436  1k  
+R_R5         0 N01203  220  
+R_R3         0 VOUT  1k  
+V_V1         N00436 0 12
+Q_Q1         N01114 N00463 N01203 Q2N2222A/ZTX 
+V_V6         VIN 0 DC 0Vdc AC 1Vac 
+
+**** RESUMING cascodeamp-schematic1-jhu.sim.cir ****
+.END
+
+**** 02/07/20 21:17:56 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-jhu"  [ e:\university\electronics 2\lab\1st\sim\cascodeamp-schematic1-jhu.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222A/ZTX    
+               NPN             
+          IS   30.611000E-15 
+          BF  220            
+          NF    1.00124      
+         VAF  104            
+         IKF     .52         
+         ISE    7.500000E-15 
+          NE    1.41         
+          BR    4            
+          NR    1.005        
+         VAR   28            
+         IKR     .24         
+         ISC   10.652500E-12 
+          NC    1.3728       
+          RB     .13         
+          RE     .22         
+          RC     .12         
+         CJE   27.010000E-12 
+         CJC    9.120000E-12 
+         VJC     .4089       
+         MJC     .3508       
+          TF  325.000000E-12 
+          TR  100.000000E-09 
+          CN    2.42         
+           D     .87         
+
+
+**** 02/07/20 21:17:56 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-jhu"  [ e:\university\electronics 2\lab\1st\sim\cascodeamp-schematic1-jhu.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)    0.0000  ( VOUT)    0.0000  (N00436)   12.0000 (N00463)    1.8940     
+
+(N01114)    6.4721 (N01203)    1.2218 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.743E-03
+    V_V6         0.000E+00
+
+    TOTAL POWER DISSIPATION   6.89E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

@@ -1,0 +1,15 @@
+* source CURRENTMIRROR
+Q_Q1         N00517 N00653 N000032 BC107A 
+R_R3         N01735 N00653  6.8k  
+R_R4         N00967 N02191  39k  
+Q_Q2         VOUT N00967 0 BC107A 
+R_R5         0 N00967  2.7k  
+Q_Q3         N00517 N00517 N00379 BC558A 
+C_C1         N00967 VIN  1u  
+Q_Q4         VOUT N00517 N00379 BC558A 
+V_V1         N00379 0 10
+V_V2         0 N01735 10
+V_V3         N02191 0 10
+V_V4         VIN 0 DC 0Vdc AC 1Vac 
+R_R1         N01735 N000032  1.5k  
+R_R2         0 N00653  10k  

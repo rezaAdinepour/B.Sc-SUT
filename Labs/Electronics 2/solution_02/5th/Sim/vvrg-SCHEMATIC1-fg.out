@@ -1,0 +1,127 @@
+
+**** 05/07/20 12:59:05 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-fg"  [ E:\UNIVERSITY\Electronics 2\LAB\5th\Sim\vvrg-SCHEMATIC1-fg.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "vvrg-SCHEMATIC1-fg.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 1 1000gig
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\vvrg-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING vvrg-SCHEMATIC1.net ****
+* source VVRG
+Q_Q1         N00604 VIN N00409 BC107A 
+Q_Q2         VOUT N00604 N00693 BC107A 
+V_V1         N00326 0 15
+R_R1         N00604 N00326  68k  
+R_R2         VOUT N00326  2.2k  
+V_V2         N03434 0 DC 0Vdc AC 1Vac 
+R_R3         N00769 N00693  560  
+R_R4         0 N00769  330  
+R_R5         0 N00409  1k  
+C_C4         N03434 VIN  0.1u  
+R_R8         N00409 VOUT  33k  
+C_C2         0 N00693  10u  
+
+**** RESUMING vvrg-SCHEMATIC1-fg.sim.cir ****
+.END
+
+**** 05/07/20 12:59:05 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-fg"  [ E:\UNIVERSITY\Electronics 2\LAB\5th\Sim\vvrg-SCHEMATIC1-fg.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC107A          
+               NPN             
+          IS    7.049000E-15 
+          BF  375.5          
+          NF    1            
+         VAF  116.3          
+         IKF    4.589        
+         ISE    7.049000E-15 
+          NE    1.281        
+          BR    2.611        
+          NR    1            
+         IKR    5.313        
+         ISC  121.700000E-12 
+          NC    1.865        
+          RC    1.464        
+         CJE   11.500000E-12 
+         VJE     .5          
+         MJE     .2717       
+         CJC    5.380000E-12 
+         VJC     .6218       
+         MJC     .329        
+          TF  451.000000E-12 
+         XTF   17.43         
+         VTF   10            
+         ITF    6.194        
+          TR   10.000000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 05/07/20 12:59:05 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-fg"  [ E:\UNIVERSITY\Electronics 2\LAB\5th\Sim\vvrg-SCHEMATIC1-fg.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)     .4517  ( VOUT)    4.3967  (N00326)   15.0000 (N00409)     .1293     
+
+(N00604)    5.0111 (N00693)    4.3052 (N00769)    1.5963 (N03434)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -4.967E-03
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   7.45E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

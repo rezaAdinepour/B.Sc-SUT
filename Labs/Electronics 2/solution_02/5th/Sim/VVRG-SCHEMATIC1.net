@@ -1,0 +1,13 @@
+* source VVRG
+Q_Q1         N00604 VIN N00409 BC107A 
+Q_Q2         VOUT N00604 N00693 BC107A 
+V_V1         N00326 0 15
+R_R1         N00604 N00326  68k  
+R_R2         VOUT N00326  2.2k  
+V_V2         N03434 0 DC 0Vdc AC 1Vac 
+R_R3         N00769 N00693  560  
+R_R4         0 N00769  330  
+R_R5         0 N00409  1k  
+C_C4         N03434 VIN  0.1u  
+R_R8         N00409 VOUT  33k  
+C_C2         0 N00693  10u  

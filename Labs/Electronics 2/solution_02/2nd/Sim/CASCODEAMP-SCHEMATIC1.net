@@ -1,0 +1,14 @@
+* source CASCODEAMP
+R_R1         N00463 N00436  10k  
+R_R2         N00726 N00463  5.6k  
+C_C3         VIN N00726  10u  
+R_R3         0 N00726  4.7k  
+C_C4         0 N01203  10u  
+V_V4         VIN 0  
++SIN 0 25m 5k 0 0 0
+R_R4         VOUT N00436  1.8k  
+R_R5         0 N01203  1k  
+V_V1         N00436 0 15
+Q_Q1         VOUT N00463 N001712 BC107A 
+Q_Q2         N001712 N00726 N01203 BC107A 
+C_C1         0 N00463  10u  

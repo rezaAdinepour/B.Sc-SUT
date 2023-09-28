@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-jhu"  [ e:\university\electronics 2\lab\1st\sim\cascodeamp-schematic1-jhu.sim ] 
+
+** Creating circuit file "cascodeamp-schematic1-jhu.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 10 10gig
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\cascodeamp-SCHEMATIC1.net" 
+
+
+.END

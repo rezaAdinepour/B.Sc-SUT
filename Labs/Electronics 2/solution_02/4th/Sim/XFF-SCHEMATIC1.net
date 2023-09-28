@@ -1,0 +1,14 @@
+* source XFF
+R_R1         VOUT1 N00776  6.8k  
+V_V2         0 N000471 10
+V_V1         N00776 0 10
+R_R2         VOUT2 N00776  6.8k  
+R_R3         N000471 N00346  4.7k  
+R_R4         0 N00287  3.3k  
+R_R5         0 N00572  3.3k  
+C_C1         VIN1 N00287  10u  
+C_C2         N00572 VIN2  10u  
+Q_Q1         VOUT1 N00287 N00346 Q2N2222
+Q_Q2         VOUT2 N00572 N00346 Q2N2222
+V_V4         VIN1 0 DC 0Vdc AC 1Vac 
+V_V6         VIN2 0 DC 0Vdc AC 1Vac 

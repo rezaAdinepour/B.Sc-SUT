@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-fg"  [ E:\UNIVERSITY\Electronics 2\LAB\5th\Sim\vvrg-SCHEMATIC1-fg.sim ] 
+
+** Creating circuit file "vvrg-SCHEMATIC1-fg.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 1 1000gig
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\vvrg-SCHEMATIC1.net" 
+
+
+.END

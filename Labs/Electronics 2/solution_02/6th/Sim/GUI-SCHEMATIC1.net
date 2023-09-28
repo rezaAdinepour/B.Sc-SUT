@@ -1,0 +1,12 @@
+* source GUI
+Q_Q1         N00314 N00404 N00718 BC107A 
+R_R1         N00314 N01095  2.2k  
+R_R2         N00314 N00377  100k  
+V_V1         N01095 0 9
+V_V5         VOUT 0 DC 0Vdc AC 1Vac 
+R_R3         N00404 N00377  100k  
+R_R5         0 N00718  470  
+C_C1         N00314 VOUT  22u  
+C_C4         0 N00718  100u  
+C_C3         N02699 N00404  22u  
+R_R8         0 N02699  12k  

@@ -1,0 +1,52 @@
+
+**** 05/06/20 12:53:04 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-hj"  [ E:\UNIVERSITY\Electronics 2\LAB\4th\Sim\xff-SCHEMATIC1-hj.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "xff-SCHEMATIC1-hj.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 100 10gig
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\xff-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING xff-SCHEMATIC1.net ****
+* source XFF
+R_R1         VOUT N00776  6.8k  
+V_V2         0 N000471 10
+V_V1         N00776 0 10
+R_R2         N00487 N00776  6.8k  
+V_V4         0 N01275 DC 0Vdc AC 1Vac 
+R_R3         N000471 N00346  4.7k  
+R_R4         0 N00287  3.3k  
+R_R5         0 N00572  3.3k  
+C_C1         VIN N00287  10u  
+C_C2         N00572 N01275  10u  
+Q_Q1         VOUT N00287 N00346 Q2N2222
+Q_Q2         N00487 N00572 N00346 Q2N2222
+V_V4         VIN 0 DC 0Vdc AC 1Vac 
+$
+ERROR -- Name "V_V4" is defined more than once
+-----------------------------------$
+ERROR -- Missing node
+
+**** RESUMING xff-SCHEMATIC1-hj.sim.cir ****
+.END
+

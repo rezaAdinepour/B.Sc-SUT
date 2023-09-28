@@ -1,0 +1,134 @@
+
+**** 02/17/20 00:27:37 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-h"  [ E:\UNIVERSITY\Electronics 2\LAB\3rd\currentmirror-SCHEMATIC1-h.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "currentmirror-SCHEMATIC1-h.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 10 1gig
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\currentmirror-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING currentmirror-SCHEMATIC1.net ****
+* source CURRENTMIRROR
+Q_Q1         N00517 N00653 N000032 BC107A 
+R_R3         N01735 N00653  6.8k  
+R_R4         N00967 N02191  39k  
+Q_Q2         VOUT N00967 0 BC107A 
+R_R5         0 N00967  2.7k  
+Q_Q3         N00517 N00517 N00379 BC558A 
+C_C1         N00967 VIN  1u  
+Q_Q4         VOUT N00517 N00379 BC558A 
+V_V1         N00379 0 10
+V_V2         0 N01735 10
+V_V3         N02191 0 10
+V_V4         VIN 0 DC 0Vdc AC 1Vac 
+R_R1         N01735 N000032  1.5k  
+R_R2         0 N00653  10k  
+
+**** RESUMING currentmirror-SCHEMATIC1-h.sim.cir ****
+.END
+
+**** 02/17/20 00:27:37 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-h"  [ E:\UNIVERSITY\Electronics 2\LAB\3rd\currentmirror-SCHEMATIC1-h.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC107A          BC558A          
+               NPN             PNP             
+          IS    7.049000E-15    1.020000E-15 
+          BF  375.5           174.7          
+          NF    1               1            
+         VAF  116.3            73.79         
+         IKF    4.589            .1023       
+         ISE    7.049000E-15   10.730000E-15 
+          NE    1.281           1.644        
+          BR    2.611           4.432        
+          NR    1               1            
+         IKR    5.313           2.237        
+         ISC  121.700000E-12   14.740000E-15 
+          NC    1.865           1.296        
+          NK                     .5033       
+          RC    1.464           1.039        
+         CJE   11.500000E-12   30.000000E-12 
+         VJE     .5              .5          
+         MJE     .2717           .3333       
+         CJC    5.380000E-12    9.810000E-12 
+         VJC     .6218           .4865       
+         MJC     .329            .332        
+          TF  451.000000E-12  830.300000E-12 
+         XTF   17.43           10.32         
+         VTF   10              10            
+         ITF    6.194            .8981       
+          TR   10.000000E-09   10.000000E-09 
+         XTB    1.5             1.5          
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 02/17/20 00:27:37 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-h"  [ E:\UNIVERSITY\Electronics 2\LAB\3rd\currentmirror-SCHEMATIC1-h.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)    0.0000  ( VOUT)    9.9868  (N00379)   10.0000 (N00517)    9.2690     
+
+(N00653)   -5.9978 (N00967)     .6404 (N01735)  -10.0000 (N02191)   10.0000     
+
+(N000032)   -6.6791                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.634E-03
+    V_V2        -2.802E-03
+    V_V3        -2.400E-04
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   5.68E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+
