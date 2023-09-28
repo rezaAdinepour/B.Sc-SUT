@@ -1,0 +1,99 @@
+
+**** 10/12/21 18:28:34 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab2"  [ e:\university\electerical\labs\electronics 1\reports\lab2\simulation\elec1_lab2-schematic1-el
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "elec1_lab2-schematic1-elec1_lab2.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\elec1_lab2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING elec1_lab2-SCHEMATIC1.net ****
+* source ELEC1_LAB2
+D_D8         VOUT 0 D02CZ20 
+V_V3         VIN 0  
++SIN 0 8 1k 0 0 0
+R_R3         VIN VOUT  10k  
+
+**** RESUMING elec1_lab2-schematic1-elec1_lab2.sim.cir ****
+.END
+
+**** 10/12/21 18:28:34 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab2"  [ e:\university\electerical\labs\electronics 1\reports\lab2\simulation\elec1_lab2-schematic1-el
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D02CZ20         
+          IS   51.850000E-15 
+           N    1.17         
+         ISR  990.000000E-06 
+         IKF   19.19         
+          BV   20.14         
+         IBV    1.105        
+          RS     .3181       
+          TT    5.000000E-09 
+         CJO  402.800000E-12 
+          VJ    5            
+           M    1.533        
+
+
+**** 10/12/21 18:28:34 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab2"  [ e:\university\electerical\labs\electronics 1\reports\lab2\simulation\elec1_lab2-schematic1-el
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)    0.0000  ( VOUT)-5.433E-18  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -5.433E-22
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

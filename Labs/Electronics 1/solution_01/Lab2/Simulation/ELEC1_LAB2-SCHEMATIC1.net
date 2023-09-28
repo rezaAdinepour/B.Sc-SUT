@@ -1,0 +1,5 @@
+* source ELEC1_LAB2
+D_D8         VOUT 0 D02CZ20 
+V_V3         VIN 0  
++SIN 0 8 1k 0 0 0
+R_R3         VIN VOUT  10k  

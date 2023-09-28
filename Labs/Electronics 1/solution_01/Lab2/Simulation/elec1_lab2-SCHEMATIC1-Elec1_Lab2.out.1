@@ -1,0 +1,47 @@
+
+**** 10/12/21 16:17:10 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab2"  [ e:\university\electerical\labs\electronics 1\reports\lab2\simulation\elec1_lab2-schematic1-el
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "elec1_lab2-schematic1-elec1_lab2.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\elec1_lab2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING elec1_lab2-SCHEMATIC1.net ****
+* source ELEC1_LAB2
+V_V3         VIN 0  
++SIN 0 6 1k 0 0 0
+V_V2         N00205 0 +3Vdc
+R_R3         VIN N03136  10k  
+D_D6         N03385 N03136 D1N4148 
+V_V3         0 N03385 +3Vdc
+$
+ERROR -- Name "V_V3" is defined more than once
+D_D5         N03136 N00205 D1N4148 
+--------------------$
+ERROR -- Expecting keyword STIMULUS, saw N00205.
+
+
+**** RESUMING elec1_lab2-schematic1-elec1_lab2.sim.cir ****
+.END
+

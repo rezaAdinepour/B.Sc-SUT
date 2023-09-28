@@ -1,0 +1,53 @@
+
+**** 12/29/21 13:28:23 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1Lab_Final"  [ E:\UNIVERSITY\ELECTERICAL\LABS\ELECTRONICS 1\Reports\Finall\Simulation\elec1lab_finall-SC
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "elec1lab_finall-SCHEMATIC1-Elec1Lab_Final.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1K -100K -1
+-----------$
+ERROR -- Invalid value
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\elec1lab_finall-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING elec1lab_finall-SCHEMATIC1.net ****
+* source ELEC1LAB_FINALL
+Q_Q1         N01602 N00645 N00728 Q2N2222A/ZTX 
+R_R1         0 N00728  100  
+R_R2         N01200 N01602  150k  
+V_V3         VIN 0 DC 0Vdc AC 1Vac 
+R_R3         0 N01200  20k  
+C_C6         0 N01289  0.1u  
+R_R4         N01260 N01602  2.2k  
+C_C7         N00728 VOUT  100n  
+R_R5         N00645 N01602  91k  
+C_C8         N01260 N00645  100n  
+R_R6         0 N00645  100k  
+Q_Q2         N01260 N01200 N01289 Q2N2222A/ZTX 
+R_R7         VOUT 0  1k  
+R_R8         0 N01289  100  
+C_C1         VIN N01200  100u  
+V_V1         N01602 0 10Vdc
+
+**** RESUMING elec1lab_finall-SCHEMATIC1-Elec1Lab_Final.sim.cir ****
+.END
+

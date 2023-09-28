@@ -1,0 +1,9 @@
+* source ELEC2_LAB4
+D_D1         N00125 VOUT D1N4148 
+D_D2         N00152 VOUT D1N4148 
+D_D3         0 N00125 D1N4148 
+D_D4         0 N00152 D1N4148 
+R_R1         0 VOUT  100k  
+V_V1         N00125 N00152  
++SIN 0 8 500 0 0 0
+C_C1         0 VOUT  470u  

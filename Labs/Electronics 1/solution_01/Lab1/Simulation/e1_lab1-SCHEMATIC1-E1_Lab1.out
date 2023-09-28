@@ -1,0 +1,101 @@
+
+**** 01/05/22 18:15:50 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-E1_Lab1"  [ e:\university\electerical\labs\electronics 1\reports\lab1\simulation\e1_lab1-schematic1-e1_lab1.
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "e1_lab1-schematic1-e1_lab1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\e1_lab1-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING e1_lab1-SCHEMATIC1.net ****
+* source E1_LAB1
+V_V1         N03270 0  
++SIN 0 4 100 0 0 0
+D_D6         N03338 N03322 D1N4148 
+V_V2         N03338 0 2Vdc
+R_R3         N03270 N03322  1k  
+
+**** RESUMING e1_lab1-schematic1-e1_lab1.sim.cir ****
+.END
+
+**** 01/05/22 18:15:50 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-E1_Lab1"  [ e:\university\electerical\labs\electronics 1\reports\lab1\simulation\e1_lab1-schematic1-e1_lab1.
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         
+          IS    2.682000E-09 
+           N    1.836        
+         ISR    1.565000E-09 
+         IKF     .04417      
+          BV  100            
+         IBV  100.000000E-06 
+          RS     .5664       
+          TT   11.540000E-09 
+         CJO    4.000000E-12 
+          VJ     .5          
+           M     .3333       
+
+
+**** 01/05/22 18:15:50 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-E1_Lab1"  [ e:\university\electerical\labs\electronics 1\reports\lab1\simulation\e1_lab1-schematic1-e1_lab1.
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N03270)    0.0000 (N03322)    1.3798 (N03338)    2.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.380E-03
+    V_V2        -1.380E-03
+
+    TOTAL POWER DISSIPATION   2.76E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

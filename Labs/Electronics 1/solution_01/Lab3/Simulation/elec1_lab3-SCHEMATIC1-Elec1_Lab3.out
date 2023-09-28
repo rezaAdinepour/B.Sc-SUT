@@ -1,0 +1,100 @@
+
+**** 10/18/21 10:22:29 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab3"  [ E:\UNIVERSITY\ELECTERICAL\LABS\ELECTRONICS 1\REPORTS\Lab3\Simulation\elec1_lab3-SCHEMATIC1-El
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "elec1_lab3-SCHEMATIC1-Elec1_Lab3.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 3ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\elec1_lab3-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING elec1_lab3-SCHEMATIC1.net ****
+* source ELEC1_LAB3
+V_V1         N00081 0  
++SIN 0 6 500 0 0 0
+D_D1         N00081 N00119 D1N4148 
+C_C1         0 N00119  100u  
+R_R1         0 N00119  1  
+
+**** RESUMING elec1_lab3-SCHEMATIC1-Elec1_Lab3.sim.cir ****
+.END
+
+**** 10/18/21 10:22:29 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab3"  [ E:\UNIVERSITY\ELECTERICAL\LABS\ELECTRONICS 1\REPORTS\Lab3\Simulation\elec1_lab3-SCHEMATIC1-El
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         
+          IS    2.682000E-09 
+           N    1.836        
+         ISR    1.565000E-09 
+         IKF     .04417      
+          BV  100            
+         IBV  100.000000E-06 
+          RS     .5664       
+          TT   11.540000E-09 
+         CJO    4.000000E-12 
+          VJ     .5          
+           M     .3333       
+
+
+**** 10/18/21 10:22:29 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab3"  [ E:\UNIVERSITY\ELECTERICAL\LABS\ELECTRONICS 1\REPORTS\Lab3\Simulation\elec1_lab3-SCHEMATIC1-El
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00081)    0.0000 (N00119) 130.3E-27 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.303E-25
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

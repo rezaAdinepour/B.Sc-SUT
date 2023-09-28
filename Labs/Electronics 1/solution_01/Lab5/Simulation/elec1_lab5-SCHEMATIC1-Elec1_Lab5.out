@@ -1,0 +1,96 @@
+
+**** 11/02/21 20:04:44 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab5"  [ E:\UNIVERSITY\ELECTERICAL\LABS\ELECTRONICS 1\REPORTS\LAB5\elec1_lab5-SCHEMATIC1-Elec1_Lab5.si
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "elec1_lab5-SCHEMATIC1-Elec1_Lab5.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\elec1_lab5-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING elec1_lab5-SCHEMATIC1.net ****
+* source ELEC1_LAB5
+V_V1         N00125 0 12Vdc
+R_R1         N00125 N00155  220  
+D_D1         0 N00155 D04AZ6_2 
+R_R2         0 N00155  3.3k  
+
+**** RESUMING elec1_lab5-SCHEMATIC1-Elec1_Lab5.sim.cir ****
+.END
+
+**** 11/02/21 20:04:44 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab5"  [ E:\UNIVERSITY\ELECTERICAL\LABS\ELECTRONICS 1\REPORTS\LAB5\elec1_lab5-SCHEMATIC1-Elec1_Lab5.si
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D04AZ6_2        
+          IS   10.000000E-15 
+         ISR    2.924000E-06 
+          BV    6.292        
+         IBV     .1724       
+          RS    1.000000E-03 
+          TT    5.000000E-09 
+         CJO    1.000000E-12 
+          VJ     .75         
+           M     .3333       
+
+
+**** 11/02/21 20:04:44 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab5"  [ E:\UNIVERSITY\ELECTERICAL\LABS\ELECTRONICS 1\REPORTS\LAB5\elec1_lab5-SCHEMATIC1-Elec1_Lab5.si
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00125)   12.0000 (N00155)    6.2413 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.618E-02
+
+    TOTAL POWER DISSIPATION   3.14E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

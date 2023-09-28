@@ -1,0 +1,5 @@
+* source ELEC1_LAB5
+V_V1         N00125 0 12Vdc
+R_R1         N00125 N00155  220  
+D_D1         0 N00155 D04AZ6_2 
+R_R2         0 N00155  3.3k  
