@@ -1,0 +1,8 @@
+* source PULSE_HW03
+R_R12         0 N02333  10k  
+X_U1         N02333 N02590 N01987 0 N02478 LM741
+V_V6         N02590 0 0Vdc
+V_V5         N02303 0 5Vdc
+V_V4         N01987 0 12Vdc
+R_R10         N02333 N02478  100k  
+R_R11         N02303 N02333  10k  

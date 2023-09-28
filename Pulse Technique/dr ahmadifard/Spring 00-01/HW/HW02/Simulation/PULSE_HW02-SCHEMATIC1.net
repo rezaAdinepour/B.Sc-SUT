@@ -1,0 +1,9 @@
+* source PULSE_HW02
+Q_Q1         N00552 N00490 0 BC107A 
+R_R1         N00552 N00739  1k  
+R_R2         0 N00490  10k  
+R_R3         N00409 N00463  1k  
+C_C2         N00463 N00490  5n  
+V_V1         N00409 0  
++PULSE 0 5 0 1n 1n 10us 0
+V_V2         N00739 0 10Vdc
