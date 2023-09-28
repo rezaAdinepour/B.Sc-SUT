@@ -1,0 +1,12 @@
+* source ELEC1_LAB11
+Q_Q1         N00269 N00209 N00298 BC107A 
+R_R1         0 N00298  1k  
+V_V7         N02737 0 DC 0Vdc AC 25mVac 
+R_R2         N00269 N00516  4.7k  
+C_C4         N00298 N02737  1n  
+R_R3         N00209 N00516  47k  
+V_V6         N00516 0 9Vdc
+R_R4         0 N00209  10k  
+R_R6         0 N02388  1k  
+C_C6         N00269 N02388  1u  
+C_C5         0 N00209  100u  

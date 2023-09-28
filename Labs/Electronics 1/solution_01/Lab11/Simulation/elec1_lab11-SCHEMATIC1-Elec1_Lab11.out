@@ -1,0 +1,126 @@
+
+**** 12/21/21 20:25:20 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab11"  [ E:\UNIVERSITY\ELECTERICAL\LABS\ELECTRONICS 1\Reports\Lab11\Simulation\elec1_lab11-SCHEMATIC1
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "elec1_lab11-SCHEMATIC1-Elec1_Lab11.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1K 1 1000K
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\elec1_lab11-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING elec1_lab11-SCHEMATIC1.net ****
+* source ELEC1_LAB11
+Q_Q1         N00269 N00209 N00298 BC107A 
+R_R1         0 N00298  1k  
+V_V7         N02737 0 DC 0Vdc AC 25mVac 
+R_R2         N00269 N00516  4.7k  
+C_C4         N00298 N02737  1n  
+R_R3         N00209 N00516  47k  
+V_V6         N00516 0 9Vdc
+R_R4         0 N00209  10k  
+R_R6         0 N02388  1k  
+C_C6         N00269 N02388  1u  
+C_C5         0 N00209  100u  
+
+**** RESUMING elec1_lab11-SCHEMATIC1-Elec1_Lab11.sim.cir ****
+.END
+
+**** 12/21/21 20:25:20 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab11"  [ E:\UNIVERSITY\ELECTERICAL\LABS\ELECTRONICS 1\Reports\Lab11\Simulation\elec1_lab11-SCHEMATIC1
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC107A          
+               NPN             
+          IS    7.049000E-15 
+          BF  375.5          
+          NF    1            
+         VAF  116.3          
+         IKF    4.589        
+         ISE    7.049000E-15 
+          NE    1.281        
+          BR    2.611        
+          NR    1            
+         IKR    5.313        
+         ISC  121.700000E-12 
+          NC    1.865        
+          RC    1.464        
+         CJE   11.500000E-12 
+         VJE     .5          
+         MJE     .2717       
+         CJC    5.380000E-12 
+         VJC     .6218       
+         MJC     .329        
+          TF  451.000000E-12 
+         XTF   17.43         
+         VTF   10            
+         ITF    6.194        
+          TR   10.000000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 12/21/21 20:25:20 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab11"  [ E:\UNIVERSITY\ELECTERICAL\LABS\ELECTRONICS 1\Reports\Lab11\Simulation\elec1_lab11-SCHEMATIC1
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00209)    1.5345 (N00269)    4.9141 (N00298)     .8747 (N00516)    9.0000     
+
+(N02388)    0.0000 (N02737)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V7         0.000E+00
+    V_V6        -1.028E-03
+
+    TOTAL POWER DISSIPATION   9.25E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .17
+

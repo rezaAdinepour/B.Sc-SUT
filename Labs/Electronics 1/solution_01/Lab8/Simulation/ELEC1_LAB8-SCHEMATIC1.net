@@ -1,0 +1,10 @@
+* source ELEC1_LAB8
+R_R1         VOUT N00434  1k  
+R_R4         0 N00251  320k  
+C_C2         VIN N00251  10u  
+V_V1         VIN 0  
++SIN 0 1.5 1k 0 0 0
+Q_Q1         VOUT N00251 N02623 BC107A 
+R_R3         0 N02623  1k  
+V_V2         N00434 0 5
+R_R2         N00251 N00434  220k  

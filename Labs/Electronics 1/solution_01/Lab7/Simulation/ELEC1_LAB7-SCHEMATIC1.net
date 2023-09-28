@@ -1,0 +1,8 @@
+* source ELEC1_LAB7
+Q_Q1         N00129 N00192 0 BC107A 
+R_R1         VB N00192  470  
+V_V1         VB 0 8
+R_R2         N00165 N00129  1k  
+D_D1         N03169 N00165 D1N4148 
+V_V3         N03169 0  
++SIN 0 10 100 0 0 0

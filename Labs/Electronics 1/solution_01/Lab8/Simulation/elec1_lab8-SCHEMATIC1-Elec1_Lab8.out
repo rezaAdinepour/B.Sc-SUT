@@ -1,0 +1,124 @@
+
+**** 11/22/21 11:41:29 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab8"  [ e:\university\electerical\labs\electronics 1\reports\lab8\simulation\elec1_lab8-schematic1-el
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "elec1_lab8-schematic1-elec1_lab8.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 5ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\elec1_lab8-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING elec1_lab8-SCHEMATIC1.net ****
+* source ELEC1_LAB8
+R_R1         VOUT N00434  1k  
+R_R4         0 N00251  320k  
+C_C2         VIN N00251  10u  
+V_V1         VIN 0  
++SIN 0 1.5 1k 0 0 0
+Q_Q1         VOUT N00251 N02623 BC107A 
+R_R3         0 N02623  1k  
+V_V2         N00434 0 5
+R_R2         N00251 N00434  220k  
+
+**** RESUMING elec1_lab8-schematic1-elec1_lab8.sim.cir ****
+.END
+
+**** 11/22/21 11:41:29 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab8"  [ e:\university\electerical\labs\electronics 1\reports\lab8\simulation\elec1_lab8-schematic1-el
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC107A          
+               NPN             
+          IS    7.049000E-15 
+          BF  375.5          
+          NF    1            
+         VAF  116.3          
+         IKF    4.589        
+         ISE    7.049000E-15 
+          NE    1.281        
+          BR    2.611        
+          NR    1            
+         IKR    5.313        
+         ISC  121.700000E-12 
+          NC    1.865        
+          RC    1.464        
+         CJE   11.500000E-12 
+         VJE     .5          
+         MJE     .2717       
+         CJC    5.380000E-12 
+         VJC     .6218       
+         MJC     .329        
+          TF  451.000000E-12 
+         XTF   17.43         
+         VTF   10            
+         ITF    6.194        
+          TR   10.000000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 11/22/21 11:41:29 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab8"  [ e:\university\electerical\labs\electronics 1\reports\lab8\simulation\elec1_lab8-schematic1-el
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)    0.0000  ( VOUT)    3.7153  (N00251)    1.9626 (N00434)    5.0000     
+
+(N02623)    1.2923 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -1.298E-03
+
+    TOTAL POWER DISSIPATION   6.49E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

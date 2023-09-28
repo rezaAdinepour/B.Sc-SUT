@@ -1,0 +1,10 @@
+* source ELEC1_LAB10
+Q_Q1         N00618 N00187 N00247 BC107A 
+R_R1         N00187 N00618  10k  
+V_V8         N03207 0 DC 0Vdc AC 1Vac 
+V_V7         N00618 0 12Vdc
+R_R2         0 N00187  18k  
+C_C3         N03207 N00187  1u  
+R_R3         0 N00247  1k  
+R_R4         N00333 0  1k  
+C_C4         N00247 N00333  1u  

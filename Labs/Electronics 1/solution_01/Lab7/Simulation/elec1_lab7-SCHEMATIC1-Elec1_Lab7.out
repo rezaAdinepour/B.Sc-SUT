@@ -1,0 +1,149 @@
+
+**** 11/14/21 22:04:56 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab7"  [ E:\UNIVERSITY\ELECTERICAL\LABS\ELECTRONICS 1\REPORTS\LAB7\SIMULATION\elec1_lab7-SCHEMATIC1-El
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "elec1_lab7-SCHEMATIC1-Elec1_Lab7.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ms 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\elec1_lab7-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING elec1_lab7-SCHEMATIC1.net ****
+* source ELEC1_LAB7
+Q_Q1         N00129 N00192 0 BC107A 
+R_R1         VB N00192  470  
+V_V1         VB 0 8
+R_R2         N00165 N00129  1k  
+D_D1         N03169 N00165 D1N4148 
+V_V3         N03169 0  
++SIN 0 10 100 0 0 0
+
+**** RESUMING elec1_lab7-SCHEMATIC1-Elec1_Lab7.sim.cir ****
+.END
+
+**** 11/14/21 22:04:56 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab7"  [ E:\UNIVERSITY\ELECTERICAL\LABS\ELECTRONICS 1\REPORTS\LAB7\SIMULATION\elec1_lab7-SCHEMATIC1-El
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         
+          IS    2.682000E-09 
+           N    1.836        
+         ISR    1.565000E-09 
+         IKF     .04417      
+          BV  100            
+         IBV  100.000000E-06 
+          RS     .5664       
+          TT   11.540000E-09 
+         CJO    4.000000E-12 
+          VJ     .5          
+           M     .3333       
+
+
+**** 11/14/21 22:04:56 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab7"  [ E:\UNIVERSITY\ELECTERICAL\LABS\ELECTRONICS 1\REPORTS\LAB7\SIMULATION\elec1_lab7-SCHEMATIC1-El
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC107A          
+               NPN             
+          IS    7.049000E-15 
+          BF  375.5          
+          NF    1            
+         VAF  116.3          
+         IKF    4.589        
+         ISE    7.049000E-15 
+          NE    1.281        
+          BR    2.611        
+          NR    1            
+         IKR    5.313        
+         ISC  121.700000E-12 
+          NC    1.865        
+          RC    1.464        
+         CJE   11.500000E-12 
+         VJE     .5          
+         MJE     .2717       
+         CJC    5.380000E-12 
+         VJC     .6218       
+         MJC     .329        
+          TF  451.000000E-12 
+         XTF   17.43         
+         VTF   10            
+         ITF    6.194        
+          TR   10.000000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 11/14/21 22:04:56 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Elec1_Lab7"  [ E:\UNIVERSITY\ELECTERICAL\LABS\ELECTRONICS 1\REPORTS\LAB7\SIMULATION\elec1_lab7-SCHEMATIC1-El
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VB)    8.0000  (N00129)     .0090 (N00165)     .0090 (N00192)     .7669     
+
+(N03169)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.539E-02
+    V_V3         7.126E-10
+
+    TOTAL POWER DISSIPATION   1.23E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+
