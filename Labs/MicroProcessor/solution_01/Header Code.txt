@@ -1,0 +1,8 @@
+//           ******************************************************
+//          **   Processor      : ATMEGA 32                       **
+//         ***   Frequency      : 8MHz External Clock             ***
+//        ****   AUTHOR         : Reza Adinepour                  ****
+//        ****   Linkedin       : linkedin.com/reza_adinepour/    ****
+//         ***   Student ID:    : 9814303                         ***
+//          **   Github         : github.com/reza_adinepour/      **
+//           ******************************************************
