@@ -1,0 +1,126 @@
+
+**** 02/19/20 08:11:42 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-s"  [ e:\university\electronics 3\lab\2nd\sim\diffamp-schematic1-s.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "diffamp-schematic1-s.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 10 100gig
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\diffamp-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING diffamp-SCHEMATIC1.net ****
+* source DIFFAMP
+Q_Q1         N00306 N00642 N00069 Q2N2222A/ZTX 
+Q_Q3         N00069 N01208 N002462 Q2N2222A/ZTX 
+Q_Q2         VOUT 0 N00069 Q2N2222A/ZTX 
+R_R5         N007541 N002462  5.6k  
+V_V2         VIN 0 DC 0Vdc AC 1Vac 
+R_R2         VOUT N00306  820  
+V_V1         N00306 0 12
+V_V3         0 N007541 12
+R_R3         N00642 N00670  120  
+R_R6         N01208 0  1k  
+R_R4         N00670 VIN  50  
+
+**** RESUMING diffamp-schematic1-s.sim.cir ****
+.END
+
+**** 02/19/20 08:11:42 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-s"  [ e:\university\electronics 3\lab\2nd\sim\diffamp-schematic1-s.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222A/ZTX    
+               NPN             
+          IS   30.611000E-15 
+          BF  220            
+          NF    1.00124      
+         VAF  104            
+         IKF     .52         
+         ISE    7.500000E-15 
+          NE    1.41         
+          BR    4            
+          NR    1.005        
+         VAR   28            
+         IKR     .24         
+         ISC   10.652500E-12 
+          NC    1.3728       
+          RB     .13         
+          RE     .22         
+          RC     .12         
+         CJE   27.010000E-12 
+         CJC    9.120000E-12 
+         VJC     .4089       
+         MJC     .3508       
+          TF  325.000000E-12 
+          TR  100.000000E-09 
+          CN    2.42         
+           D     .87         
+
+
+**** 02/19/20 08:11:42 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-s"  [ e:\university\electronics 3\lab\2nd\sim\diffamp-schematic1-s.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)    0.0000  ( VOUT)   11.2010  (N00069)    -.6244 (N00306)   12.0000     
+
+(N00642)-710.1E-06 (N00670)-208.9E-06 (N01208)    -.0760 (N002462)    -.7228    
+
+(N007541)  -12.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -4.177E-06
+    V_V1        -1.929E-03
+    V_V3        -2.014E-03
+
+    TOTAL POWER DISSIPATION   4.73E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

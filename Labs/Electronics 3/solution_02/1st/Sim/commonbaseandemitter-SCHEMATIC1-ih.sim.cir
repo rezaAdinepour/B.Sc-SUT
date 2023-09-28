@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-ih"  [ e:\university\electronics 3\lab\1st\sim\commonbaseandemitter-schematic1-ih.sim ] 
+
+** Creating circuit file "commonbaseandemitter-schematic1-ih.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 10 100meg
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\commonbaseandemitter-SCHEMATIC1.net" 
+
+
+.END

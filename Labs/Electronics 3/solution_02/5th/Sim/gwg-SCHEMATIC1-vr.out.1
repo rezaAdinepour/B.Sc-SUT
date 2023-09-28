@@ -1,0 +1,54 @@
+
+**** 05/30/21 20:04:15 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-vr"  [ e:\university\electronics 3\lab\5th\sim\gwg-schematic1-vr.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "gwg-schematic1-vr.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 200us 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\gwg-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING gwg-SCHEMATIC1.net ****
+* source GWG
+R_R3         N04740 N04767  0.4679  
+C_C2         N04740 N04767  0.11  
+C_C3         N04767 N04984  0.077  
+R_R4         N04767 N04984  27.67  
+V_V1         N04740 0  
++PULSE 0 1 0 0 0 10ms 10ms
+R_R2         N04452 N04484  47k  
+R_R1         N04984 N04329  33k  
+R_R2         N04329 N04356  33k  
+$
+ERROR -- Name "R_R2" is defined more than once
+R_R1         N04356 N04452  47k  
+$
+ERROR -- Name "R_R1" is defined more than once
+C_C1         N04329 N04356  1u  
+C_C1         N04452 N04484  1u  
+$
+ERROR -- Name "C_C1" is defined more than once
+E_U5         N04984 0 VALUE {LIMIT(V(0,N04767)*1E6,-15V,+15V)}
+
+**** RESUMING gwg-schematic1-vr.sim.cir ****
+.END
+

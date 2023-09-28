@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-tegr"  [ E:\University\Electronics 3\LAB\7th\Sim\scs-SCHEMATIC1-tegr.sim ] 
+
+** Creating circuit file "scs-SCHEMATIC1-tegr.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 320us 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\scs-SCHEMATIC1.net" 
+
+
+.END

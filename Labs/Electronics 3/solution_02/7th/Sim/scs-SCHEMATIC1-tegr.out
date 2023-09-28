@@ -1,0 +1,192 @@
+
+**** 05/18/20 12:25:08 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tegr"  [ E:\University\Electronics 3\LAB\7th\Sim\scs-SCHEMATIC1-tegr.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "scs-SCHEMATIC1-tegr.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 320us 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\scs-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING scs-SCHEMATIC1.net ****
+* source SCS
+X_U1         0 N00459 N01911 N01748 VA AD741
+R_R1         VC N00459  470  
+R_R2         N00459 VA  1k  
+X_U2         0 N00836 N01911 N01748 VB AD741
+R_R3         VA N00836  470  
+R_R4         N00836 VB  1k  
+X_U3         0 N01353 N01911 N01748 VC AD741
+R_R5         VB N01353  470  
+R_R6         N01353 VC  1k  
+C_C1         N00459 VA  47n  
+C_C2         N00836 VB  47n  
+V_V2         N01911 0 10
+C_C3         N01353 VC  47n  
+V_V1         0 N01748 10
+
+**** RESUMING scs-SCHEMATIC1-tegr.sim.cir ****
+.END
+
+**** 05/18/20 12:25:08 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tegr"  [ E:\University\Electronics 3\LAB\7th\Sim\scs-SCHEMATIC1-tegr.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.dx         X_U1.dy         X_U2.dx         X_U2.dy         
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS                    1.000000E-03                    1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U3.dx         X_U3.dy         
+          IS  800.000000E-18  800.000000E-18 
+          RS                    1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 05/18/20 12:25:08 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tegr"  [ E:\University\Electronics 3\LAB\7th\Sim\scs-SCHEMATIC1-tegr.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qx         X_U2.qx         X_U3.qx         
+               NPN             NPN             NPN             
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75           93.75         
+          NF    1               1               1            
+          BR    1               1               1            
+          NR    1               1               1            
+          CN    2.42            2.42            2.42         
+           D     .87             .87             .87         
+
+
+**** 05/18/20 12:25:08 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tegr"  [ E:\University\Electronics 3\LAB\7th\Sim\scs-SCHEMATIC1-tegr.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VA) 44.76E-06  (   VB) 44.76E-06  (   VC) 44.76E-06  (N00459) 19.25E-06     
+
+(N00836) 19.25E-06 (N01353) 19.25E-06 (N01748)  -10.0000 (N01911)   10.0000     
+
+(X_U1.6)-5.063E-09 (X_U1.7) 48.35E-06 (X_U1.8) 48.35E-06 (X_U1.9)    0.0000     
+
+(X_U2.6)-5.062E-09 (X_U2.7) 48.35E-06 (X_U2.8) 48.35E-06 (X_U2.9)    0.0000     
+
+(X_U3.6)-5.062E-09 (X_U3.7) 48.35E-06 (X_U3.8) 48.35E-06 (X_U3.9)    0.0000     
+
+(X_U1.10)    -.6077                   (X_U1.11)    9.9603                       
+
+(X_U1.12)    9.9603                   (X_U1.13)    -.5938                       
+
+(X_U1.14)    -.5938                   (X_U1.53)    9.0000                       
+
+(X_U1.54)   -9.0000                   (X_U1.90) 79.77E-06                       
+
+(X_U1.91)   25.0000                   (X_U1.92)  -25.0000                       
+
+(X_U1.99)    0.0000                   (X_U2.10)    -.6077                       
+
+(X_U2.11)    9.9603                   (X_U2.12)    9.9603                       
+
+(X_U2.13)    -.5938                   (X_U2.14)    -.5938                       
+
+(X_U2.53)    9.0000                   (X_U2.54)   -9.0000                       
+
+(X_U2.90) 79.77E-06                   (X_U2.91)   25.0000                       
+
+(X_U2.92)  -25.0000                   (X_U2.99)    0.0000                       
+
+(X_U3.10)    -.6077                   (X_U3.11)    9.9603                       
+
+(X_U3.12)    9.9603                   (X_U3.13)    -.5938                       
+
+(X_U3.14)    -.5938                   (X_U3.53)    9.0000                       
+
+(X_U3.54)   -9.0000                   (X_U3.90) 79.76E-06                       
+
+(X_U3.91)   25.0000                   (X_U3.92)  -25.0000                       
+
+(X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -3.349E-03
+    V_V1        -3.349E-03
+    X_U1.vb     -5.063E-14
+    X_U1.vc      9.001E-12
+    X_U1.ve      9.209E-12
+    X_U1.vlim    7.977E-08
+    X_U1.vlp    -2.500E-11
+    X_U1.vln    -2.500E-11
+    X_U2.vb     -5.062E-14
+    X_U2.vc      9.001E-12
+    X_U2.ve      9.095E-12
+    X_U2.vlim    7.977E-08
+    X_U2.vlp    -2.500E-11
+    X_U2.vln    -2.500E-11
+    X_U3.vb     -5.062E-14
+    X_U3.vc      9.001E-12
+    X_U3.ve      9.095E-12
+    X_U3.vlim    7.976E-08
+    X_U3.vlp    -2.500E-11
+    X_U3.vln    -2.500E-11
+
+    TOTAL POWER DISSIPATION   6.70E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .05
+

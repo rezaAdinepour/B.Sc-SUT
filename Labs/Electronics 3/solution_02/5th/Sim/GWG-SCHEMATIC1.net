@@ -1,0 +1,14 @@
+* source GWG
+R_R3         VIN N04767  0.4679  
+C_C4         VIN N04767  0.11  
+C_C3         N04767 N04984  0.077  
+R_R4         N04767 N04984  27.67  
+V_V1         VIN 0  
++PULSE 0mv 1mv 0 0 0 10ms 10ms
+R_R2         N04452 VOUT  47k  
+R_R1         N04984 N04329  33k  
+R_R11         N04329 N04356  33k  
+R_R22         N04356 N04452  47k  
+C_C2         N04329 N04356  1u  
+C_C1         N04452 VOUT  1u  
+E_U5         N04984 0 VALUE {LIMIT(V(0,N04767)*1E6,-15V,+15V)}

@@ -1,0 +1,12 @@
+* source COMMONBASEANDEMITTER
+V_V2         VIN 0 DC 0Vdc AC 1Vac 
+Q_Q1         VOUT N00103 N00367 Q2N2222A/ZTX 
+R_R1         VOUT N00265  5.6k  
+R_R2         0 N00367  330  
+R_R7         N02594 N007210  100  
+C_C2         N00367 0  48u  
+C_C3         N02594 N00103  3.3u  
+R_R3         N00103 N00265  4.7k  
+V_V1         N00265 0 12
+R_R4         0 N00103  390  
+R_R6         VIN N007210  50  

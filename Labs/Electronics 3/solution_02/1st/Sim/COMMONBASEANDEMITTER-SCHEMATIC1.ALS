@@ -1,0 +1,15 @@
+.ALIASES
+V_V2            V2(+=VIN -=0 )
+Q_Q1            Q1(C=VOUT B=N00103 E=N00367 )
+R_R1            R1(1=VOUT 2=N00265 )
+R_R2            R2(1=0 2=N00367 )
+R_R7            R7(1=N02594 2=N007210 )
+C_C2            C2(1=N00367 2=0 )
+C_C3            C3(1=N02594 2=N00103 )
+R_R3            R3(1=N00103 2=N00265 )
+V_V1            V1(+=N00265 -=0 )
+R_R4            R4(1=0 2=N00103 )
+R_R6            R6(1=VIN 2=N007210 )
+_    _(Vout=VOUT)
+_    _(Vin=VIN)
+.ENDALIASES

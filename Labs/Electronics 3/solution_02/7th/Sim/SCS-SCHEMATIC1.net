@@ -1,0 +1,15 @@
+* source SCS
+X_U1         0 N00459 N01911 N01748 VA AD741
+R_R1         VC N00459  470  
+R_R2         N00459 VA  1k  
+X_U2         0 N00836 N01911 N01748 VB AD741
+R_R3         VA N00836  470  
+R_R4         N00836 VB  1k  
+X_U3         0 N01353 N01911 N01748 VC AD741
+R_R5         VB N01353  470  
+R_R6         N01353 VC  1k  
+C_C1         N00459 VA  47n  
+C_C2         N00836 VB  47n  
+V_V2         N01911 0 10
+C_C3         N01353 VC  47n  
+V_V1         0 N01748 10

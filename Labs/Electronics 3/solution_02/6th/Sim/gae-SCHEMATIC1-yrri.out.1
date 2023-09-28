@@ -1,0 +1,55 @@
+
+**** 05/11/20 05:40:18 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-yrri"  [ E:\UNIVERSITY\Electronics 3\LAB\6th\Sim\gae-SCHEMATIC1-yrri.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "gae-SCHEMATIC1-yrri.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of h:\softwares\orcad\new\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.4us 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\gae-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING gae-SCHEMATIC1.net ****
+* source GAE
+Q_Q9         N01162 N01867 N01357 Q2N2222A/ZTX 
+R_R2         VOUT N02699  680  
+R_R11         N01867 0  318  
+R_R3         VOUT N01647  250  
+C_C1         N01867 0  0.1n  
+R_R4         N01647 0  270  
+C_C2         VOUT N01948  0.1n  
+V_V3         N02507 0 12
+R_R5         N02507 N01082  1k  
+R_R6         N01162 N02507  3.3k  
+Q_Q9         N01082 N01647 N01277 Q2N2222A/ZTX 
+$
+ERROR -- Name "Q_Q9" is defined more than once
+R_R7         N01360 N01277  18  
+R_R8         N01360 N01357  18  
+R_R9         N02699 N01360  3.9k  
+Q_Q8         VOUT N01162 N00776 BC177AP/ZTX 
+R_R10         N01948 N01867  318  
+V_V2         0 N02699 12
+R_R1         N00776 N02507  120  
+
+**** RESUMING gae-SCHEMATIC1-yrri.sim.cir ****
+.END
+

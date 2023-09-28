@@ -1,0 +1,12 @@
+* source JRYK
+R_R1         N00234 N01081  7.5k  
+C_C4         0 N00305  470u  
+R_R2         0 N00234  400  
+R_R3         0 N00305  100  
+L_L1         N01081 VOUT  22m  
+V_V1         N01081 0 9
+L_L2         VOUT N00659  4.7u  
+C_C1         0 VOUT  1n  
+C_C2         N00659 0  10n  
+C_C3         N00234 N00659  10u  
+Q_Q1         VOUT N00234 N00305 Q2N2222
