@@ -1,0 +1,5 @@
+* source PULSE_HW01
+C_C5         N02673 N02585  10n  
+R_R6         0 N02585  100  
+V_V3         N02673 0  
++PULSE 0 10 0 1n 1n 10m 0
